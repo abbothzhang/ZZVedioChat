@@ -1,0 +1,3 @@
+ImSDK.framework 		ImSDK
+QALSDK.framework		ÍøÂçSDK
+TLSSDK.framework		µÇÂ¼SDK
