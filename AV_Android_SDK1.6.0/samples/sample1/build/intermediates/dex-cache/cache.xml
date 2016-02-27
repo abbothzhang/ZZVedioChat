@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/mobilepb.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a5e62566e5023a4497edcb883324e82771c8c9fb">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/mobilepb-a09e2e6c87afbc18a3b0869377cb01b023a77a65.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/qavsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="72907c1fe56cb249dff87723df311d1a4600292d">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/qavsdk-408b72559ec8822f417c3193b480c4f5b2ecdeec.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/bugly_1.2.8_imsdk_release.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b7cda4b61b114dd9684be56309411b5eb251b611">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/bugly_1.2.8_imsdk_release-04c468b7777b4aeadfafbadb74e12b8bad9c5485.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Downloads/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-c67273a06c817ef4ec32e55f5093a09cdeed7670.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/imsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d9fef18fa4c30af3fdd1110053aad1f29846d251">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/imsdk-63991f12e9425b822a278cdd02939af731a278ad.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/qalsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d20ca16f7df6ea26234a6331a73621c22d9ecb96">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/qalsdk-05a472c1455ead071269171f663413b6414edab3.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/httpmime-4.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d34b163e52a9727101aced60775d51c5085390a1">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/httpmime-4.1.1-63384f0ad987cfb2ed260c25302437c807a3e718.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dd8fa9304e376adaf936c3db097240d2efcb116f">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/wup-1.0.0-SNAPSHOT-ea3aa345894c0861c26b10905c18325cbc866356.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/beacon_android_v1.9.9.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bfb018e8073e59236f150fbf261e184996ee7abc">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/beacon_android_v1.9.9-48bbb506b4c7bed9984d3906140d836c5e8f800b.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/classes-7324948eac0b2a7203f210f4ab942faa98dfa7c8.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-8d5c8d4fe90cc9036f59607e4cdbfe830f84d056.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.4-93851f0a8129a9c6615a63ee428634eded8dd068.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/eup_1.9.2__allproguad_rqdp.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc2a82e6063ab032c96bacc96b0bd8dc929da9ab">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/eup_1.9.2__allproguad_rqdp-3cfabcc6ec485724645fd63e3fda322b1db7c32f.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/libs/tls_sdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a6fdd5189b8a788ff05e1a9216e2700d891fae1a">
+        <dex dex="/Users/admin/Desktop/随心播/AV_Android_SDK1.6.0/samples/sample1/app/build/intermediates/pre-dexed/debug/tls_sdk-7ea6e069410e10a11069ccd11278b107c1de867b.jar" />
+    </item>
+    <item
+        jar="/Users/admin/AndroidStudioProjects/show_proj/trunk/client/Android/QAVSDKDemoMulti61/app/libs/bugly_1.2.8_imsdk_release.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b7cda4b61b114dd9684be56309411b5eb251b611">
+        <dex dex="/Users/admin/AndroidStudioProjects/show_proj/trunk/client/Android/QAVSDKDemoMulti61/app/build/intermediates/pre-dexed/debug/bugly_1.2.8_imsdk_release-25b96d4d608729ad789343de21825a7707d373bc.jar" />
+    </item>
+
+</items>
