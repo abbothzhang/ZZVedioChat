@@ -33,13 +33,11 @@
 		5045E6131C827C1D009ED2C3 /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030761C31270900FD2641 /* QAVSDK.framework */; };
 		5045E6141C827C1D009ED2C3 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030771C31270900FD2641 /* TLSSDK.framework */; };
 		5045E6171C827C8E009ED2C3 /* ZZVCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */; };
-		5045E6181C827C8E009ED2C3 /* ZZVCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6161C827C8E009ED2C3 /* ZZVCCommon.m */; };
 		5045E61B1C827CAD009ED2C3 /* ZZVCContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6191C827CAD009ED2C3 /* ZZVCContext.h */; };
 		5045E61C1C827CAD009ED2C3 /* ZZVCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */; };
 		5045E61F1C827CD3009ED2C3 /* ZZVCEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */; };
 		5045E6201C827CD3009ED2C3 /* ZZVCEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */; };
 		5045E6231C827CF9009ED2C3 /* ZZVCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6211C827CF9009ED2C3 /* ZZVCError.h */; };
-		5045E6241C827CF9009ED2C3 /* ZZVCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6221C827CF9009ED2C3 /* ZZVCError.m */; };
 		5045E6271C827D25009ED2C3 /* ZZVCMultiRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */; };
 		5045E6281C827D25009ED2C3 /* ZZVCMultiRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */; };
 		5045E62B1C827D48009ED2C3 /* ZZVCRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6291C827D48009ED2C3 /* ZZVCRoom.h */; };
@@ -193,13 +191,11 @@
 		5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCAudioCtrl.h; path = public/ZZVCAudioCtrl.h; sourceTree = "<group>"; };
 		5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCAudioCtrl.m; path = public/ZZVCAudioCtrl.m; sourceTree = "<group>"; };
 		5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCCommon.h; path = public/ZZVCCommon.h; sourceTree = "<group>"; };
-		5045E6161C827C8E009ED2C3 /* ZZVCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCCommon.m; path = public/ZZVCCommon.m; sourceTree = "<group>"; };
 		5045E6191C827CAD009ED2C3 /* ZZVCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCContext.h; path = public/ZZVCContext.h; sourceTree = "<group>"; };
 		5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCContext.m; path = public/ZZVCContext.m; sourceTree = "<group>"; };
 		5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCEndpoint.h; path = public/ZZVCEndpoint.h; sourceTree = "<group>"; };
 		5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCEndpoint.m; path = public/ZZVCEndpoint.m; sourceTree = "<group>"; };
 		5045E6211C827CF9009ED2C3 /* ZZVCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCError.h; path = public/ZZVCError.h; sourceTree = "<group>"; };
-		5045E6221C827CF9009ED2C3 /* ZZVCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCError.m; path = public/ZZVCError.m; sourceTree = "<group>"; };
 		5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCMultiRoom.h; path = public/ZZVCMultiRoom.h; sourceTree = "<group>"; };
 		5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCMultiRoom.m; path = public/ZZVCMultiRoom.m; sourceTree = "<group>"; };
 		5045E6291C827D48009ED2C3 /* ZZVCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCRoom.h; path = public/ZZVCRoom.h; sourceTree = "<group>"; };
@@ -423,13 +419,11 @@
 				5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */,
 				5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */,
 				5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */,
-				5045E6161C827C8E009ED2C3 /* ZZVCCommon.m */,
 				5045E6191C827CAD009ED2C3 /* ZZVCContext.h */,
 				5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */,
 				5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */,
 				5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */,
 				5045E6211C827CF9009ED2C3 /* ZZVCError.h */,
-				5045E6221C827CF9009ED2C3 /* ZZVCError.m */,
 				5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */,
 				5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */,
 				5045E6291C827D48009ED2C3 /* ZZVCRoom.h */,
@@ -907,10 +901,8 @@
 				5045E61C1C827CAD009ED2C3 /* ZZVCContext.m in Sources */,
 				5045E60E1C827BBF009ED2C3 /* ZZVCAudioCtrl.m in Sources */,
 				5045E6301C827D74009ED2C3 /* ZZVCVideoCtrl.m in Sources */,
-				5045E6181C827C8E009ED2C3 /* ZZVCCommon.m in Sources */,
 				5045E6281C827D25009ED2C3 /* ZZVCMultiRoom.m in Sources */,
 				5045E6201C827CD3009ED2C3 /* ZZVCEndpoint.m in Sources */,
-				5045E6241C827CF9009ED2C3 /* ZZVCError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

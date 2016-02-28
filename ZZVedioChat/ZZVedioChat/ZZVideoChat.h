@@ -10,6 +10,7 @@
 #define ZZVideoChat_h
 
 #import "ZZVCError.h"
+#import "ZZVCCommon.h"
 
 
 #endif /* ZZVideoChat_h */
