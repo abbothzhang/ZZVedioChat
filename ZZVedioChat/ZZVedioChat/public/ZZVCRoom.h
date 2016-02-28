@@ -70,7 +70,7 @@
 }
 
 @property(assign,nonatomic)UInt64 roomId;     ///< 音视频房间ID
-@property(assign,nonatomic)avRoomType roomType;  ///< 音视频房间类型（双人或多人）
+@property(assign,nonatomic)zzvcRoomType roomType;  ///< 音视频房间类型（双人或多人）
 
 /**
  @brief 获取通话中实时房间质量相关信息，业务侧可以不用关心，主要用来查看通话情况、排查问题等。

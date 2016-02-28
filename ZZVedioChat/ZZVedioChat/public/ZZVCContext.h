@@ -10,18 +10,23 @@
 #import "ZZVCRoom.h"
 #import "ZZVCAudioCtrl.h"
 #import "ZZVCVideoCtrl.h"
+#import <QAVSDK/QAVSDK.h>
+#import "ZZVideoChat.h"
+#import "ZZVCContextConfig.h"
+#import "ZZVCMultiParam.h"
 
 /**
  @brief AVContext对象配置信息
  */
-@interface ZZVCContextConfig : NSObject{
-}
-
-@property (copy,nonatomic) NSString* sdkAppId;  ///< 腾讯为每个使用SDK的App分配多AppId。
-@property (copy,nonatomic) NSString* appIdAtThird;  ///< App使用的OAuth授权体系分配的AppId。
-@property (copy,nonatomic) NSString* identifier;    ///< 帐号名
-@property (copy,nonatomic) NSString* accountType;   ///< 腾讯为每个接入方分配的帐号类型。
-@end
+//@interface ZZVCContextConfig : QAVContextConfig{
+//}
+//
+//@property (copy,nonatomic) NSString* sdkAppId;  ///< 腾讯为每个使用SDK的App分配多AppId。
+//@property (copy,nonatomic) NSString* appIdAtThird;  ///< App使用的OAuth授权体系分配的AppId。
+//@property (copy,nonatomic) NSString* identifier;    ///< 帐号名
+//@property (copy,nonatomic) NSString* accountType;   ///< 腾讯为每个接入方分配的帐号类型。
+//
+//@end
 
 /**
  *  通用的回调
@@ -91,7 +96,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  -# 只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；
  -# 当异步操作启动失败的时候，直接通过StartContext的返回值返回错误，不会再触发回调函数。
  */
--(ZZVCResult)startContext:(ContextOperationBlock)block;
+-(ZZVCResult)startContext:(zzvcContextOperationBlock)block;
 
 /**
  @brief 终止ZZVCContext对象。
@@ -109,7 +114,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  - App应该设法保证startContext和stopContext的配对调用；
  - stopContext内部如果判断到当前还没退出音视频房间，会自动调用ExitRoom；
  */
--(ZZVCResult)stopContext:(ContextOperationBlock)block;
+-(ZZVCResult)stopContext:(zzvcContextOperationBlock)block;
 
 /**
  @brief 进入音视频房间。
@@ -136,7 +141,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  - 调用EnterRoom之前，必须先退出上一个音视频房间；
  - 如果当前AVContext中已经存在一个音视频房间，调用EnterRoom会同步返回失败。
  */
--(ZZVCResult)enterRoom:(ZZVCRoomParam*)param delegate:(id<ZZVCRoomDelegate>)dlg;
+-(ZZVCResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<ZZVCRoomDelegate>)dlg;
 
 /**
  @brief 退出音视频房间。

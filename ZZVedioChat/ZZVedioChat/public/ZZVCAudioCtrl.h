@@ -49,7 +49,7 @@
  @brief 音频控制器的封装类
  */
 /// 音频控制器的封装类
-@interface ZZVCAudioCtrl : QAVAudioCtrl{
+@interface ZZVCAudioCtrl : NSObject{
     
 }
 

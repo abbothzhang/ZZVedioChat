@@ -1,6 +1,6 @@
 //
 //  LoginViewController.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-17.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
@@ -28,6 +28,8 @@
 #import <TLSSDK/TLSLoginHelper.h>
 
 #import "AppDelegate.h"
+
+#import "ZZVideoChat.h"
 
 @interface NLoginViewController (){
     BOOL _isLogin;
@@ -91,8 +93,8 @@
             return;
         }
         
-        [[AVUtil sharedContext] startContext:^(QAVResult result) {
-            if(result == QAV_OK)
+        [[AVUtil sharedContext] startContext:^(ZZVCResult result) {
+            if(result == ZZVC_OK)
             {
                 //创建model
                 MultiRoomMemberModel* model=[[[MultiRoomMemberModel alloc] init] autorelease];
@@ -158,7 +160,7 @@
     }
     
     if ([AVUtil sharedContext]) {
-        if (![[AVUtil sharedContext] stopContext:^(QAVResult result) {
+        if (![[AVUtil sharedContext] stopContext:^(ZZVCResult result) {
             
             MSDynamicsDrawerViewController* drawerController=[[MSDynamicsDrawerViewController alloc] init];
             [drawerController setRevealWidth:120 forDirection:MSDynamicsDrawerDirectionRight];

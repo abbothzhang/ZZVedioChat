@@ -11,6 +11,17 @@
 
 #import "ZZVCError.h"
 #import "ZZVCCommon.h"
+#import "ZZVCContext.h"
+#import "ZZVCAudioCtrl.h"
+#import "ZZVCVideoCtrl.h"
+#import "ZZVCEndpoint.h"
+#import "ZZVCMultiParam.h"
+#import "ZZVCRoom.h"
+#import "ZZVCMultiRoom.h"
+#import "ZZVCFrameDesc.h"
+#import "ZZVCVideoFrame.h"
+
+
 
 
 #endif /* ZZVideoChat_h */

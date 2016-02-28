@@ -18,42 +18,7 @@ typedef NS_ENUM(NSInteger, zzvcVideoSrcType){
     ZZVCVIDEO_SRC_TYPE_SCREEN	= 2, /// AVVIDEO_SRC_TYPE_SCREEN 屏幕。
 };
 
-/**
- @brief 视频帧描述
- */
 
-@interface ZZVCFrameDesc:NSObject{
-    
-}
-
-//详情见avColorFormats的定义。
-
-@property(assign,nonatomic) UInt32 width; ///< 宽度，单位：像素。
-@property(assign,nonatomic) UInt32  height; ///< 高度，单位：像素。
-
-/**
- @brief 画面旋转的角度：
- - source_type为AVVIDEO_SRC_TYPE_CAMERA时，表示视频源为摄像头。
- 在终端上，摄像头画面是支持旋转的，App需要根据旋转角度调整渲染层的处理，以保证画面的正常显示。
- - source_type为其他值时，rotate恒为0。
- */
-@property(assign,nonatomic)int rotate;
-
-@property(assign, nonatomic) avColorFormats color_format; ///< 色彩格式，
-@property(assign,nonatomic)avVideoSrcType srcType; ///< 视频源类型，详情见
-@end
-
-/// 视频帧
-@interface ZZVCVideoFrame : NSObject{
-}
-
-@property(retain,nonatomic) ZZVCFrameDesc*frameDesc; ///< 视频帧描述
-@property(copy, nonatomic) NSString*identifier; ///< 视频帧所属的房间成员ID。
-@property(assign, nonatomic)UInt32 dataSize;    ///< 视频帧的数据缓冲区大小，单位：字节。
-@property(assign,nonatomic) UInt8* data;    ///< 视频帧的数据缓冲区，SDK内部会管理缓冲区的分配和释放。
-@property(assign, nonatomic)UInt64 roomID;  ///< 视频帧所属的房间成员ID。
-
-@end
 
 /**
  @brief 摄像头信息
@@ -104,6 +69,46 @@ struct ZZVCAudioFrameDesc {
 
 @end
 
+///////////////
+/**
+ @brief 视频帧描述
+ */
+
+//@interface ZZVCFrameDesc:NSObject{
+//    
+//}
+//
+////详情见avColorFormats的定义。
+//
+//@property(assign,nonatomic) UInt32 width; ///< 宽度，单位：像素。
+//@property(assign,nonatomic) UInt32  height; ///< 高度，单位：像素。
+//
+///**
+// @brief 画面旋转的角度：
+// - source_type为AVVIDEO_SRC_TYPE_CAMERA时，表示视频源为摄像头。
+// 在终端上，摄像头画面是支持旋转的，App需要根据旋转角度调整渲染层的处理，以保证画面的正常显示。
+// - source_type为其他值时，rotate恒为0。
+// */
+//@property(assign,nonatomic)int rotate;
+//
+//@property(assign, nonatomic) zzvcColorFormats color_format; ///< 色彩格式，
+//@property(assign,nonatomic)zzvcVideoSrcType srcType; ///< 视频源类型，详情见
+//@end
+
+///// 视频帧
+//@interface ZZVCVideoFrame : NSObject{
+//}
+//
+//@property(retain,nonatomic) ZZVCFrameDesc*frameDesc; ///< 视频帧描述
+//@property(copy, nonatomic) NSString*identifier; ///< 视频帧所属的房间成员ID。
+//@property(assign, nonatomic)UInt32 dataSize;    ///< 视频帧的数据缓冲区大小，单位：字节。
+//@property(assign,nonatomic) UInt8* data;    ///< 视频帧的数据缓冲区，SDK内部会管理缓冲区的分配和释放。
+//@property(assign, nonatomic)UInt64 roomID;  ///< 视频帧所属的房间成员ID。
+//
+//@end
+
+////////////////
+
 
 
 /// 音视频房间类型
@@ -146,15 +151,16 @@ typedef NS_ENUM(NSInteger, ZZVCUpdateEvent){
 };
 
 
-/**
- @brief 房间参数
- 
- */
-@interface ZZVCRoomParam: NSObject{
-    
-}
-@property(assign, nonatomic)avRoomType roomtype;    ///< 音视频房间类型
-@end
+///**
+// @brief 房间参数
+// 
+// */
+//@interface ZZVCRoomParam: NSObject{
+//    
+//}
+//@property(assign, nonatomic)zzvcRoomType roomtype;    ///< 音视频房间类型
+//
+//@end
 
 
 
@@ -162,18 +168,18 @@ typedef NS_ENUM(NSInteger, ZZVCUpdateEvent){
  @brief 多人房间参数
  
  */
-@interface ZZVCMultiParam : ZZVCRoomParam{
-    
-}
-@property(assign, nonatomic)avAudioCategory audioCategory; ///< 音视频场景策略，多人房间专用。
-@property(assign, nonatomic)UInt32 roomID;    ///< App指定的房间ID。
-
-//advance property
-@property(assign, nonatomic)UInt64 authBitMap;///< 音视频权限位。
-@property(copy, nonatomic)NSData*authBuffer;  ///< 音视频权限加密串。
-@property(copy, nonatomic)NSString*controlRole; ///< 角色名，web端音视频参数配置工具所设置的角色名。
-
-@end
+//@interface ZZVCMultiParam : ZZVCRoomParam{
+//    
+//}
+//@property(assign, nonatomic)zzvcAudioCategory audioCategory; ///< 音视频场景策略，多人房间专用。
+//@property(assign, nonatomic)UInt32 roomID;    ///< App指定的房间ID。
+//
+////advance property
+//@property(assign, nonatomic)UInt64 authBitMap;///< 音视频权限位。
+//@property(copy, nonatomic)NSData*authBuffer;  ///< 音视频权限加密串。
+//@property(copy, nonatomic)NSString*controlRole; ///< 角色名，web端音视频参数配置工具所设置的角色名。
+//
+//@end
 
 //权限位
 #define ZZVC_AUTH_BITS_DEFUALT     0xFFFFFFFFFFFFFFFF ///< 缺省值。拥有所有权限。

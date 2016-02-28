@@ -7,7 +7,8 @@
 //
 #import "ZZVCCommon.h"
 #import "ZZVCError.h"
-
+#import <AVFoundation/AVFoundation.h>
+#import "ZZVCVideoFrame.h"
 
 
 /**
@@ -84,7 +85,7 @@ typedef NS_ENUM(NSInteger, zzvcCameraPos){
  @return 返回错误码。当返回ZZVC_OK时，操作回调才会被执行；否则就不会执行，需要处理具体的错误码。
  
  */
--(ZZVCResult)switchCamera:(cameraPos)pos complete:(cameraOptionComplete)block;
+-(ZZVCResult)switchCamera:(zzvcCameraPos)pos complete:(cameraOptionComplete)block;
 
 /**
  @brief 打开/关闭摄像头。
