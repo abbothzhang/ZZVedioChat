@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char ZZVedioChatVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZZVedioChat/PublicHeader.h>
 
-
+#import <ZZVedioChat/ZZVCError.h>

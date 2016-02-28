@@ -211,6 +211,8 @@
 		5045E6361C827F1B009ED2C3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		5045E6381C827F22009ED2C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5045E6411C827FA8009ED2C3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		5045E6431C82823A009ED2C3 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		5045E6481C82858D009ED2C3 /* ZZVideoChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoChat.h; sourceTree = "<group>"; };
 		9211784E1C3BC461000D8148 /* AudioUtil.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioUtil.storyboard; sourceTree = "<group>"; };
 		9211784F1C3BC461000D8148 /* AVUtilController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVUtilController.h; sourceTree = "<group>"; };
 		921178501C3BC461000D8148 /* AVUtilController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVUtilController.m; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 				5045E60F1C827BC5009ED2C3 /* public */,
 				5045E5FF1C827B0C009ED2C3 /* ZZVedioChat.h */,
 				5045E6011C827B0C009ED2C3 /* Info.plist */,
+				5045E6431C82823A009ED2C3 /* Prefix.pch */,
 			);
 			path = ZZVedioChat;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 		5045E60F1C827BC5009ED2C3 /* public */ = {
 			isa = PBXGroup;
 			children = (
+				5045E6481C82858D009ED2C3 /* ZZVideoChat.h */,
 				5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */,
 				5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */,
 				5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */,
@@ -1003,6 +1007,8 @@
 					"$(PROJECT_DIR)/libs",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
 				INFOPLIST_FILE = ZZVedioChat/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -1041,6 +1047,8 @@
 					"$(PROJECT_DIR)/libs",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
 				INFOPLIST_FILE = ZZVedioChat/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -1078,6 +1086,8 @@
 					"$(PROJECT_DIR)/libs",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
 				INFOPLIST_FILE = ZZVedioChat/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;

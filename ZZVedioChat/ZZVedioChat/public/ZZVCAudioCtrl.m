@@ -1,13 +1,13 @@
+////
+////  ZZVCAudioCtrl.m
+////  QAVSDKDemo_public
+////
+////  Created by albert on 16/2/28.
+////  Copyright © 2016年 TOBINCHEN. All rights reserved.
+////
 //
-//  ZZVCAudioCtrl.m
-//  QAVSDKDemo_public
+//#import "ZZVCAudioCtrl.h"
 //
-//  Created by albert on 16/2/28.
-//  Copyright © 2016年 TOBINCHEN. All rights reserved.
+//@implementation ZZVCAudioCtrl
 //
-
-#import "ZZVCAudioCtrl.h"
-
-@implementation ZZVCAudioCtrl
-
-@end
+//@end

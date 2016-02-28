@@ -6,8 +6,3 @@
 //  Copyright © 2016年 TOBINCHEN. All rights reserved.
 //
 
-#import "ZZVCCommon.h"
-
-@implementation ZZVCCommon
-
-@end
