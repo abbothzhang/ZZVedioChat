@@ -5,6 +5,7 @@
 //  Created by albert on 16/2/28.
 //  Copyright © 2016年 TOBINCHEN. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
 /// 视频流的色彩格式
 typedef NS_ENUM(NSInteger, zzvcColorFormats){

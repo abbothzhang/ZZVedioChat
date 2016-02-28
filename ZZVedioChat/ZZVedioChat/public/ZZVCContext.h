@@ -10,7 +10,6 @@
 #import "ZZVCRoom.h"
 #import "ZZVCAudioCtrl.h"
 #import "ZZVCVideoCtrl.h"
-#import <QAVSDK/QAVSDK.h>
 #import "ZZVideoChat.h"
 #import "ZZVCContextConfig.h"
 #import "ZZVCMultiParam.h"

@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5045E6001C827B0C009ED2C3 /* ZZVedioChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E5FF1C827B0C009ED2C3 /* ZZVedioChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5045E6041C827B0C009ED2C3 /* ZZVedioChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */; };
 		5045E6051C827B0C009ED2C3 /* ZZVedioChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5045E60D1C827BBF009ED2C3 /* ZZVCAudioCtrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */; };
@@ -194,7 +193,6 @@
 
 /* Begin PBXFileReference section */
 		5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZVedioChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5045E5FF1C827B0C009ED2C3 /* ZZVedioChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVedioChat.h; sourceTree = "<group>"; };
 		5045E6011C827B0C009ED2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCAudioCtrl.h; path = public/ZZVCAudioCtrl.h; sourceTree = "<group>"; };
 		5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCAudioCtrl.m; path = public/ZZVCAudioCtrl.m; sourceTree = "<group>"; };
@@ -421,7 +419,6 @@
 			isa = PBXGroup;
 			children = (
 				5045E60F1C827BC5009ED2C3 /* public */,
-				5045E5FF1C827B0C009ED2C3 /* ZZVedioChat.h */,
 				5045E6011C827B0C009ED2C3 /* Info.plist */,
 				5045E6431C82823A009ED2C3 /* Prefix.pch */,
 			);
@@ -736,7 +733,6 @@
 				5045E61B1C827CAD009ED2C3 /* ZZVCContext.h in Headers */,
 				5045E62B1C827D48009ED2C3 /* ZZVCRoom.h in Headers */,
 				5045E6231C827CF9009ED2C3 /* ZZVCError.h in Headers */,
-				5045E6001C827B0C009ED2C3 /* ZZVedioChat.h in Headers */,
 				5045E61F1C827CD3009ED2C3 /* ZZVCEndpoint.h in Headers */,
 				5045E6531C833574009ED2C3 /* ZZVCVideoFrame.h in Headers */,
 				5045E6271C827D25009ED2C3 /* ZZVCMultiRoom.h in Headers */,

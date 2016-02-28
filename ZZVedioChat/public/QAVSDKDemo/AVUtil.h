@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "ZZVCSDK/ZZVCSDK.h"
 #import "ZZVideoChat.h"
 
 @interface AVUtil : NSObject{

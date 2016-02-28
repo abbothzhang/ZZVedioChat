@@ -1,13 +1,13 @@
 //
 //  MultiRoomMemberModel.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-19.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
 //
 
 #import "MultiRoomMemberModel.h"
-#import "QAVSDk/QAVSDK.h"
+#import "ZZVideoChat.h"
 
 NSString* EndpointStateUpdate=@"EndpointStateUpdate";
 
@@ -51,7 +51,7 @@ NSString* EndpointStateUpdate=@"EndpointStateUpdate";
     //demo的要求是显示有音频和视频的成员列表
     
     //对于一个已经在成员列表里的成员只更新状态
-    for (QAVEndpoint*endpoint in identifiers){
+    for (ZZVCEndpoint*endpoint in identifiers){
         //没有音频和视频的就删除
         BOOL isDelete = YES;
         if (endpoint.isAudio || endpoint.isCameraVideo){
@@ -98,7 +98,7 @@ NSString* EndpointStateUpdate=@"EndpointStateUpdate";
     
     //同一个时刻只会有一个人上屏幕视频，所以简单处理。
     [_screenEndpoints removeAllObjects];
-    for (QAVEndpoint*endpoint in identifiers)
+    for (ZZVCEndpoint*endpoint in identifiers)
     {
         if (endpoint.isScreenVideo)
         {
@@ -117,7 +117,7 @@ NSString* EndpointStateUpdate=@"EndpointStateUpdate";
 }
 
 -(void)deleteMember:(NSArray*)identifiers{
-    for (QAVEndpoint*endpointToDelete in identifiers){
+    for (ZZVCEndpoint*endpointToDelete in identifiers){
         for (NSInteger index = 0; index < _audioAndCameraEndpoints.count; index++){
             MemberData*data = _audioAndCameraEndpoints[index];
             if ([data.identifier compare:endpointToDelete.identifier] == NSOrderedSame){
@@ -127,7 +127,7 @@ NSString* EndpointStateUpdate=@"EndpointStateUpdate";
         }
     }
     
-    for (QAVEndpoint*endpointToDelete in identifiers){
+    for (ZZVCEndpoint*endpointToDelete in identifiers){
         for (NSInteger index = 0; index < _screenEndpoints.count; index++){
             MemberData*data = _screenEndpoints[index];
             if ([data.identifier compare:endpointToDelete.identifier] == NSOrderedSame){

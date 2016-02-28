@@ -479,7 +479,7 @@ static UIImage* createImageWithColor(UIColor* color)
     
     [self showTips:@"切换摄像头..."];
     
-    cameraPos pos = control.selected ? CameraPosFront : CameraPosBack;
+    zzvcCameraPos pos = control.selected ? zzvcCameraPosFront : zzvcCameraPosBack;
     
     [[AVUtil sharedContext].videoCtrl switchCamera:pos complete:^(int result) {
         [self hideTips:@"切换摄像头完成" afterDelay:0.5];
