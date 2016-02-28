@@ -6,7 +6,10 @@
 //  Copyright © 2016年 TOBINCHEN. All rights reserved.
 //
 
-//#import "ZZVCCommon.h"
+#import <Foundation/Foundation.h>
+#import "ZZVCCommon.h"
+#import "ZZVCError.h"
+#import <QAVSDK/QAVSDK.h>
 
 /**
  @brief 音频帧回调委托协议
@@ -23,7 +26,7 @@
 /**
  @brief 音频数据委托协议
  */
-@protocol ZZVCAudioDataDelegate <NSObject>
+@protocol ZZVCAudioDataDelegate <QAVAudioDataDelegate>
 @required
 /**
  @brief 音频数据透传回调。
