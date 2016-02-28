@@ -1,6 +1,6 @@
 //
 //  AVFrameDispatcher.h
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-4.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
@@ -37,7 +37,7 @@
 @property (retain,nonatomic) NSData*    data;
 @end
 
-@class QAVVideoFrame;
+@class ZZVCVideoFrame;
 /**
  *  负责画面帧分发
  */
@@ -48,7 +48,7 @@
  *  @param aFrame       帧对象
  *  @param isSubFrame 是否属于子画面
  */
--(void)dispatchVideoFrame:(QAVVideoFrame *)aFrame isSubFrame:(BOOL) isSubFrame;
+-(void)dispatchVideoFrame:(ZZVCVideoFrame *)aFrame isSubFrame:(BOOL) isSubFrame;
 @end
 
 /**
