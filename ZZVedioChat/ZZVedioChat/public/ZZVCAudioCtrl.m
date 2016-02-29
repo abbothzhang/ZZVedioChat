@@ -135,13 +135,15 @@
  @remark 会直接影响callback传入的AudioFrame的格式。
  */
 
-//TODO:
 
-//-(ZZVCResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc{
-////    QAVAudioFrameDesc qavAudioDesc ;
-//    
-//    return (ZZVCResult)[self.audioCtrl setAudioDataFormat:srcType desc:(struct QAVAudioFrameDesc*)audioDesc];
-//}
+-(ZZVCResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc{
+//    QAVAudioFrameDesc qavAudioDesc ;
+    struct QAVAudioFrameDesc ad;
+    ad.Bits = audioDesc.Bits;
+    ad.ChannelNum = audioDesc.ChannelNum;
+    ad.SampleRate = audioDesc.SampleRate;
+    return (ZZVCResult)[self.audioCtrl setAudioDataFormat:(QAVAudioDataSourceType)srcType desc:ad];
+}
 
 /**
  @brief 获取某类型的音频格式参数。
@@ -150,10 +152,14 @@
  @remark 无。
  */
 
-//TODO:
-//-(struct ZZVCAudioFrameDesc)getAudioDataFormat:(ZZVCAudioDataSourceType) srcType{
-//    return [self.audioCtrl getAudioDataFormat:srcType];
-//}
+-(struct ZZVCAudioFrameDesc)getAudioDataFormat:(ZZVCAudioDataSourceType) srcType{
+    struct QAVAudioFrameDesc qavAF = [self.audioCtrl getAudioDataFormat:(QAVAudioDataSourceType)srcType];
+    struct ZZVCAudioFrameDesc zzvcAF;
+    zzvcAF.Bits = qavAF.Bits;
+    zzvcAF.ChannelNum = qavAF.ChannelNum;
+    zzvcAF.SampleRate = qavAF.SampleRate;
+    return zzvcAF;
+}
 
 /**
  @brief 设置某类型的音频音量。
