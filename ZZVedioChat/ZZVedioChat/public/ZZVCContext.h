@@ -28,16 +28,16 @@
 //@end
 
 /**
- *  通用的回调
+ *  通用的回调ContextOperationBlock
  *
  *  @param result 错误码。非0表示出错
  */
-typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
+//typedef void (^ContextOperationBlock)(ZZVCResult result);
 
 /**
  @brief AVContext对象封装类，代表着一个SDK运行实例
  */
-@interface ZZVCContext : NSObject{
+@interface ZZVCContext : QAVContext{
     
 }
 @property(retain, nonatomic) ZZVCContextConfig*Config;///< 创建AVContext对象所需的配置信息
@@ -95,7 +95,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  -# 只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；
  -# 当异步操作启动失败的时候，直接通过StartContext的返回值返回错误，不会再触发回调函数。
  */
--(ZZVCResult)startContext:(zzvcContextOperationBlock)block;
+-(ZZVCResult)startContext:(ContextOperationBlock)block;
 
 /**
  @brief 终止ZZVCContext对象。
@@ -113,7 +113,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  - App应该设法保证startContext和stopContext的配对调用；
  - stopContext内部如果判断到当前还没退出音视频房间，会自动调用ExitRoom；
  */
--(ZZVCResult)stopContext:(zzvcContextOperationBlock)block;
+-(ZZVCResult)stopContext:(ContextOperationBlock)block;
 
 /**
  @brief 进入音视频房间。
@@ -128,7 +128,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  
  @return 返回值表示异步操作启动是否成功；
  
- 异步操作执行结果通过继承ZZVCRoomDelegate的委托对象的OnEnterRoomComplete()返回。
+ 异步操作执行结果通过继承QAVRoomDelegate的委托对象的OnEnterRoomComplete()返回。
  
  @retval ZZVC_OK 启动成功。
  @retval ZZVC_ERR_CONTEXT_NOT_STARTED StartContext()没有执行成功。
@@ -140,7 +140,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  - 调用EnterRoom之前，必须先退出上一个音视频房间；
  - 如果当前AVContext中已经存在一个音视频房间，调用EnterRoom会同步返回失败。
  */
--(ZZVCResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<ZZVCRoomDelegate>)dlg;
+-(ZZVCResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<QAVRoomDelegate>)dlg;
 
 /**
  @brief 退出音视频房间。
@@ -148,7 +148,7 @@ typedef void (^zzvcContextOperationBlock)(ZZVCResult result);
  @details ExitRoom是一个异步操作，内部会连接服务器，申请退出音视频房间。
  
  @return 返回值表示异步操作启动是否成功；
- 异步操作执行结果通过继承ZZVCRoomDelegate的委托对象的OnExitRoomComplete()返回。
+ 异步操作执行结果通过继承QAVRoomDelegate的委托对象的OnExitRoomComplete()返回。
  
  @retval ZZVC_OK 启动成功。
  @retval 其他值 启动失败。

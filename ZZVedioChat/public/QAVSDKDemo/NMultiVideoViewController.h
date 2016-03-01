@@ -17,7 +17,7 @@
 @class MultiRoomConfigViewController;
 @class RoomMemberViewController;
 @class PreviewView;
-@interface NMultiVideoViewController : TipsViewController<UICollectionViewDataSource,UICollectionViewDelegate,ZZVCRoomDelegate,ZZVCRemoteVideoDelegate, ZZVCScreenVideoDelegate>{
+@interface NMultiVideoViewController : TipsViewController<UICollectionViewDataSource,UICollectionViewDelegate,QAVRoomDelegate,ZZVCRemoteVideoDelegate, ZZVCScreenVideoDelegate>{
 
     MultiRoomMemberModel* _model;
     UICollectionView* _memberCollectionView;

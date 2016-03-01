@@ -11,7 +11,7 @@
 /**
  @brief 房间委托协议
  */
-@protocol ZZVCRoomDelegate <NSObject>
+@protocol QAVRoomDelegate <NSObject>
 @required
 /**
  @brief ZZVCContext的enterRoom的回调函数。
