@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7764403c-511f-11e5-9d97-9daa8253dcd1++3031",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7764403c-511f-11e5-9d97-9daa8253dcd1++3031" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7764403c-511f-11e5-9d97-9daa8253dcd1++3031" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "039B9494-99A8-4B6B-BC31-BDF4C33E9E37",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7764403c-511f-11e5-9d97-9daa8253dcd1++3031" : "AVTLSDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QAVSDKDemo_public",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QAV_iOS_SDK1.6.0\/Demo2\/QAVSDKDemo_public.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-svn.tencent.com\/AvcOpen\/av_show_proj",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7764403c-511f-11e5-9d97-9daa8253dcd1++3031"
+    }
+  ]
+}

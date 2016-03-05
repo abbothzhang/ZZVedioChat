@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AVTLSLoginViewController">
+            <connections>
+                <outlet property="qq" destination="08v-TM-Ho1" id="Ymm-Za-gvC"/>
+                <outlet property="tips" destination="fsH-3H-bMM" id="yKA-Vu-j43"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wx" destination="JTA-g9-L8R" id="nWS-D8-m5B"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AVT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffr-dw-lyf">
+                    <rect key="frame" x="285" y="84" width="30" height="30"/>
+                    <state key="normal" title="登录">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="GPH-eC-nJh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtm-q4-d5S">
+                    <rect key="frame" x="285" y="154" width="30" height="30"/>
+                    <state key="normal" title="注销">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="logout:" destination="-1" eventType="touchUpInside" id="RMi-g2-LjM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-3H-bMM">
+                    <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTA-g9-L8R">
+                    <rect key="frame" x="472" y="457" width="48" height="48"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="icon48_appwx_logo.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08v-TM-Ho1">
+                    <rect key="frame" x="80" y="461" width="48" height="48"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="qqicon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="08v-TM-Ho1" firstAttribute="width" secondItem="JTA-g9-L8R" secondAttribute="width" id="0qf-4c-mo6"/>
+                <constraint firstAttribute="centerY" secondItem="fsH-3H-bMM" secondAttribute="centerY" id="2va-Xr-pwz"/>
+                <constraint firstItem="fsH-3H-bMM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8C2-4f-d5D"/>
+                <constraint firstItem="JTA-g9-L8R" firstAttribute="centerY" secondItem="08v-TM-Ho1" secondAttribute="centerY" id="Era-fC-3Vo"/>
+                <constraint firstAttribute="centerX" secondItem="ffr-dw-lyf" secondAttribute="centerX" constant="8" id="PjM-Ys-4ud"/>
+                <constraint firstAttribute="centerX" secondItem="ffr-dw-lyf" secondAttribute="centerX" id="QL7-g3-SO7"/>
+                <constraint firstItem="08v-TM-Ho1" firstAttribute="height" secondItem="JTA-g9-L8R" secondAttribute="height" id="ToI-eg-FSL"/>
+                <constraint firstAttribute="trailing" secondItem="JTA-g9-L8R" secondAttribute="trailing" constant="80" id="XqZ-ax-gj2"/>
+                <constraint firstAttribute="bottom" secondItem="08v-TM-Ho1" secondAttribute="bottom" constant="100" id="YRp-fe-tYw"/>
+                <constraint firstAttribute="centerX" secondItem="fsH-3H-bMM" secondAttribute="centerX" id="bqH-gP-6vP"/>
+                <constraint firstItem="ffr-dw-lyf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="eAg-Nx-1Cg"/>
+                <constraint firstAttribute="centerX" secondItem="xtm-q4-d5S" secondAttribute="centerX" id="fJb-qv-s7T"/>
+                <constraint firstItem="08v-TM-Ho1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="iec-Fj-gPB"/>
+                <constraint firstAttribute="centerX" secondItem="xtm-q4-d5S" secondAttribute="centerX" id="jky-Hc-ahA"/>
+                <constraint firstAttribute="trailing" secondItem="fsH-3H-bMM" secondAttribute="trailing" constant="20" id="lq3-dN-CBC"/>
+                <constraint firstItem="xtm-q4-d5S" firstAttribute="top" secondItem="ffr-dw-lyf" secondAttribute="bottom" constant="40" id="mna-19-uta"/>
+                <constraint firstItem="fsH-3H-bMM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="msU-pS-opb"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PjM-Ys-4ud"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="934" y="640"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon48_appwx_logo.png" width="48" height="48"/>
+        <image name="qqicon.png" width="36" height="39"/>
+    </resources>
+</document>

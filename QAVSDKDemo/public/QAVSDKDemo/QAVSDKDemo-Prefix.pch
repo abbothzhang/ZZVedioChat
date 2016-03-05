@@ -1,0 +1,60 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define  _BUILD_FOR_MULT
+#define google tencent
+#define protobuf av
+
+#define FOREXTERNAL
+
+
+#define _BUILD_FOR_TLS 1
+
+#if _BUILD_FOR_TLS
+
+/**
+ * AVSDK登录参数配置
+ */
+// Demo 配置
+#define kAVSDKDemo_AppIdThird       @"1400001862"
+#define kAVSDKDemo_SdkAppId         @"1400001862"
+#define kAVSDKDemo_SdkAppIdToken    @"0"
+#define kAVSDKDemo_AccountType      @"1019"
+
+
+// TLS 相关参数
+#define TLS_SDK_APPID 1400001862
+#define TLS_SDK_ACCOUNT_TYPE 1019
+#define APP_VERSION @""
+
+
+#else
+
+#define kAVSDKDemo_AppIdThird       @"1104620500"
+#define kAVSDKDemo_SdkAppId         @"1104620500"
+#define kAVSDKDemo_SdkAppIdToken    @"0"
+#define kAVSDKDemo_AccountType      @"107"
+
+#endif
+
+
+
+
+#define QQ_OPEN_ID @"1104778508"
+#define QQ_OPEN_SCHEMA @"tencent1104778508"
+#define WX_OPEN_ID @"wx307d66cbc308cf1f"
+#define WX_OPEN_KEY @"69aed8b3fd41ed72efcfbdbca1e99a27"
