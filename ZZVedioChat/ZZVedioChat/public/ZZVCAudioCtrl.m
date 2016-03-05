@@ -87,10 +87,10 @@
  
  @param dlg 继承了QAudioDataDelegate的对象实例
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)setAudioDataEventDelegate:(id<ZZVCAudioDataDelegate>)dlg{
-    return (ZZVCResult)[self.audioCtrl setAudioDataEventDelegate:dlg];
+-(QAVResult)setAudioDataEventDelegate:(id<ZZVCAudioDataDelegate>)dlg{
+    return (QAVResult)[self.audioCtrl setAudioDataEventDelegate:dlg];
 }
 
 
@@ -99,11 +99,11 @@
  
  @param type 要注册监听的音频数据源类型，具体参考ZZVCAudioDataSourceType
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)registerAudioDataCallback:(ZZVCAudioDataSourceType)type{
+-(QAVResult)registerAudioDataCallback:(ZZVCAudioDataSourceType)type{
     QAVAudioDataSourceType type2 = (QAVAudioDataSourceType)type;
-    return (ZZVCResult)[self.audioCtrl registerAudioDataCallback:type2];
+    return (QAVResult)[self.audioCtrl registerAudioDataCallback:type2];
 }
 
 
@@ -112,19 +112,19 @@
  
  @param type 要反注册监听的音频数据源类型，具体参考ZZVCAudioDataSourceType
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)unregisterAudioDataCallback:(ZZVCAudioDataSourceType)type{
-    return (ZZVCResult)[self.audioCtrl unregisterAudioDataCallback:(QAVAudioDataSourceType)type];
+-(QAVResult)unregisterAudioDataCallback:(ZZVCAudioDataSourceType)type{
+    return (QAVResult)[self.audioCtrl unregisterAudioDataCallback:(QAVAudioDataSourceType)type];
 }
 
 /**
  @brief 反注册所有数据的回调
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)unregisterAudioDataCallbackAll{
-    return (ZZVCResult)[self.audioCtrl unregisterAudioDataCallbackAll];
+-(QAVResult)unregisterAudioDataCallbackAll{
+    return (QAVResult)[self.audioCtrl unregisterAudioDataCallbackAll];
 }
 
 /**
@@ -136,13 +136,13 @@
  */
 
 
--(ZZVCResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc{
+-(QAVResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc{
 //    QAVAudioFrameDesc qavAudioDesc ;
     struct QAVAudioFrameDesc ad;
     ad.Bits = audioDesc.Bits;
     ad.ChannelNum = audioDesc.ChannelNum;
     ad.SampleRate = audioDesc.SampleRate;
-    return (ZZVCResult)[self.audioCtrl setAudioDataFormat:(QAVAudioDataSourceType)srcType desc:ad];
+    return (QAVResult)[self.audioCtrl setAudioDataFormat:(QAVAudioDataSourceType)srcType desc:ad];
 }
 
 /**
@@ -168,8 +168,8 @@
  @return 成功返回ZZVC_OK, 否则返回ZZVC_ERR_FAILED。
  @remark 没有注册对应类型的callback会直接返回AV_ERR_FAILED。
  */
--(ZZVCResult)setAudioDataVolume:(ZZVCAudioDataSourceType)srcType volume:(float)volume{
-    return (ZZVCResult)[self.audioCtrl setAudioDataVolume:(QAVAudioDataSourceType)srcType volume:volume];
+-(QAVResult)setAudioDataVolume:(ZZVCAudioDataSourceType)srcType volume:(float)volume{
+    return (QAVResult)[self.audioCtrl setAudioDataVolume:(QAVAudioDataSourceType)srcType volume:volume];
 }
 
 /**

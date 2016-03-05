@@ -82,8 +82,8 @@
  -# 只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；
  -# 当异步操作启动失败的时候，直接通过StartContext的返回值返回错误，不会再触发回调函数。
  */
--(ZZVCResult)startContext:(ContextOperationBlock)block{
-   return (ZZVCResult)[self.qavContext startContext:block];
+-(QAVResult)startContext:(ContextOperationBlock)block{
+   return (QAVResult)[self.qavContext startContext:block];
 }
 
 /**
@@ -102,8 +102,8 @@
  - App应该设法保证startContext和stopContext的配对调用；
  - stopContext内部如果判断到当前还没退出音视频房间，会自动调用ExitRoom；
  */
--(ZZVCResult)stopContext:(ContextOperationBlock)block{
-    return (ZZVCResult)[self.qavContext stopContext:block];
+-(QAVResult)stopContext:(ContextOperationBlock)block{
+    return (QAVResult)[self.qavContext stopContext:block];
 }
 
 /**
@@ -131,10 +131,10 @@
  - 调用EnterRoom之前，必须先退出上一个音视频房间；
  - 如果当前AVContext中已经存在一个音视频房间，调用EnterRoom会同步返回失败。
  */
--(ZZVCResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<QAVRoomDelegate>)dlg{
+-(QAVResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<QAVRoomDelegate>)dlg{
     QAVRoomParam *qavParam = [[QAVRoomParam alloc] init];
     qavParam.roomtype = (avRoomType)param.roomtype;
-   return (ZZVCResult)[self.qavContext enterRoom:qavParam delegate:dlg];
+   return (QAVResult)[self.qavContext enterRoom:qavParam delegate:dlg];
     
     
 }
@@ -150,8 +150,8 @@
  @retval ZZVC_OK 启动成功。
  @retval 其他值 启动失败。
  */
--(ZZVCResult)exitRoom{
-    return (ZZVCResult)[self.qavContext exitRoom];
+-(QAVResult)exitRoom{
+    return (QAVResult)[self.qavContext exitRoom];
 }
 
 @end

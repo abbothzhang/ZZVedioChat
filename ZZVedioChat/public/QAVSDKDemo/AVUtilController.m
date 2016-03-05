@@ -504,7 +504,7 @@ NSInteger len = 0;
 }
 
 #pragma mark ZZVCAUDIACALLBACK
--(ZZVCResult)audioDataComes:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
+-(QAVResult)audioDataComes:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     NSString*typeString = [self getTypeString:type];
     audioCallbackHandler*handler = _dicRunningState[key];
@@ -539,7 +539,7 @@ NSInteger len = 0;
 
 
 
--(ZZVCResult)audioDataShouInput:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
+-(QAVResult)audioDataShouInput:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     audioCallbackHandler*handler = [_dicRunningState objectForKey:key];
     if (handler && handler.fileName && handler.file){

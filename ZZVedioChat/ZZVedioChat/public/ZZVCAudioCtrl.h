@@ -36,7 +36,7 @@
  @remark 回调函数设定为专门处理数据用。函数回调在非主线程，请确保线程安全。特别是不要在回调函数中直接调用SDK接口。
  成功返回ZZVC_OK, 否则返回ZZVC_ERR_FAILED。
  */
--(ZZVCResult)audioDataComes:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type;
+-(QAVResult)audioDataComes:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type;
 /**
  @brief 传给sdk的音频数据回调。
  @details 通过回调函数，来通知外部读取或者写入具体类型的音频数据。
@@ -45,7 +45,7 @@
  @remark 回调函数设定为专门处理数据用。函数回调在非主线程，请确保线程安全。特别是不要在回调函数中直接调用SDK接口。
  成功返回QAudioDataCallbackResult_Success, 否则返回QAudioDataCallbackResult_Error。
  */
--(ZZVCResult)audioDataShouInput:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type;
+-(QAVResult)audioDataShouInput:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type;
 @end
 
 /**
@@ -106,9 +106,9 @@
  
  @param dlg 继承了QAudioDataDelegate的对象实例
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)setAudioDataEventDelegate:(id<ZZVCAudioDataDelegate>)dlg;
+-(QAVResult)setAudioDataEventDelegate:(id<ZZVCAudioDataDelegate>)dlg;
 
 
 /**
@@ -116,9 +116,9 @@
  
  @param type 要注册监听的音频数据源类型，具体参考ZZVCAudioDataSourceType
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)registerAudioDataCallback:(ZZVCAudioDataSourceType)type;
+-(QAVResult)registerAudioDataCallback:(ZZVCAudioDataSourceType)type;
 
 
 /**
@@ -126,16 +126,16 @@
  
  @param type 要反注册监听的音频数据源类型，具体参考ZZVCAudioDataSourceType
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)unregisterAudioDataCallback:(ZZVCAudioDataSourceType)type;
+-(QAVResult)unregisterAudioDataCallback:(ZZVCAudioDataSourceType)type;
 
 /**
  @brief 反注册所有数据的回调
  
- @return 具体参考ZZVCResult
+ @return 具体参考QAVResult
  */
--(ZZVCResult)unregisterAudioDataCallbackAll;
+-(QAVResult)unregisterAudioDataCallbackAll;
 
 /**
  @brief 设置某类型的音频格式参数。
@@ -144,7 +144,7 @@
  @return 成功返回ZZVC_OK, 否则返回ZZVC_ERR_FAILED。
  @remark 会直接影响callback传入的AudioFrame的格式。
  */
--(ZZVCResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc;
+-(QAVResult)setAudioDataFormat:(ZZVCAudioDataSourceType)srcType  desc:(struct ZZVCAudioFrameDesc)audioDesc;
 
 /**
  @brief 获取某类型的音频格式参数。
@@ -161,7 +161,7 @@
  @return 成功返回ZZVC_OK, 否则返回ZZVC_ERR_FAILED。
  @remark 没有注册对应类型的callback会直接返回AV_ERR_FAILED。
  */
--(ZZVCResult)setAudioDataVolume:(ZZVCAudioDataSourceType)srcType volume:(float)volume;
+-(QAVResult)setAudioDataVolume:(ZZVCAudioDataSourceType)srcType volume:(float)volume;
 
 /**
  @brief 获取某类型的音频音量。

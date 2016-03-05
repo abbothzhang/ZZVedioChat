@@ -360,7 +360,7 @@ using namespace std;
         return NO;
     
     ZZVCMultiRoom*multiRoom = (ZZVCMultiRoom*)[AVUtil sharedContext].room;
-    ZZVCResult ret = [multiRoom ChangeAuthority:authPirvateMap];
+    QAVResult ret = [multiRoom ChangeAuthority:authPirvateMap];
     return (ret == ZZVC_OK) ? YES :NO;
 }
 

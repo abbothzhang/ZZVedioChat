@@ -589,7 +589,7 @@ static UIImage* createImageWithColor(UIColor* color)
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[AVUtil sharedContext] stopContext:^(ZZVCResult result) {
+        [[AVUtil sharedContext] stopContext:^(QAVResult result) {
             [self dismissViewControllerAnimated:YES completion:^{
                 [_memberCollectionView release];
                 [_previewView release];
@@ -816,7 +816,7 @@ static UIImage* createImageWithColor(UIColor* color)
         
         //request view
         if (_identifierList.count  > 0 ) {
-            [ZZVCEndpoint requsetViewList:[AVUtil sharedContext] identifierList:_identifierList srcTypeList:_srcTypeList ret:^(ZZVCResult result) {
+            [ZZVCEndpoint requsetViewList:[AVUtil sharedContext] identifierList:_identifierList srcTypeList:_srcTypeList ret:^(QAVResult result) {
                 if (result != ZZVC_OK){
                     [AVUtil ShowMsg:@"请求画面失败"];
                 }
@@ -824,7 +824,7 @@ static UIImage* createImageWithColor(UIColor* color)
         }
         else
         {
-            [ZZVCEndpoint cancelAllview:[AVUtil sharedContext] ret:^(ZZVCResult result) {
+            [ZZVCEndpoint cancelAllview:[AVUtil sharedContext] ret:^(QAVResult result) {
 
             }];
         }

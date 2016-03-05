@@ -93,7 +93,7 @@
             return;
         }
         
-        [[AVUtil sharedContext] startContext:^(ZZVCResult result) {
+        [[AVUtil sharedContext] startContext:^(QAVResult result) {
             if(result == ZZVC_OK)
             {
                 //创建model
@@ -160,7 +160,7 @@
     }
     
     if ([AVUtil sharedContext]) {
-        if (![[AVUtil sharedContext] stopContext:^(ZZVCResult result) {
+        if (![[AVUtil sharedContext] stopContext:^(QAVResult result) {
             
             MSDynamicsDrawerViewController* drawerController=[[MSDynamicsDrawerViewController alloc] init];
             [drawerController setRevealWidth:120 forDirection:MSDynamicsDrawerDirectionRight];

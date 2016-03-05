@@ -85,7 +85,7 @@ typedef NS_ENUM(NSInteger, zzvcCameraPos){
  @return 返回错误码。当返回ZZVC_OK时，操作回调才会被执行；否则就不会执行，需要处理具体的错误码。
  
  */
--(ZZVCResult)switchCamera:(zzvcCameraPos)pos complete:(cameraOptionComplete)block;
+-(QAVResult)switchCamera:(zzvcCameraPos)pos complete:(cameraOptionComplete)block;
 
 /**
  @brief 打开/关闭摄像头。
@@ -96,7 +96,7 @@ typedef NS_ENUM(NSInteger, zzvcCameraPos){
  @return 返回错误码。当返回ZZVC_OK时，操作回调才会被执行；否则就不会执行，需要处理具体的错误码。
  
  */
--(ZZVCResult)enableCamera:(BOOL)bEnable complete:(cameraOptionComplete)block;
+-(QAVResult)enableCamera:(BOOL)bEnable complete:(cameraOptionComplete)block;
 
 /**
  @brief 获取通话中实时视频质量相关信息，业务侧可以不用关心，主要用来查看通话情况、排查问题等。

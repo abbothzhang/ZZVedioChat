@@ -52,6 +52,6 @@
  
  @return 返回操作结果。
  */
--(ZZVCResult)ChangeAuthority:(NSData*)buff;
+-(QAVResult)ChangeAuthority:(NSData*)buff;
 
 @end

@@ -32,7 +32,7 @@
  *
  *  @param result 错误码。非0表示出错
  */
-//typedef void (^ContextOperationBlock)(ZZVCResult result);
+//typedef void (^ContextOperationBlock)(QAVResult result);
 
 /**
  @brief AVContext对象封装类，代表着一个SDK运行实例
@@ -95,7 +95,7 @@
  -# 只有当异步操作启动成功的时候，才会通过回调函数异步返回执行结果；
  -# 当异步操作启动失败的时候，直接通过StartContext的返回值返回错误，不会再触发回调函数。
  */
--(ZZVCResult)startContext:(ContextOperationBlock)block;
+-(QAVResult)startContext:(ContextOperationBlock)block;
 
 /**
  @brief 终止ZZVCContext对象。
@@ -113,7 +113,7 @@
  - App应该设法保证startContext和stopContext的配对调用；
  - stopContext内部如果判断到当前还没退出音视频房间，会自动调用ExitRoom；
  */
--(ZZVCResult)stopContext:(ContextOperationBlock)block;
+-(QAVResult)stopContext:(ContextOperationBlock)block;
 
 /**
  @brief 进入音视频房间。
@@ -140,7 +140,7 @@
  - 调用EnterRoom之前，必须先退出上一个音视频房间；
  - 如果当前AVContext中已经存在一个音视频房间，调用EnterRoom会同步返回失败。
  */
--(ZZVCResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<QAVRoomDelegate>)dlg;
+-(QAVResult)enterRoom:(ZZVCMultiParam*)param delegate:(id<QAVRoomDelegate>)dlg;
 
 /**
  @brief 退出音视频房间。
@@ -153,6 +153,6 @@
  @retval ZZVC_OK 启动成功。
  @retval 其他值 启动失败。
  */
--(ZZVCResult)exitRoom;
+-(QAVResult)exitRoom;
 
 @end

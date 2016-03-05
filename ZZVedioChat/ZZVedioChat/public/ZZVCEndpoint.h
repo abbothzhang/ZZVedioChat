@@ -13,17 +13,17 @@
 /**
  @brief 请求画面回调block
  */
-typedef void (^zzvcRequestViewBlock)(ZZVCResult result);
+typedef void (^RequestViewBlock)(QAVResult result);
 
 /**
  @brief 请求多个成员的画面回调block
  */
-typedef void (^zzvcRequestViewListBlock)(ZZVCResult result);
+typedef void (^RequestViewListBlock)(QAVResult result);
 
 /**
  @brief 取消多个成员的画面回调block
  */
-typedef void (^zzvcCancelViewListBlock)(ZZVCResult result);
+typedef void (^CancelViewListBlock)(QAVResult result);
 
 
 /**
@@ -54,7 +54,7 @@ typedef void (^zzvcCancelViewListBlock)(ZZVCResult result);
  
  @return 具体查看ZZVCError.h
  */
-+(int)requsetViewList:(ZZVCContext*)context identifierList:(NSArray*)identifierList srcTypeList:(NSArray*)srcTypeList ret:(zzvcRequestViewListBlock)block;
++(int)requsetViewList:(ZZVCContext*)context identifierList:(NSArray*)identifierList srcTypeList:(NSArray*)srcTypeList ret:(RequestViewListBlock)block;
 
 /**
  @brief 取消多个成员的画面
@@ -69,7 +69,7 @@ typedef void (^zzvcCancelViewListBlock)(ZZVCResult result);
  
  @return 具体查看ZZVCError.h
  */
-+(int)cancelAllview:(ZZVCContext*)context ret:(zzvcCancelViewListBlock)block;
++(int)cancelAllview:(ZZVCContext*)context ret:(CancelViewListBlock)block;
 
 /**
  @brief 请求成员的视频画面。
@@ -85,7 +85,7 @@ typedef void (^zzvcCancelViewListBlock)(ZZVCResult result);
  － RequestView和CancelView不能并发执行，即同一时间点只能进行一种操作。
  － RequestView和CancelView配对使用。
  */
--(ZZVCResult)requestView:(zzvcRequestViewBlock)block;
+-(QAVResult)requestView:(RequestViewBlock)block;
 
 /**
  @brief 取消请求成员的视频画面。
@@ -98,7 +98,7 @@ typedef void (^zzvcCancelViewListBlock)(ZZVCResult result);
  － RequestView和CancelView不能并发执行，即同一时间点只能进行一种操作。
  － RequestView和CancelView配对使用。
  */
--(ZZVCResult)cancelView:(zzvcRequestViewBlock)block;
+-(QAVResult)cancelView:(RequestViewBlock)block;
 
 
 @end

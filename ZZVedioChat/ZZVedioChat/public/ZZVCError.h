@@ -11,7 +11,7 @@
 #define ZZVC_RESULT(label, value) ZZVC_Result_ ## label = value
 
 /// 错误码
-typedef NS_ENUM(NSInteger, ZZVCResult){
+typedef NS_ENUM(NSInteger, QAVResult){
     
     ZZVC_OK = 0,     /// ZZVC_OK 成功操作。
     
