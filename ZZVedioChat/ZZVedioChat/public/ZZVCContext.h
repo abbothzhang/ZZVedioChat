@@ -40,13 +40,13 @@
 @interface ZZVCContext : QAVContext{
     
 }
-@property(retain, nonatomic) ZZVCContextConfig*Config;///< 创建AVContext对象所需的配置信息
-
-
-// 只有进入房间后以下属性才有用
-@property (readonly,nonatomic)ZZVCRoom*room;  ///< 音视频房间
-@property (readonly,nonatomic)ZZVCAudioCtrl *audioCtrl;  ///< 音频控制器
-@property (readonly,nonatomic)ZZVCVideoCtrl *videoCtrl;  ///< 视频控制器
+//@property(retain, nonatomic) ZZVCContextConfig*Config;///< 创建AVContext对象所需的配置信息
+//
+//
+//// 只有进入房间后以下属性才有用
+//@property (readonly,nonatomic)ZZVCRoom*room;  ///< 音视频房间
+//@property (readonly,nonatomic)ZZVCAudioCtrl *audioCtrl;  ///< 音频控制器
+//@property (readonly,nonatomic)ZZVCVideoCtrl *videoCtrl;  ///< 视频控制器
 
 /**
  @brief 创建ZZVCContext对象。

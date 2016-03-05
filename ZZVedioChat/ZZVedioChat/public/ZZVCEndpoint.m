@@ -72,9 +72,9 @@
  － RequestView和CancelView不能并发执行，即同一时间点只能进行一种操作。
  － RequestView和CancelView配对使用。
  */
-//-(QAVResult)requestView:(RequestViewBlock)block{
-//    
-//}
+-(QAVResult)requestView:(RequestViewBlock)block{
+    return [self.qavEndpoint requestView:block];
+}
 
 /**
  @brief 取消请求成员的视频画面。
@@ -87,9 +87,9 @@
  － RequestView和CancelView不能并发执行，即同一时间点只能进行一种操作。
  － RequestView和CancelView配对使用。
  */
-//-(QAVResult)cancelView:(RequestViewBlock)block{
-//    
-//}
+-(QAVResult)cancelView:(RequestViewBlock)block{
+    return [self.qavEndpoint cancelView:block];
+}
 
 - (QAVEndpoint *)qavEndpoint{
     if (_qavEndpoint == nil) {
