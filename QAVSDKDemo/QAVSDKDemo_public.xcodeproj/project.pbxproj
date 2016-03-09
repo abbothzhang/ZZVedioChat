@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		501090CE1C8AB2B900B0B1C6 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501090CC1C8AB2B900B0B1C6 /* functions.cpp */; };
+		501090D01C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 501090CF1C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd */; };
 		921178511C3BC461000D8148 /* AudioUtil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211784E1C3BC461000D8148 /* AudioUtil.storyboard */; };
 		921178521C3BC461000D8148 /* AVUtilController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921178501C3BC461000D8148 /* AVUtilController.m */; };
 		922EAE081C0D8816008F30BF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EADFD1C0D8816008F30BF /* TencentOpenAPI.framework */; };
@@ -104,7 +106,7 @@
 		EA28A5291A6CA76500A2DB93 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA28A5281A6CA76500A2DB93 /* back@2x.png */; };
 		EA2D800B1AA5A72500D130BA /* MultiRoomConfigViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2D800A1AA5A72500D130BA /* MultiRoomConfigViewController.mm */; };
 		EA31695D1A1999D700A35B98 /* NLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31695C1A1999D700A35B98 /* NLoginViewController.m */; };
-		EA3169601A19A00D00A35B98 /* NMultiVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.m */; };
+		EA3169601A19A00D00A35B98 /* NMultiVideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.mm */; };
 		EA3169641A19D21C00A35B98 /* UserHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3169631A19D21C00A35B98 /* UserHeadCell.m */; };
 		EA41C1F21A1DCE2B000A84EC /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA41C1F01A1DCE2B000A84EC /* group@2x.png */; };
 		EA41C1F31A1DCE2B000A84EC /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA41C1F11A1DCE2B000A84EC /* setting@2x.png */; };
@@ -129,6 +131,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		501090CC1C8AB2B900B0B1C6 /* functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		501090CD1C8AB2B900B0B1C6 /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		501090CF1C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		9211784E1C3BC461000D8148 /* AudioUtil.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioUtil.storyboard; sourceTree = "<group>"; };
 		9211784F1C3BC461000D8148 /* AVUtilController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVUtilController.h; sourceTree = "<group>"; };
 		921178501C3BC461000D8148 /* AVUtilController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVUtilController.m; sourceTree = "<group>"; };
@@ -237,7 +242,7 @@
 		EA31695B1A1999D700A35B98 /* NLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLoginViewController.h; sourceTree = "<group>"; };
 		EA31695C1A1999D700A35B98 /* NLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NLoginViewController.m; sourceTree = "<group>"; };
 		EA31695E1A19A00D00A35B98 /* NMultiVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NMultiVideoViewController.h; sourceTree = "<group>"; };
-		EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NMultiVideoViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = NMultiVideoViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EA3169621A19D21C00A35B98 /* UserHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeadCell.h; sourceTree = "<group>"; };
 		EA3169631A19D21C00A35B98 /* UserHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeadCell.m; sourceTree = "<group>"; };
 		EA41C1F01A1DCE2B000A84EC /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group@2x.png"; sourceTree = "<group>"; };
@@ -266,6 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501090D01C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd in Frameworks */,
 				922EAE0C1C0D8816008F30BF /* TLSUI.framework in Frameworks */,
 				92C0307C1C31270900FD2641 /* QAVSDK.framework in Frameworks */,
 				9E42978D1B4510D80029762D /* CoreTelephony.framework in Frameworks */,
@@ -437,6 +443,7 @@
 		EA161869199B49A20084846E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				501090CF1C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd */,
 				92C030721C31270900FD2641 /* AVFoundationEx.FrameWork */,
 				92C030731C31270900FD2641 /* descript.txt */,
 				92C030741C31270900FD2641 /* ImSDK.framework */,
@@ -478,6 +485,8 @@
 				EA16187C199B49A40084846E /* Main.storyboard */,
 				9EDA88E71B3BAB5800DA5406 /* AVUtil.h */,
 				9EDA88E81B3BAB5800DA5406 /* AVUtil.m */,
+				501090CC1C8AB2B900B0B1C6 /* functions.cpp */,
+				501090CD1C8AB2B900B0B1C6 /* functions.h */,
 				EA161885199B49A40084846E /* Images.xcassets */,
 				EA06D22319F503BC00431C66 /* images */,
 				EA161871199B49A30084846E /* Supporting Files */,
@@ -528,7 +537,7 @@
 				9E72406C1BEB58DA006EEA38 /* AVFrameDispatcher.h */,
 				9E72406D1BEB58DA006EEA38 /* AVFrameDispatcher.m */,
 				EA31695E1A19A00D00A35B98 /* NMultiVideoViewController.h */,
-				EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.m */,
+				EA31695F1A19A00D00A35B98 /* NMultiVideoViewController.mm */,
 			);
 			name = MultiComplexDemo;
 			sourceTree = "<group>";
@@ -707,6 +716,7 @@
 				EA205CCE1A3FCD4D008CFADF /* SettingViewController.m in Sources */,
 				FC5E40811BB28A8200177845 /* AVGLCommon.m in Sources */,
 				EA16187B199B49A30084846E /* AppDelegate.m in Sources */,
+				501090CE1C8AB2B900B0B1C6 /* functions.cpp in Sources */,
 				EA3169641A19D21C00A35B98 /* UserHeadCell.m in Sources */,
 				EA134A5D1A49524600900FDE /* MBProgressHUD.m in Sources */,
 				FC5E407B1BB14B9100177845 /* AVGLRenderView+Animation.m in Sources */,
@@ -727,7 +737,7 @@
 				EA1D7E0B1A1C919A002C5EA8 /* MultiRoomMemberModel.m in Sources */,
 				EA2783881A2F2DE000774C7F /* UserAddViewController.m in Sources */,
 				EA1A9DAD19B56BC2004E349A /* UserConfig.m in Sources */,
-				EA3169601A19A00D00A35B98 /* NMultiVideoViewController.m in Sources */,
+				EA3169601A19A00D00A35B98 /* NMultiVideoViewController.mm in Sources */,
 				9EDA88E91B3BAB5800DA5406 /* AVUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

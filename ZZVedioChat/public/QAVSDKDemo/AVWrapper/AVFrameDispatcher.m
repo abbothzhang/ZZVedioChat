@@ -1,13 +1,13 @@
 //
 //  AVFrameDispatcher.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-4.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
 //
 
 #import "AVFrameDispatcher.h"
-#import "QAVSDK/QAVContext.h"
+#import "ZZVideoChat.h"
 
 @implementation AVFrameInfo
 
@@ -29,7 +29,7 @@
 
 @implementation AVSingleFrameDispatcher
 
--(void)dispatchVideoFrame:(QAVVideoFrame*)args isSubFrame:(BOOL) isSubFrame
+-(void)dispatchVideoFrame:(ZZVCVideoFrame*)args isSubFrame:(BOOL) isSubFrame
 {
     if (self.imageView != nil) {
         NSString *renderKey = [NSString stringWithFormat:@"%@%d", args.identifier, (int)args.frameDesc.srcType];
