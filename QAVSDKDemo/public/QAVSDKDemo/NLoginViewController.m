@@ -24,7 +24,6 @@
 #import <ImSDK/TIMManager.h>
 #import "AVUtil.h"
 
-#import <TLSUI/TLSUI.h>
 #import <TLSSDK/TLSLoginHelper.h>
 
 #import "AppDelegate.h"

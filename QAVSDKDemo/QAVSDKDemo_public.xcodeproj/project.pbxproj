@@ -26,15 +26,6 @@
 		501090D01C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 501090CF1C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd */; };
 		921178511C3BC461000D8148 /* AudioUtil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211784E1C3BC461000D8148 /* AudioUtil.storyboard */; };
 		921178521C3BC461000D8148 /* AVUtilController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921178501C3BC461000D8148 /* AVUtilController.m */; };
-		922EAE081C0D8816008F30BF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EADFD1C0D8816008F30BF /* TencentOpenAPI.framework */; };
-		922EAE091C0D8816008F30BF /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 922EADFE1C0D8816008F30BF /* TencentOpenApi_IOS_Bundle.bundle */; };
-		922EAE0A1C0D8816008F30BF /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EADFF1C0D8816008F30BF /* TLSSDK.framework */; };
-		922EAE0B1C0D8816008F30BF /* TLSUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 922EAE001C0D8816008F30BF /* TLSUI.bundle */; };
-		922EAE0C1C0D8816008F30BF /* TLSUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EAE011C0D8816008F30BF /* TLSUI.framework */; };
-		922EAE0D1C0D8816008F30BF /* TLSUIBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 922EAE021C0D8816008F30BF /* TLSUIBundle.bundle */; };
-		922EAE0E1C0D8816008F30BF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EAE071C0D8816008F30BF /* libWeChatSDK.a */; };
-		922EAE381C0D8888008F30BF /* AVTLSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922EAE361C0D8888008F30BF /* AVTLSLoginViewController.m */; };
-		922EAE391C0D8888008F30BF /* AVTLSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 922EAE371C0D8888008F30BF /* AVTLSLoginViewController.xib */; };
 		922EAE3C1C0DA1A0008F30BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 922EAE3B1C0DA1A0008F30BF /* LaunchScreen.xib */; };
 		92C030781C31270900FD2641 /* AVFoundationEx.FrameWork in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030721C31270900FD2641 /* AVFoundationEx.FrameWork */; };
 		92C030791C31270900FD2641 /* descript.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92C030731C31270900FD2641 /* descript.txt */; };
@@ -137,18 +128,6 @@
 		9211784E1C3BC461000D8148 /* AudioUtil.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioUtil.storyboard; sourceTree = "<group>"; };
 		9211784F1C3BC461000D8148 /* AVUtilController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVUtilController.h; sourceTree = "<group>"; };
 		921178501C3BC461000D8148 /* AVUtilController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVUtilController.m; sourceTree = "<group>"; };
-		922EADFD1C0D8816008F30BF /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
-		922EADFE1C0D8816008F30BF /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
-		922EADFF1C0D8816008F30BF /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
-		922EAE001C0D8816008F30BF /* TLSUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TLSUI.bundle; sourceTree = "<group>"; };
-		922EAE011C0D8816008F30BF /* TLSUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSUI.framework; sourceTree = "<group>"; };
-		922EAE021C0D8816008F30BF /* TLSUIBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TLSUIBundle.bundle; sourceTree = "<group>"; };
-		922EAE051C0D8816008F30BF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		922EAE061C0D8816008F30BF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		922EAE071C0D8816008F30BF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		922EAE351C0D8888008F30BF /* AVTLSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTLSLoginViewController.h; sourceTree = "<group>"; };
-		922EAE361C0D8888008F30BF /* AVTLSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVTLSLoginViewController.m; sourceTree = "<group>"; };
-		922EAE371C0D8888008F30BF /* AVTLSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVTLSLoginViewController.xib; sourceTree = "<group>"; };
 		922EAE3A1C0D88B7008F30BF /* QAVSDKDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QAVSDKDemo-Prefix.pch"; sourceTree = "<group>"; };
 		922EAE3B1C0DA1A0008F30BF /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		92C030721C31270900FD2641 /* AVFoundationEx.FrameWork */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundationEx.FrameWork; path = libs/AVFoundationEx.FrameWork; sourceTree = "<group>"; };
@@ -272,13 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				501090D01C8AB41000B0B1C6 /* libstdc++.6.0.9.tbd in Frameworks */,
-				922EAE0C1C0D8816008F30BF /* TLSUI.framework in Frameworks */,
 				92C0307C1C31270900FD2641 /* QAVSDK.framework in Frameworks */,
 				9E42978D1B4510D80029762D /* CoreTelephony.framework in Frameworks */,
-				922EAE0E1C0D8816008F30BF /* libWeChatSDK.a in Frameworks */,
 				92C0307B1C31270900FD2641 /* QALSDK.framework in Frameworks */,
-				922EAE081C0D8816008F30BF /* TencentOpenAPI.framework in Frameworks */,
-				922EAE0A1C0D8816008F30BF /* TLSSDK.framework in Frameworks */,
 				9ED6F3661A80768600D5F0FA /* libc++.dylib in Frameworks */,
 				92C0307D1C31270900FD2641 /* TLSSDK.framework in Frameworks */,
 				92C030781C31270900FD2641 /* AVFoundationEx.FrameWork in Frameworks */,
@@ -301,46 +276,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		922EADFB1C0D8816008F30BF /* TLSLibs */ = {
-			isa = PBXGroup;
-			children = (
-				922EADFC1C0D8816008F30BF /* TLS */,
-				922EAE031C0D8816008F30BF /* WXApi */,
-			);
-			path = TLSLibs;
-			sourceTree = "<group>";
-		};
-		922EADFC1C0D8816008F30BF /* TLS */ = {
-			isa = PBXGroup;
-			children = (
-				922EADFD1C0D8816008F30BF /* TencentOpenAPI.framework */,
-				922EADFE1C0D8816008F30BF /* TencentOpenApi_IOS_Bundle.bundle */,
-				922EADFF1C0D8816008F30BF /* TLSSDK.framework */,
-				922EAE001C0D8816008F30BF /* TLSUI.bundle */,
-				922EAE011C0D8816008F30BF /* TLSUI.framework */,
-				922EAE021C0D8816008F30BF /* TLSUIBundle.bundle */,
-			);
-			path = TLS;
-			sourceTree = "<group>";
-		};
-		922EAE031C0D8816008F30BF /* WXApi */ = {
-			isa = PBXGroup;
-			children = (
-				922EAE041C0D8816008F30BF /* Headers */,
-				922EAE071C0D8816008F30BF /* libWeChatSDK.a */,
-			);
-			path = WXApi;
-			sourceTree = "<group>";
-		};
-		922EAE041C0D8816008F30BF /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				922EAE051C0D8816008F30BF /* WXApi.h */,
-				922EAE061C0D8816008F30BF /* WXApiObject.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
 		9E72408C1BEC4957006EEA38 /* LoginAndConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,9 +289,6 @@
 				EA1A9DAC19B56BC2004E349A /* UserConfig.m */,
 				EA31695B1A1999D700A35B98 /* NLoginViewController.h */,
 				EA31695C1A1999D700A35B98 /* NLoginViewController.m */,
-				922EAE351C0D8888008F30BF /* AVTLSLoginViewController.h */,
-				922EAE361C0D8888008F30BF /* AVTLSLoginViewController.m */,
-				922EAE371C0D8888008F30BF /* AVTLSLoginViewController.xib */,
 			);
 			name = LoginAndConfig;
 			sourceTree = "<group>";
@@ -425,7 +357,6 @@
 		EA16185E199B49A20084846E = {
 			isa = PBXGroup;
 			children = (
-				922EADFB1C0D8816008F30BF /* TLSLibs */,
 				EA161870199B49A20084846E /* QAVSDKDemo */,
 				EA161869199B49A20084846E /* Frameworks */,
 				EA161868199B49A20084846E /* Products */,
@@ -595,7 +526,6 @@
 						CreatedOnToolsVersion = 7.1;
 					};
 					EA161866199B49A20084846E = {
-						DevelopmentTeam = M3HQ7NZ47V;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -641,7 +571,6 @@
 				EA1D7E171A1C9B44002C5EA8 /* speak@2x.png in Resources */,
 				EA28A5291A6CA76500A2DB93 /* back@2x.png in Resources */,
 				EA06D24419F503BD00431C66 /* head_ppt@2x.png in Resources */,
-				922EAE0D1C0D8816008F30BF /* TLSUIBundle.bundle in Resources */,
 				FC969C281BC7955E00316C6F /* Shaderf.glsl in Resources */,
 				A762C7FD1B7DC94B00D6FEF1 /* qav_btn_accept_audio_normal.png in Resources */,
 				EA161875199B49A30084846E /* InfoPlist.strings in Resources */,
@@ -649,7 +578,6 @@
 				A762C8011B7DC94B00D6FEF1 /* qav_btn_accept_video_press.png in Resources */,
 				EA06D23719F503BD00431C66 /* 11@2x.png in Resources */,
 				EA06D24519F503BD00431C66 /* head_screen@2x.png in Resources */,
-				922EAE091C0D8816008F30BF /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				EA06D24219F503BD00431C66 /* head_camera@2x.png in Resources */,
 				EA06D23E19F503BD00431C66 /* 7@2x.png in Resources */,
 				922EAE3C1C0DA1A0008F30BF /* LaunchScreen.xib in Resources */,
@@ -665,9 +593,7 @@
 				A762C7FE1B7DC94B00D6FEF1 /* qav_btn_accept_audio_press.png in Resources */,
 				EA06D24019F503BD00431C66 /* 9@2x.png in Resources */,
 				EA06D23C19F503BD00431C66 /* 5@2x.png in Resources */,
-				922EAE391C0D8888008F30BF /* AVTLSLoginViewController.xib in Resources */,
 				EA41C1F21A1DCE2B000A84EC /* group@2x.png in Resources */,
-				922EAE0B1C0D8816008F30BF /* TLSUI.bundle in Resources */,
 				A762C7FC1B7DC94B00D6FEF1 /* qav_btn_accept_audio_disable.png in Resources */,
 				EA06D23F19F503BD00431C66 /* 8@2x.png in Resources */,
 			);
@@ -722,7 +648,6 @@
 				FC5E407B1BB14B9100177845 /* AVGLRenderView+Animation.m in Sources */,
 				921178521C3BC461000D8148 /* AVUtilController.m in Sources */,
 				FC5E407C1BB14B9100177845 /* AVGLShareInstance.m in Sources */,
-				922EAE381C0D8888008F30BF /* AVTLSLoginViewController.m in Sources */,
 				9E72AD961B0D7EC000708DAE /* runningTipsView.m in Sources */,
 				9E72406E1BEB58DA006EEA38 /* AVFrameDispatcher.m in Sources */,
 				EA31695D1A1999D700A35B98 /* NLoginViewController.m in Sources */,

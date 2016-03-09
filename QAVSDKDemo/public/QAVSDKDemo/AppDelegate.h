@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <TencentOpenAPI/TencentOAuth.h>
-#import "WXApi.h"
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate, TencentSessionDelegate, WXApiDelegate>
-
-@property (nonatomic, retain) TencentOAuth *openQQ;
-@property (nonatomic, retain) id<WXApiDelegate> tlsuiwx;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 - (void)switchToLoginView;
 

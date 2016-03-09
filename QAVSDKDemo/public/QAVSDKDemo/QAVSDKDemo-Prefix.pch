@@ -22,7 +22,7 @@
 #define FOREXTERNAL
 
 
-#define _BUILD_FOR_TLS 1
+#define _BUILD_FOR_TLS 0
 
 #if _BUILD_FOR_TLS
 

@@ -15,7 +15,6 @@
 #import <TLSSDK/TLSAccountHelper.h>
 #import <TLSSDK/TLSLoginHelper.h>
 #import "UserConfig.h"
-#import "AVTLSLoginViewController.h"
 
 //DDFileLogger* fileLogger=nil;
 //
@@ -119,6 +118,7 @@
 
 - (void)switchToLoginView
 {
+    /*
     if (!self.window)
     {
         self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
@@ -128,6 +128,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    */
 }
 
 
@@ -157,41 +158,12 @@
     NSLog(@"%s %d", __func__, cancelled);
 }
 
--(void)onResp:(BaseResp *)resp{
-    NSLog(@"%d %@ %d",resp.errCode, resp.errStr, resp.type);
-    if ([resp isKindOfClass:[SendAuthResp class]]) {
-        if(self.tlsuiwx != nil)
-            [self.tlsuiwx onResp:resp];
-    }
-}
-
-
 -(BOOL)application:(UIApplication*)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     NSLog(@"%s %@", __func__, url);
-    if ([url.scheme compare:QQ_OPEN_SCHEMA] == NSOrderedSame) {
-        
-        return [TencentOAuth HandleOpenURL:url];
-        
-    }
-    else if([url.scheme compare:WX_OPEN_ID] == NSOrderedSame){
-        
-        [WXApi handleOpenURL:url delegate:self];
-        
-    }
     return YES;
 }
 -(BOOL)application:(UIApplication*)application handleOpenURL:(NSURL *)url{
     NSLog(@"%s %@", __func__, url);
-    if ([url.scheme compare:QQ_OPEN_SCHEMA] == NSOrderedSame) {
-        
-        return [TencentOAuth HandleOpenURL:url];
-        
-    }
-    else if([url.scheme compare:WX_OPEN_ID] == NSOrderedSame){
-        
-        [WXApi handleOpenURL:url delegate:self];
-        
-    }
     return YES;
 }
 

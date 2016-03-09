@@ -33,7 +33,7 @@ NSString* UserTokenKey=@"sdkAppIdToken";
         NSArray* users = [NSArray array];
 #else
         NSArray* users= [NSArray arrayWithObjects:
-                                                    @{@"id":@"xianhuan"},
+                                                    @{@"id":@"辉哥"},
                                                   @{@"id":@"st"},
                                                   @{@"id":@"2208137703"},
                                                   @{@"id":@"2378730536"},
@@ -43,7 +43,7 @@ NSString* UserTokenKey=@"sdkAppIdToken";
                                                   @{@"id":@"2310998392"},
                                                   @{@"id":@"31726276"},
                                                   @{@"id":@"2696020827"},
-                                                  @{@"id":@"270085831"},
+                                                  @{@"id":@"这里的用户名可以随便填"},
                                                     nil];
 #endif
 
