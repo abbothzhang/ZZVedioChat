@@ -50,6 +50,7 @@
 		A762C7FF1B7DC94B00D6FEF1 /* qav_btn_accept_video_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = A762C7F91B7DC94B00D6FEF1 /* qav_btn_accept_video_disable.png */; };
 		A762C8001B7DC94B00D6FEF1 /* qav_btn_accept_video_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A762C7FA1B7DC94B00D6FEF1 /* qav_btn_accept_video_normal.png */; };
 		A762C8011B7DC94B00D6FEF1 /* qav_btn_accept_video_press.png in Resources */ = {isa = PBXBuildFile; fileRef = A762C7FB1B7DC94B00D6FEF1 /* qav_btn_accept_video_press.png */; };
+		D075A6591C9145BA00D3AC91 /* InputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D075A6581C9145BA00D3AC91 /* InputTableViewCell.m */; };
 		EA06D23519F503BD00431C66 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA06D22419F503BC00431C66 /* 0@2x.png */; };
 		EA06D23619F503BD00431C66 /* 10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA06D22519F503BC00431C66 /* 10@2x.png */; };
 		EA06D23719F503BD00431C66 /* 11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA06D22619F503BC00431C66 /* 11@2x.png */; };
@@ -155,6 +156,8 @@
 		A762C7F91B7DC94B00D6FEF1 /* qav_btn_accept_video_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qav_btn_accept_video_disable.png; sourceTree = "<group>"; };
 		A762C7FA1B7DC94B00D6FEF1 /* qav_btn_accept_video_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qav_btn_accept_video_normal.png; sourceTree = "<group>"; };
 		A762C7FB1B7DC94B00D6FEF1 /* qav_btn_accept_video_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qav_btn_accept_video_press.png; sourceTree = "<group>"; };
+		D075A6571C9145BA00D3AC91 /* InputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTableViewCell.h; sourceTree = "<group>"; };
+		D075A6581C9145BA00D3AC91 /* InputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTableViewCell.m; sourceTree = "<group>"; };
 		EA06D22419F503BC00431C66 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
 		EA06D22519F503BC00431C66 /* 10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10@2x.png"; sourceTree = "<group>"; };
 		EA06D22619F503BC00431C66 /* 11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11@2x.png"; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 				EA1A9DAC19B56BC2004E349A /* UserConfig.m */,
 				EA31695B1A1999D700A35B98 /* NLoginViewController.h */,
 				EA31695C1A1999D700A35B98 /* NLoginViewController.m */,
+				D075A6571C9145BA00D3AC91 /* InputTableViewCell.h */,
+				D075A6581C9145BA00D3AC91 /* InputTableViewCell.m */,
 			);
 			name = LoginAndConfig;
 			sourceTree = "<group>";
@@ -645,6 +650,7 @@
 				501090CE1C8AB2B900B0B1C6 /* functions.cpp in Sources */,
 				EA3169641A19D21C00A35B98 /* UserHeadCell.m in Sources */,
 				EA134A5D1A49524600900FDE /* MBProgressHUD.m in Sources */,
+				D075A6591C9145BA00D3AC91 /* InputTableViewCell.m in Sources */,
 				FC5E407B1BB14B9100177845 /* AVGLRenderView+Animation.m in Sources */,
 				921178521C3BC461000D8148 /* AVUtilController.m in Sources */,
 				FC5E407C1BB14B9100177845 /* AVGLShareInstance.m in Sources */,
