@@ -2,8 +2,6 @@
 ////  AVGLRenderView+Animation.m
 ////  OpenGLRestruct
 ////
-////  Created by vigoss on 14-11-14.
-////  Copyright (c) 2014年 vigoss. All rights reserved.
 ////
 //
 //#import "AVGLRenderView+Animation.h"

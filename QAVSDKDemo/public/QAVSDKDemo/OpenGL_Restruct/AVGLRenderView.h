@@ -2,8 +2,6 @@
 //  AVGLRenderView.h
 //  OpenGLRestruct
 //
-//  Created by vigoss on 14-11-10.
-//  Copyright (c) 2014年 vigoss. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
