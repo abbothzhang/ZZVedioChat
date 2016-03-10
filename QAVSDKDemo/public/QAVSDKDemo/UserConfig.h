@@ -2,8 +2,6 @@
 //  UserConfig.h
 //  AVTest
 //
-//  Created by TOBINCHEN on 14-9-2.
-//  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

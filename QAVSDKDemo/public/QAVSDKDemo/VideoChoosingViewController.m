@@ -2,8 +2,6 @@
 //  VideoChoosingViewController.m
 //  QAVSDKDemo
 //
-//  Created by roger lin on 15/8/31.
-//  Copyright (c) 2015年 TOBINCHEN. All rights reserved.
 //
 
 

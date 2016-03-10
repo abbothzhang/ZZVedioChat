@@ -2,8 +2,6 @@
 //  AVUtilController.h
 //  QAVSDKDemo
 //
-//  Created by xianhuanlin on 15/12/2.
-//  Copyright © 2015年 TOBINCHEN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

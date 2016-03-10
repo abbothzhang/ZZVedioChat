@@ -2,8 +2,6 @@
 //  util.m
 //  QAVSDKDemo
 //
-//  Created by xianhuanlin on 15/6/25.
-//  Copyright (c) 2015年 TOBINCHEN. All rights reserved.
 //
 
 #import "AVUtil.h"

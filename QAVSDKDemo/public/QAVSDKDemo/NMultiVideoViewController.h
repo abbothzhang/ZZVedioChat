@@ -2,8 +2,6 @@
 //  NMultiVideoViewController.h
 //  QAVSDKDemo_P
 //
-//  Created by TOBINCHEN on 14-11-17.
-//  Copyright (c) 2014?ﾦ￐ TOBINCHEN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,8 +2,6 @@
 //  UserConfig.m
 //  AVTest
 //
-//  Created by TOBINCHEN on 14-9-2.
-//  Copyright (c) 2014 TOBINCHEN. All rights reserved.
 //
 
 #import "UserConfig.h"
