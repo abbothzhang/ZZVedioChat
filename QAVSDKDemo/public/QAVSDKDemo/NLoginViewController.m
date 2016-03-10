@@ -23,10 +23,10 @@
 #import <ImSDK/IMSdkInt.h>
 #import <ImSDK/TIMManager.h>
 #import "AVUtil.h"
-
 #import <TLSSDK/TLSLoginHelper.h>
-
 #import "AppDelegate.h"
+#import "InputTableViewCell.h"
+
 
 @interface NLoginViewController (){
     BOOL _isLogin;
@@ -142,8 +142,8 @@
     if (_isLogin)
         return;
     
-    [UserConfig shareConfig].roomId = _textFiledRoomId.text.integerValue ;
-    [UserConfig shareConfig].roomRole = _textFiledRoomRole.text ;
+    [UserConfig shareConfig].roomId = roomCell.roomId.text.integerValue ;
+    [UserConfig shareConfig].roomRole = roomRoleCell.roomId.text ;
     [self startContext];
     _isLogin = YES;
 }
@@ -252,46 +252,39 @@
     }else if(indexPath.section==1)
     {
         if (indexPath.row==0) {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"房间号"];
-            if (!cell) {
-                cell=[[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"房间号"] autorelease];
+            roomCell = [tableView dequeueReusableCellWithIdentifier:@"房间号"];
+            if (!roomCell) {
+                roomCell=[[[InputTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"房间号"] autorelease];
             }
 #ifdef _BUILD_FOR_MULT
-            _textFiledRoomId=[[[UITextField alloc] initWithFrame:CGRectMake(100, 0, 200, 40)] autorelease];
+            
             if ([UserConfig shareConfig].roomId != 0){
-                _textFiledRoomId.text = [NSString stringWithFormat:@"%ld",(long)[UserConfig shareConfig].roomId];
+                roomCell.roomId.text = [NSString stringWithFormat:@"%ld",(long)[UserConfig shareConfig].roomId];
             }
             else{
-                _textFiledRoomId.text = @"200001";
+                roomCell.roomId.text = @"200001";
             }
-            [cell.contentView addSubview:_textFiledRoomId];
-            
-            UILabel* textLable=[[[UILabel alloc] initWithFrame:CGRectMake(10, 0, 80, 40)] autorelease];
-            textLable.text=@"房间号:";
-            [cell.contentView addSubview:textLable];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
+            roomCell.showText.text=@"房间号:";
+            roomCell.selectionStyle=UITableViewCellSelectionStyleNone;
 #endif
-            return cell;
+            return roomCell;
+            
         }else if (indexPath.row == 1){
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"流控角色名"];
-            if (!cell) {
-                cell=[[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"流控角色名"] autorelease];
+            
+            roomRoleCell = [tableView dequeueReusableCellWithIdentifier:@"流控角色名"];
+            if (!roomRoleCell) {
+                roomRoleCell=[[[InputTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"流控角色名"] autorelease];
             }
 #ifdef _BUILD_FOR_MULT
-            _textFiledRoomRole=[[[UITextField alloc] initWithFrame:CGRectMake(120, 0, 200, 40)] autorelease];
             if ([UserConfig shareConfig].roomId != 0){
-                _textFiledRoomRole.text = [NSString stringWithFormat:@"%ld",(long)[UserConfig shareConfig].roomId];
+                roomRoleCell.roomId.text = [NSString stringWithFormat:@"%ld",(long)[UserConfig shareConfig].roomId];
             }
             else{
-                _textFiledRoomRole.text = @"200001";
+                roomRoleCell.roomId.text = @"200001";
             }
-            [cell.contentView addSubview:_textFiledRoomRole];
-            
-            UILabel* textLable=[[[UILabel alloc] initWithFrame:CGRectMake(10, 0, 160, 40)] autorelease];
-            textLable.text=@"流控角色名:";
-            [cell.contentView addSubview:textLable];
-            cell.selectionStyle=UITableViewCellSelectionStyleNone;
-            return cell;
+            roomRoleCell.showText.text=@"流控角色名:";
+            roomRoleCell.selectionStyle=UITableViewCellSelectionStyleNone;
+            return roomRoleCell;
 #endif
         }
         return nil;
@@ -381,7 +374,10 @@
         AppDelegate* appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
         [appDelegate switchToLoginView];
     }
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
+
+
 #pragma mark user selected delegate
 -(void)userSelected:(NSString*)openId{
     [[UserConfig shareConfig] setCurrentUserWithOpenId: openId];
