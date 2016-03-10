@@ -2,7 +2,7 @@
 //  AVUtilController.m
 //  QAVSDKDemo
 //
-//  Created by xianhuanlin on 15/12/2.
+
 
 //
 
