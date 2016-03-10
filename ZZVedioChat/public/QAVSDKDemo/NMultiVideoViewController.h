@@ -1,6 +1,6 @@
 //
 //  NMultiVideoViewController.h
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-17.
 //  Copyright (c) 2014?ﾦ￐ TOBINCHEN. All rights reserved.
@@ -9,16 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "MultiRoomMemberModel.h"
 #import "TipsViewController.h"
-#import "QAVSDK/QAVContext.h"
-#import "QAVSDK/QAVSDK.h"
 #import "AVGLBaseView.h"
 #import "AVFrameDispatcher.h"
+#import "ZZVideoChat.h"
 
 
 @class MultiRoomConfigViewController;
 @class RoomMemberViewController;
 @class PreviewView;
-@interface NMultiVideoViewController : TipsViewController<UICollectionViewDataSource,UICollectionViewDelegate,QAVRoomDelegate,QAVRemoteVideoDelegate, QAVScreenVideoDelegate>{
+@interface NMultiVideoViewController : TipsViewController<UICollectionViewDataSource,UICollectionViewDelegate,QAVRoomDelegate,ZZVCRemoteVideoDelegate, ZZVCScreenVideoDelegate>{
 
     MultiRoomMemberModel* _model;
     UICollectionView* _memberCollectionView;

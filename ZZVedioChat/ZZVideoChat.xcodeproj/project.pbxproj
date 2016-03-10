@@ -22,6 +22,48 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5045E6041C827B0C009ED2C3 /* ZZVedioChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */; };
+		5045E6051C827B0C009ED2C3 /* ZZVedioChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5045E60D1C827BBF009ED2C3 /* ZZVCAudioCtrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */; };
+		5045E60E1C827BBF009ED2C3 /* ZZVCAudioCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */; };
+		5045E6101C827C1D009ED2C3 /* AVFoundationEx.FrameWork in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030721C31270900FD2641 /* AVFoundationEx.FrameWork */; };
+		5045E6111C827C1D009ED2C3 /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030741C31270900FD2641 /* ImSDK.framework */; };
+		5045E6121C827C1D009ED2C3 /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030751C31270900FD2641 /* QALSDK.framework */; };
+		5045E6131C827C1D009ED2C3 /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030761C31270900FD2641 /* QAVSDK.framework */; };
+		5045E6141C827C1D009ED2C3 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C030771C31270900FD2641 /* TLSSDK.framework */; };
+		5045E6171C827C8E009ED2C3 /* ZZVCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */; };
+		5045E61B1C827CAD009ED2C3 /* ZZVCContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6191C827CAD009ED2C3 /* ZZVCContext.h */; };
+		5045E61C1C827CAD009ED2C3 /* ZZVCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */; };
+		5045E61F1C827CD3009ED2C3 /* ZZVCEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */; };
+		5045E6201C827CD3009ED2C3 /* ZZVCEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */; };
+		5045E6231C827CF9009ED2C3 /* ZZVCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6211C827CF9009ED2C3 /* ZZVCError.h */; };
+		5045E6271C827D25009ED2C3 /* ZZVCMultiRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */; };
+		5045E6281C827D25009ED2C3 /* ZZVCMultiRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */; };
+		5045E62B1C827D48009ED2C3 /* ZZVCRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6291C827D48009ED2C3 /* ZZVCRoom.h */; };
+		5045E62C1C827D48009ED2C3 /* ZZVCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E62A1C827D48009ED2C3 /* ZZVCRoom.m */; };
+		5045E62F1C827D74009ED2C3 /* ZZVCVideoCtrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E62D1C827D74009ED2C3 /* ZZVCVideoCtrl.h */; };
+		5045E6301C827D74009ED2C3 /* ZZVCVideoCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E62E1C827D74009ED2C3 /* ZZVCVideoCtrl.m */; };
+		5045E6311C827ECF009ED2C3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E42978C1B4510D80029762D /* CoreTelephony.framework */; };
+		5045E6331C827EF4009ED2C3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E6321C827EF4009ED2C3 /* libc++.tbd */; };
+		5045E6351C827F0A009ED2C3 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E6341C827F0A009ED2C3 /* libstdc++.6.tbd */; };
+		5045E6371C827F1B009ED2C3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E6361C827F1B009ED2C3 /* libsqlite3.0.tbd */; };
+		5045E6391C827F22009ED2C3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E6381C827F22009ED2C3 /* libz.tbd */; };
+		5045E63A1C827F2E009ED2C3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A9441199C6F18001A7FEC /* CoreVideo.framework */; };
+		5045E63B1C827F39009ED2C3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A9415199C6237001A7FEC /* AudioToolbox.framework */; };
+		5045E63C1C827F3F009ED2C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA161A2A199B68790084846E /* AVFoundation.framework */; };
+		5045E63D1C827F4A009ED2C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16186C199B49A20084846E /* CoreGraphics.framework */; };
+		5045E63E1C827F58009ED2C3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A94A3199C9E77001A7FEC /* CoreMedia.framework */; };
+		5045E63F1C827F5D009ED2C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16186E199B49A20084846E /* UIKit.framework */; };
+		5045E6401C827F65009ED2C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16186A199B49A20084846E /* Foundation.framework */; };
+		5045E6421C827FA8009ED2C3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045E6411C827FA8009ED2C3 /* libiconv.tbd */; };
+		5045E64B1C833276009ED2C3 /* ZZVCContextConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6491C833276009ED2C3 /* ZZVCContextConfig.h */; };
+		5045E64C1C833276009ED2C3 /* ZZVCContextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E64A1C833276009ED2C3 /* ZZVCContextConfig.m */; };
+		5045E64F1C833304009ED2C3 /* ZZVCMultiParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E64D1C833304009ED2C3 /* ZZVCMultiParam.h */; };
+		5045E6501C833304009ED2C3 /* ZZVCMultiParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E64E1C833304009ED2C3 /* ZZVCMultiParam.m */; };
+		5045E6531C833574009ED2C3 /* ZZVCVideoFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6511C833574009ED2C3 /* ZZVCVideoFrame.h */; };
+		5045E6541C833574009ED2C3 /* ZZVCVideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6521C833574009ED2C3 /* ZZVCVideoFrame.m */; };
+		5045E6571C833678009ED2C3 /* ZZVCFrameDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5045E6551C833678009ED2C3 /* ZZVCFrameDesc.h */; };
+		5045E6581C833678009ED2C3 /* ZZVCFrameDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5045E6561C833678009ED2C3 /* ZZVCFrameDesc.m */; };
 		921178511C3BC461000D8148 /* AudioUtil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211784E1C3BC461000D8148 /* AudioUtil.storyboard */; };
 		921178521C3BC461000D8148 /* AVUtilController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921178501C3BC461000D8148 /* AVUtilController.m */; };
 		922EAE081C0D8816008F30BF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EADFD1C0D8816008F30BF /* TencentOpenAPI.framework */; };
@@ -119,6 +161,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5045E6021C827B0C009ED2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA16185F199B49A20084846E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5045E5FC1C827B0C009ED2C3;
+			remoteInfo = ZZVedioChat;
+		};
 		92EEFAFF1C3B51D00067D72C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA16185F199B49A20084846E /* Project object */;
@@ -128,7 +177,52 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5045E60A1C827B0D009ED2C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5045E6051C827B0C009ED2C3 /* ZZVedioChat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZVedioChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5045E6011C827B0C009ED2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCAudioCtrl.h; path = public/ZZVCAudioCtrl.h; sourceTree = "<group>"; };
+		5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCAudioCtrl.m; path = public/ZZVCAudioCtrl.m; sourceTree = "<group>"; };
+		5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCCommon.h; path = public/ZZVCCommon.h; sourceTree = "<group>"; };
+		5045E6191C827CAD009ED2C3 /* ZZVCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCContext.h; path = public/ZZVCContext.h; sourceTree = "<group>"; };
+		5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCContext.m; path = public/ZZVCContext.m; sourceTree = "<group>"; };
+		5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCEndpoint.h; path = public/ZZVCEndpoint.h; sourceTree = "<group>"; };
+		5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCEndpoint.m; path = public/ZZVCEndpoint.m; sourceTree = "<group>"; };
+		5045E6211C827CF9009ED2C3 /* ZZVCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCError.h; path = public/ZZVCError.h; sourceTree = "<group>"; };
+		5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCMultiRoom.h; path = public/ZZVCMultiRoom.h; sourceTree = "<group>"; };
+		5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCMultiRoom.m; path = public/ZZVCMultiRoom.m; sourceTree = "<group>"; };
+		5045E6291C827D48009ED2C3 /* ZZVCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCRoom.h; path = public/ZZVCRoom.h; sourceTree = "<group>"; };
+		5045E62A1C827D48009ED2C3 /* ZZVCRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCRoom.m; path = public/ZZVCRoom.m; sourceTree = "<group>"; };
+		5045E62D1C827D74009ED2C3 /* ZZVCVideoCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCVideoCtrl.h; path = public/ZZVCVideoCtrl.h; sourceTree = "<group>"; };
+		5045E62E1C827D74009ED2C3 /* ZZVCVideoCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCVideoCtrl.m; path = public/ZZVCVideoCtrl.m; sourceTree = "<group>"; };
+		5045E6321C827EF4009ED2C3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5045E6341C827F0A009ED2C3 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		5045E6361C827F1B009ED2C3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5045E6381C827F22009ED2C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5045E6411C827FA8009ED2C3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		5045E6431C82823A009ED2C3 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		5045E6481C82858D009ED2C3 /* ZZVideoChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZVideoChat.h; sourceTree = "<group>"; };
+		5045E6491C833276009ED2C3 /* ZZVCContextConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCContextConfig.h; path = public/ZZVCContextConfig.h; sourceTree = "<group>"; };
+		5045E64A1C833276009ED2C3 /* ZZVCContextConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCContextConfig.m; path = public/ZZVCContextConfig.m; sourceTree = "<group>"; };
+		5045E64D1C833304009ED2C3 /* ZZVCMultiParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCMultiParam.h; path = public/ZZVCMultiParam.h; sourceTree = "<group>"; };
+		5045E64E1C833304009ED2C3 /* ZZVCMultiParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCMultiParam.m; path = public/ZZVCMultiParam.m; sourceTree = "<group>"; };
+		5045E6511C833574009ED2C3 /* ZZVCVideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCVideoFrame.h; path = public/ZZVCVideoFrame.h; sourceTree = "<group>"; };
+		5045E6521C833574009ED2C3 /* ZZVCVideoFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCVideoFrame.m; path = public/ZZVCVideoFrame.m; sourceTree = "<group>"; };
+		5045E6551C833678009ED2C3 /* ZZVCFrameDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZVCFrameDesc.h; path = public/ZZVCFrameDesc.h; sourceTree = "<group>"; };
+		5045E6561C833678009ED2C3 /* ZZVCFrameDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZVCFrameDesc.m; path = public/ZZVCFrameDesc.m; sourceTree = "<group>"; };
 		9211784E1C3BC461000D8148 /* AudioUtil.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioUtil.storyboard; sourceTree = "<group>"; };
 		9211784F1C3BC461000D8148 /* AVUtilController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVUtilController.h; sourceTree = "<group>"; };
 		921178501C3BC461000D8148 /* AVUtilController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVUtilController.m; sourceTree = "<group>"; };
@@ -262,6 +356,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5045E5F91C827B0C009ED2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045E6421C827FA8009ED2C3 /* libiconv.tbd in Frameworks */,
+				5045E6401C827F65009ED2C3 /* Foundation.framework in Frameworks */,
+				5045E63F1C827F5D009ED2C3 /* UIKit.framework in Frameworks */,
+				5045E63E1C827F58009ED2C3 /* CoreMedia.framework in Frameworks */,
+				5045E63D1C827F4A009ED2C3 /* CoreGraphics.framework in Frameworks */,
+				5045E63C1C827F3F009ED2C3 /* AVFoundation.framework in Frameworks */,
+				5045E63B1C827F39009ED2C3 /* AudioToolbox.framework in Frameworks */,
+				5045E63A1C827F2E009ED2C3 /* CoreVideo.framework in Frameworks */,
+				5045E6391C827F22009ED2C3 /* libz.tbd in Frameworks */,
+				5045E6371C827F1B009ED2C3 /* libsqlite3.0.tbd in Frameworks */,
+				5045E6351C827F0A009ED2C3 /* libstdc++.6.tbd in Frameworks */,
+				5045E6331C827EF4009ED2C3 /* libc++.tbd in Frameworks */,
+				5045E6311C827ECF009ED2C3 /* CoreTelephony.framework in Frameworks */,
+				5045E6101C827C1D009ED2C3 /* AVFoundationEx.FrameWork in Frameworks */,
+				5045E6111C827C1D009ED2C3 /* ImSDK.framework in Frameworks */,
+				5045E6121C827C1D009ED2C3 /* QALSDK.framework in Frameworks */,
+				5045E6131C827C1D009ED2C3 /* QAVSDK.framework in Frameworks */,
+				5045E6141C827C1D009ED2C3 /* TLSSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA161864199B49A20084846E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +389,7 @@
 				92C0307C1C31270900FD2641 /* QAVSDK.framework in Frameworks */,
 				9E42978D1B4510D80029762D /* CoreTelephony.framework in Frameworks */,
 				922EAE0E1C0D8816008F30BF /* libWeChatSDK.a in Frameworks */,
+				5045E6041C827B0C009ED2C3 /* ZZVedioChat.framework in Frameworks */,
 				92C0307B1C31270900FD2641 /* QALSDK.framework in Frameworks */,
 				922EAE081C0D8816008F30BF /* TencentOpenAPI.framework in Frameworks */,
 				922EAE0A1C0D8816008F30BF /* TLSSDK.framework in Frameworks */,
@@ -295,6 +415,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5045E5FE1C827B0C009ED2C3 /* ZZVedioChat */ = {
+			isa = PBXGroup;
+			children = (
+				5045E60F1C827BC5009ED2C3 /* public */,
+				5045E6011C827B0C009ED2C3 /* Info.plist */,
+				5045E6431C82823A009ED2C3 /* Prefix.pch */,
+			);
+			path = ZZVedioChat;
+			sourceTree = "<group>";
+		};
+		5045E60F1C827BC5009ED2C3 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				5045E6481C82858D009ED2C3 /* ZZVideoChat.h */,
+				5045E60B1C827BBF009ED2C3 /* ZZVCAudioCtrl.h */,
+				5045E60C1C827BBF009ED2C3 /* ZZVCAudioCtrl.m */,
+				5045E6151C827C8E009ED2C3 /* ZZVCCommon.h */,
+				5045E6191C827CAD009ED2C3 /* ZZVCContext.h */,
+				5045E61A1C827CAD009ED2C3 /* ZZVCContext.m */,
+				5045E61D1C827CD3009ED2C3 /* ZZVCEndpoint.h */,
+				5045E61E1C827CD3009ED2C3 /* ZZVCEndpoint.m */,
+				5045E6211C827CF9009ED2C3 /* ZZVCError.h */,
+				5045E6251C827D25009ED2C3 /* ZZVCMultiRoom.h */,
+				5045E6261C827D25009ED2C3 /* ZZVCMultiRoom.m */,
+				5045E6291C827D48009ED2C3 /* ZZVCRoom.h */,
+				5045E62A1C827D48009ED2C3 /* ZZVCRoom.m */,
+				5045E62D1C827D74009ED2C3 /* ZZVCVideoCtrl.h */,
+				5045E62E1C827D74009ED2C3 /* ZZVCVideoCtrl.m */,
+				5045E6491C833276009ED2C3 /* ZZVCContextConfig.h */,
+				5045E64A1C833276009ED2C3 /* ZZVCContextConfig.m */,
+				5045E64D1C833304009ED2C3 /* ZZVCMultiParam.h */,
+				5045E64E1C833304009ED2C3 /* ZZVCMultiParam.m */,
+				5045E6511C833574009ED2C3 /* ZZVCVideoFrame.h */,
+				5045E6521C833574009ED2C3 /* ZZVCVideoFrame.m */,
+				5045E6551C833678009ED2C3 /* ZZVCFrameDesc.h */,
+				5045E6561C833678009ED2C3 /* ZZVCFrameDesc.m */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
 		922EADFB1C0D8816008F30BF /* TLSLibs */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +581,7 @@
 			children = (
 				922EADFB1C0D8816008F30BF /* TLSLibs */,
 				EA161870199B49A20084846E /* QAVSDKDemo */,
+				5045E5FE1C827B0C009ED2C3 /* ZZVedioChat */,
 				EA161869199B49A20084846E /* Frameworks */,
 				EA161868199B49A20084846E /* Products */,
 			);
@@ -430,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				EA161867199B49A20084846E /* QAVSDKDemo_public.app */,
+				5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -437,6 +599,11 @@
 		EA161869199B49A20084846E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5045E6411C827FA8009ED2C3 /* libiconv.tbd */,
+				5045E6381C827F22009ED2C3 /* libz.tbd */,
+				5045E6361C827F1B009ED2C3 /* libsqlite3.0.tbd */,
+				5045E6341C827F0A009ED2C3 /* libstdc++.6.tbd */,
+				5045E6321C827EF4009ED2C3 /* libc++.tbd */,
 				92C030721C31270900FD2641 /* AVFoundationEx.FrameWork */,
 				92C030731C31270900FD2641 /* descript.txt */,
 				92C030741C31270900FD2641 /* ImSDK.framework */,
@@ -554,7 +721,47 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5045E5FA1C827B0C009ED2C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045E64F1C833304009ED2C3 /* ZZVCMultiParam.h in Headers */,
+				5045E6171C827C8E009ED2C3 /* ZZVCCommon.h in Headers */,
+				5045E64B1C833276009ED2C3 /* ZZVCContextConfig.h in Headers */,
+				5045E62F1C827D74009ED2C3 /* ZZVCVideoCtrl.h in Headers */,
+				5045E61B1C827CAD009ED2C3 /* ZZVCContext.h in Headers */,
+				5045E62B1C827D48009ED2C3 /* ZZVCRoom.h in Headers */,
+				5045E6231C827CF9009ED2C3 /* ZZVCError.h in Headers */,
+				5045E61F1C827CD3009ED2C3 /* ZZVCEndpoint.h in Headers */,
+				5045E6531C833574009ED2C3 /* ZZVCVideoFrame.h in Headers */,
+				5045E6271C827D25009ED2C3 /* ZZVCMultiRoom.h in Headers */,
+				5045E6571C833678009ED2C3 /* ZZVCFrameDesc.h in Headers */,
+				5045E60D1C827BBF009ED2C3 /* ZZVCAudioCtrl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5045E5FC1C827B0C009ED2C3 /* ZZVedioChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045E6091C827B0D009ED2C3 /* Build configuration list for PBXNativeTarget "ZZVedioChat" */;
+			buildPhases = (
+				5045E5F81C827B0C009ED2C3 /* Sources */,
+				5045E5F91C827B0C009ED2C3 /* Frameworks */,
+				5045E5FA1C827B0C009ED2C3 /* Headers */,
+				5045E5FB1C827B0C009ED2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZVedioChat;
+			productName = ZZVedioChat;
+			productReference = 5045E5FD1C827B0C009ED2C3 /* ZZVedioChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EA161866199B49A20084846E /* QAVSDKDemo_public */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA16189C199B49A50084846E /* Build configuration list for PBXNativeTarget "QAVSDKDemo_public" */;
@@ -563,10 +770,12 @@
 				EA161864199B49A20084846E /* Frameworks */,
 				EA161865199B49A20084846E /* Resources */,
 				4F9155D61BF0B47C00867D9D /* ShellScript */,
+				5045E60A1C827B0D009ED2C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5045E6031C827B0C009ED2C3 /* PBXTargetDependency */,
 			);
 			name = QAVSDKDemo_public;
 			productName = AVTest;
@@ -582,6 +791,10 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = TOBINCHEN;
 				TargetAttributes = {
+					5045E5FC1C827B0C009ED2C3 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M3HQ7NZ47V;
+					};
 					92EEFAFA1C3B51BD0067D72C = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -610,11 +823,19 @@
 			targets = (
 				EA161866199B49A20084846E /* QAVSDKDemo_public */,
 				92EEFAFA1C3B51BD0067D72C /* dailybuild */,
+				5045E5FC1C827B0C009ED2C3 /* ZZVedioChat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5045E5FB1C827B0C009ED2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA161865199B49A20084846E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -696,6 +917,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5045E5F81C827B0C009ED2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5045E64C1C833276009ED2C3 /* ZZVCContextConfig.m in Sources */,
+				5045E62C1C827D48009ED2C3 /* ZZVCRoom.m in Sources */,
+				5045E61C1C827CAD009ED2C3 /* ZZVCContext.m in Sources */,
+				5045E60E1C827BBF009ED2C3 /* ZZVCAudioCtrl.m in Sources */,
+				5045E6541C833574009ED2C3 /* ZZVCVideoFrame.m in Sources */,
+				5045E6501C833304009ED2C3 /* ZZVCMultiParam.m in Sources */,
+				5045E6301C827D74009ED2C3 /* ZZVCVideoCtrl.m in Sources */,
+				5045E6581C833678009ED2C3 /* ZZVCFrameDesc.m in Sources */,
+				5045E6281C827D25009ED2C3 /* ZZVCMultiRoom.m in Sources */,
+				5045E6201C827CD3009ED2C3 /* ZZVCEndpoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA161863199B49A20084846E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -735,6 +973,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5045E6031C827B0C009ED2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5045E5FC1C827B0C009ED2C3 /* ZZVedioChat */;
+			targetProxy = 5045E6021C827B0C009ED2C3 /* PBXContainerItemProxy */;
+		};
 		92EEFB001C3B51D00067D72C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EA161866199B49A20084846E /* QAVSDKDemo_public */;
@@ -762,6 +1005,124 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5045E6061C827B0D009ED2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
+				INFOPLIST_FILE = ZZVedioChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.taobao4iphone.ZZVedioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5045E6071C827B0D009ED2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
+				INFOPLIST_FILE = ZZVedioChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.taobao4iphone.ZZVedioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5045E6081C827B0D009ED2C3 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZZVedioChat/Prefix.pch;
+				INFOPLIST_FILE = ZZVedioChat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.taobao4iphone.ZZVedioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = DailyBuild;
+		};
 		92EEFAFB1C3B51BD0067D72C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -897,6 +1258,7 @@
 				);
 				INFOPLIST_FILE = "public/QAVSDKDemo/QAVSDKDemo_public-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../libs/ios\"",
 					"$(PROJECT_DIR)/../../libs/ios",
@@ -947,6 +1309,7 @@
 				);
 				INFOPLIST_FILE = "public/QAVSDKDemo/QAVSDKDemo_public-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../libs/ios\"",
 					"$(PROJECT_DIR)/../../libs/ios",
@@ -1041,6 +1404,7 @@
 				);
 				INFOPLIST_FILE = "public/QAVSDKDemo/QAVSDKDemo_public-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../libs/ios\"",
 					"$(PROJECT_DIR)/../../libs/ios",
@@ -1063,6 +1427,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5045E6091C827B0D009ED2C3 /* Build configuration list for PBXNativeTarget "ZZVedioChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5045E6061C827B0D009ED2C3 /* Debug */,
+				5045E6071C827B0D009ED2C3 /* Release */,
+				5045E6081C827B0D009ED2C3 /* DailyBuild */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92EEFAFE1C3B51BD0067D72C /* Build configuration list for PBXAggregateTarget "dailybuild" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

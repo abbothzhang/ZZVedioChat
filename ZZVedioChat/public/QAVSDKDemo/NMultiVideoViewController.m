@@ -1,6 +1,6 @@
 //
 //  NMultiVideoViewController.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-17.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
@@ -14,6 +14,8 @@
 #import "AKNetworkReachability.h"
 #import <AVFoundation/AVFoundation.h>
 #import "UserConfig.h"
+
+#import "ZZVideoChat.h"
 
 FILE* videoOutputFile = NULL;
 
@@ -203,7 +205,7 @@ static UIImage* createImageWithColor(UIColor* color)
     
     [self showTips:@"创建房间..."];
     
-     QAVMultiParam*param = [[[QAVMultiParam alloc]init]autorelease];
+     ZZVCMultiParam*param = [[[ZZVCMultiParam alloc]init]autorelease];
      param.roomID = (UInt32)[UserConfig shareConfig].roomId;
      param.audioCategory = [UserConfig shareConfig].categoryNum;
     
@@ -213,20 +215,20 @@ static UIImage* createImageWithColor(UIColor* color)
        [UserConfig shareConfig].authVideoSend &&
        [UserConfig shareConfig].authVideoRev)
     {
-        param.authBitMap = QAV_AUTH_BITS_DEFUALT;
+        param.authBitMap = ZZVC_AUTH_BITS_DEFUALT;
     }
     else
     {
-        param.authBitMap = QAV_AUTH_BITS_CREATE_ROOM | QAV_AUTH_BITS_JOIN_ROOM | QAV_AUTH_BITS_RECV_SUB;
+        param.authBitMap = ZZVC_AUTH_BITS_CREATE_ROOM | ZZVC_AUTH_BITS_JOIN_ROOM | ZZVC_AUTH_BITS_RECV_SUB;
         
         if( [UserConfig shareConfig].authVideoSend )
-            param.authBitMap |= QAV_AUTH_BITS_SEND_VIDEO;
+            param.authBitMap |= ZZVC_AUTH_BITS_SEND_VIDEO;
         if( [UserConfig shareConfig].authVideoRev )
-            param.authBitMap |= QAV_AUTH_BITS_RECV_VIDEO;
+            param.authBitMap |= ZZVC_AUTH_BITS_RECV_VIDEO;
         if( [UserConfig shareConfig].authAudioSend )
-            param.authBitMap|= QAV_AUTH_BITS_SEND_AUDIO;
+            param.authBitMap|= ZZVC_AUTH_BITS_SEND_AUDIO;
         if( [UserConfig shareConfig].authAudioRev )
-            param.authBitMap|= QAV_AUTH_BITS_RECV_AUDIO;
+            param.authBitMap|= ZZVC_AUTH_BITS_RECV_AUDIO;
     }
     if ([UserConfig shareConfig].roomRole && [[UserConfig shareConfig].roomRole length] > 0)
         param.controlRole = [UserConfig shareConfig].roomRole;
@@ -442,7 +444,7 @@ static UIImage* createImageWithColor(UIColor* color)
     }
     
     BOOL bRet = [[AVUtil sharedContext].videoCtrl enableCamera:control.selected complete:^(int result){
-        if (result==QAV_OK) {
+        if (result==ZZVC_OK) {
             if (isSelectd)
                 [self startPreview];
             
@@ -477,7 +479,7 @@ static UIImage* createImageWithColor(UIColor* color)
     
     [self showTips:@"切换摄像头..."];
     
-    cameraPos pos = control.selected ? CameraPosFront : CameraPosBack;
+    zzvcCameraPos pos = control.selected ? zzvcCameraPosFront : zzvcCameraPosBack;
     
     [[AVUtil sharedContext].videoCtrl switchCamera:pos complete:^(int result) {
         [self hideTips:@"切换摄像头完成" afterDelay:0.5];
@@ -488,17 +490,17 @@ static UIImage* createImageWithColor(UIColor* color)
     UIControl* control=sender;
     control.selected=!control.selected;
     
-    QAVOutputMode mode = control.selected ? QAVOUTPUTMODE_SPEAKER : QAVOUTPUTMODE_EARPHONE;
+    ZZVCOutputMode mode = control.selected ? ZZVCOUTPUTMODE_SPEAKER : ZZVCOUTPUTMODE_EARPHONE;
     [AVUtil sharedContext].audioCtrl.outputMode = mode;
 }
 
 #pragma mark remoteVideoDelegate
--(void)OnVideoPreview:(QAVVideoFrame*)frameData{
+-(void)OnVideoPreview:(ZZVCVideoFrame*)frameData{
     if (!_inBackGround && ![_imageView isDisplay])
         [_imageView startDisplay];
     
     //临时先这么处理下，稍后再完善
-    if(frameData.frameDesc.srcType == QAVVIDEO_SRC_TYPE_SCREEN)
+    if(frameData.frameDesc.srcType == ZZVCVIDEO_SRC_TYPE_SCREEN)
     {
         int peerRotate = frameData.frameDesc.rotate;
         int selfRotate = 0;
@@ -561,7 +563,7 @@ static UIImage* createImageWithColor(UIColor* color)
 
 #pragma mark avRoomDelegate sdk回调
 -(void)OnEnterRoomComplete:(int)result{
-    if (result == QAV_OK){
+    if (result == ZZVC_OK){
         [self hideTips:@"创建房间成功" afterDelay:0.5];
         
         //设置
@@ -597,32 +599,32 @@ static UIImage* createImageWithColor(UIColor* color)
                 
                 [[NSNotificationCenter defaultCenter] removeObserver:self];
                 NSLog(@"NMultiVideoViewController dealloc %x", (int)self);
-                //[QAVContext DestroyContext:[AVUtil sharedContext]];
+                //[ZZVCContext DestroyContext:[AVUtil sharedContext]];
                 [AVUtil destroyShardContext];
             }];
         }];
     });
 }
 
--(void)OnEndpointsUpdateInfo:(QAVUpdateEvent)eventID endpointlist:(NSArray*)endpoints{
+-(void)OnEndpointsUpdateInfo:(ZZVCUpdateEvent)eventID endpointlist:(NSArray*)endpoints{
     switch (eventID) {
-        case QAV_EVENT_ID_ENDPOINT_HAS_CAMERA_VIDEO:
-        case QAV_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO:
-        case QAV_EVENT_ID_ENDPOINT_HAS_AUDIO:
-        case QAV_EVENT_ID_ENDPOINT_NO_AUDIO:
+        case ZZVC_EVENT_ID_ENDPOINT_HAS_CAMERA_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_HAS_AUDIO:
+        case ZZVC_EVENT_ID_ENDPOINT_NO_AUDIO:
         {
             [_model updateAudioAndCameraMember:endpoints];
             [_memberCollectionView reloadData];
         }
             break;
-        case QAV_EVENT_ID_ENDPOINT_HAS_SCREEN_VIDEO:
-        case QAV_EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_HAS_SCREEN_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO:
         {
             [_model updateScreenMember:endpoints];
             [_memberCollectionView reloadData];
         }
             break;
-        case QAV_EVENT_ID_ENDPOINT_EXIT:
+        case ZZVC_EVENT_ID_ENDPOINT_EXIT:
         {
             [_model updateAudioAndCameraMember:endpoints];
             [_memberCollectionView reloadData];
@@ -636,12 +638,12 @@ static UIImage* createImageWithColor(UIColor* color)
     
     switch (eventID) {
             
-        case QAV_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO:
-        case QAV_EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO:
+        case ZZVC_EVENT_ID_ENDPOINT_NO_SCREEN_VIDEO:
         {
-            int srcType = eventID == QAV_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO ? QAVVIDEO_SRC_TYPE_CAMERA : QAVVIDEO_SRC_TYPE_SCREEN;
+            int srcType = eventID == ZZVC_EVENT_ID_ENDPOINT_NO_CAMERA_VIDEO ? ZZVCVIDEO_SRC_TYPE_CAMERA : ZZVCVIDEO_SRC_TYPE_SCREEN;
         
-            for (QAVEndpoint* endpoint in endpoints)
+            for (ZZVCEndpoint* endpoint in endpoints)
             {
                 for(int i = 0; i < _identifierList.count; i++)
                 {
@@ -662,9 +664,9 @@ static UIImage* createImageWithColor(UIColor* color)
             }
         }
             break;
-        case QAV_EVENT_ID_ENDPOINT_EXIT:
+        case ZZVC_EVENT_ID_ENDPOINT_EXIT:
         {
-            for (QAVEndpoint* endpoint in endpoints)
+            for (ZZVCEndpoint* endpoint in endpoints)
             {
                 for(int i = 0; i < _identifierList.count; i++)
                 {
@@ -672,22 +674,22 @@ static UIImage* createImageWithColor(UIColor* color)
                     NSNumber *srcTypeTmp = [_srcTypeList objectAtIndex:(NSInteger)i];
                     int requestedSrcType = [srcTypeTmp intValue];
                     
-                    if ([identifier compare:endpoint.identifier] == NSOrderedSame && requestedSrcType == QAVVIDEO_SRC_TYPE_CAMERA)
+                    if ([identifier compare:endpoint.identifier] == NSOrderedSame && requestedSrcType == ZZVCVIDEO_SRC_TYPE_CAMERA)
                     {
-                        NSString *renderKey = [NSString stringWithFormat:@"%@%d", endpoint.identifier, (int)QAVVIDEO_SRC_TYPE_CAMERA];
+                        NSString *renderKey = [NSString stringWithFormat:@"%@%d", endpoint.identifier, (int)ZZVCVIDEO_SRC_TYPE_CAMERA];
                         [self releaseRender:renderKey];
                         [self updateRender];
                     }
-                    else if ([identifier compare:endpoint.identifier] == NSOrderedSame && requestedSrcType == QAVVIDEO_SRC_TYPE_SCREEN)
+                    else if ([identifier compare:endpoint.identifier] == NSOrderedSame && requestedSrcType == ZZVCVIDEO_SRC_TYPE_SCREEN)
                     {
-                        NSString *renderKey = [NSString stringWithFormat:@"%@%d", endpoint.identifier, (int)QAVVIDEO_SRC_TYPE_SCREEN];
+                        NSString *renderKey = [NSString stringWithFormat:@"%@%d", endpoint.identifier, (int)ZZVCVIDEO_SRC_TYPE_SCREEN];
                         [self releaseRender:renderKey];
                         [self updateRender];
                     }
                 }
             }
             
-            for (QAVEndpoint* endpoint in endpoints)
+            for (ZZVCEndpoint* endpoint in endpoints)
             {
                 for(int i = 0; i < _identifierList.count; i++)
                 {
@@ -713,7 +715,7 @@ static UIImage* createImageWithColor(UIColor* color)
     }
 }
 -(void)OnChangeAuthority:(int)ret{
-    if (ret == QAV_OK)
+    if (ret == ZZVC_OK)
         [AVUtil ShowMsg:@"修改权限成功"];
     else
         [AVUtil ShowMsg:@"修改权限失败"];
@@ -769,21 +771,21 @@ static UIImage* createImageWithColor(UIColor* color)
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     UserHeadCell* cell=(UserHeadCell*)[collectionView cellForItemAtIndexPath:indexPath];
     MemberData* userInfo=[_model.endpoints objectAtIndex:indexPath.item];
-    int requestingSrcType = QAVVIDEO_SRC_TYPE_NONE;
+    int requestingSrcType = ZZVCVIDEO_SRC_TYPE_NONE;
     if(userInfo.isCameraVideo)
     {
-        requestingSrcType = QAVVIDEO_SRC_TYPE_CAMERA;
+        requestingSrcType = ZZVCVIDEO_SRC_TYPE_CAMERA;
     }
     else if(userInfo.isScreenVideo)
     {
-        requestingSrcType = QAVVIDEO_SRC_TYPE_SCREEN;
+        requestingSrcType = ZZVCVIDEO_SRC_TYPE_SCREEN;
     }
     else
     {
         return;
     }
     
-    int requestedSrcType = QAVVIDEO_SRC_TYPE_NONE;
+    int requestedSrcType = ZZVCVIDEO_SRC_TYPE_NONE;
     if ([cell isMemberOfClass:[UserHeadCell class]]) {
         
         int index = 0;
@@ -814,15 +816,15 @@ static UIImage* createImageWithColor(UIColor* color)
         
         //request view
         if (_identifierList.count  > 0 ) {
-            [QAVEndpoint requsetViewList:[AVUtil sharedContext] identifierList:_identifierList srcTypeList:_srcTypeList ret:^(QAVResult result) {
-                if (result != QAV_OK){
+            [ZZVCEndpoint requsetViewList:[AVUtil sharedContext] identifierList:_identifierList srcTypeList:_srcTypeList ret:^(QAVResult result) {
+                if (result != ZZVC_OK){
                     [AVUtil ShowMsg:@"请求画面失败"];
                 }
            }];
         }
         else
         {
-            [QAVEndpoint cancelAllview:[AVUtil sharedContext] ret:^(QAVResult result) {
+            [ZZVCEndpoint cancelAllview:[AVUtil sharedContext] ret:^(QAVResult result) {
 
             }];
         }

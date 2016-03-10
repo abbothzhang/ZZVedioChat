@@ -1,6 +1,6 @@
 //
 //  AVUtilController.m
-//  QAVSDKDemo
+//  ZZVCSDKDemo
 //
 //  Created by xianhuanlin on 15/12/2.
 
@@ -8,6 +8,8 @@
 
 #import "AVUtilController.h"
 #import "AVUtil.h"
+#import "ZZVideoChat.h"
+
 char*buf = NULL;
 NSInteger len = 0;
 
@@ -105,7 +107,7 @@ NSInteger len = 0;
 -(IBAction)OnSwitchChange:(id)sender{
     for (UISwitch*swi in _arraySwitchs) {
         if (swi == sender){
-            QAVAudioDataSourceType type = (swi.tag);
+            ZZVCAudioDataSourceType type = (swi.tag);
             NSString*key = [NSString stringWithFormat:@"%ld", (long)type];
             if ([swi isOn]){
                 audioCallbackHandler*state = [_dicRunningState objectForKey:key];
@@ -115,7 +117,7 @@ NSInteger len = 0;
                 else{
                     state = [[[audioCallbackHandler alloc]init]autorelease];
                     state.dicNetStream = [NSMutableDictionary new];
-                    //struct QAVAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl GetAudioDataFormat:type];
+                    //struct ZZVCAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl GetAudioDataFormat:type];
                     //float vol = [[AVUtil sharedContext].audioCtrl GetAudioDataVolume:type];
                     
                     //struct auidoTransmitInfo info;
@@ -128,7 +130,7 @@ NSInteger len = 0;
                     [_dicRunningState setObject:state forKey:key];
                 }
                 
-                if (type == QAVAudioDataSource_MixToSend || type == QAVAudioDataSource_MixToPlay){
+                if (type == ZZVCAudioDataSource_MixToSend || type == ZZVCAudioDataSource_MixToPlay){
                     [self enableMixInput:YES type:type];
                 }
                 else{
@@ -140,7 +142,7 @@ NSInteger len = 0;
                 audioCallbackHandler*state = [_dicRunningState objectForKey:key];
                 if (state){
                     //[_dicRunningState removeObjectForKey:key];
-                    if (type == QAVAudioDataSource_MixToSend || type == QAVAudioDataSource_MixToPlay){
+                    if (type == ZZVCAudioDataSource_MixToSend || type == ZZVCAudioDataSource_MixToPlay){
                         [self enableMixInput:NO type:type];
                     }
                     else{
@@ -273,11 +275,11 @@ NSInteger len = 0;
 //    }
 //    else{
     
-        struct QAVAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl getAudioDataFormat:(QAVAudioDataSourceType)row];
+        struct ZZVCAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl getAudioDataFormat:(ZZVCAudioDataSourceType)row];
         
         NSInteger channel = framedesc.ChannelNum;
         NSInteger sampleRate = framedesc.SampleRate;
-        NSInteger volume = [[AVUtil sharedContext].audioCtrl getAudioDataVolume:(QAVAudioDataSourceType)row];
+        NSInteger volume = [[AVUtil sharedContext].audioCtrl getAudioDataVolume:(ZZVCAudioDataSourceType)row];
         
         for (int n = 0; n < g_audioDataChannelNums.count; n++) {
             if ([g_audioDataChannelNums[n] integerValue] == channel){
@@ -322,12 +324,12 @@ NSInteger len = 0;
         //struct auidoTransmitInfo info = {channel,sample, volume};
         //state.transInfo = info;
         
-        struct QAVAudioFrameDesc desc = {sample, channel};
+        struct ZZVCAudioFrameDesc desc = {sample, channel};
         
-        [[AVUtil sharedContext].audioCtrl setAudioDataFormat:(QAVAudioDataSourceType)selectType desc:desc];
-        [[AVUtil sharedContext].audioCtrl setAudioDataVolume:(QAVAudioDataSourceType)selectType volume:volume];
+        [[AVUtil sharedContext].audioCtrl setAudioDataFormat:(ZZVCAudioDataSourceType)selectType desc:desc];
+        [[AVUtil sharedContext].audioCtrl setAudioDataVolume:(ZZVCAudioDataSourceType)selectType volume:volume];
 
-        struct QAVAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl getAudioDataFormat:selectType];
+        struct ZZVCAudioFrameDesc framedesc = [[AVUtil sharedContext].audioCtrl getAudioDataFormat:selectType];
         
         if (framedesc.ChannelNum != channel || framedesc.SampleRate != sample){
             [AVUtil ShowMsg:@"设置音频参数失败"];
@@ -346,7 +348,7 @@ NSInteger len = 0;
                 }
             }
             
-            float vol = [[AVUtil sharedContext].audioCtrl getAudioDataVolume:(QAVAudioDataSourceType)selectType];
+            float vol = [[AVUtil sharedContext].audioCtrl getAudioDataVolume:(ZZVCAudioDataSourceType)selectType];
             [_sliderVolume setValue:vol];
         }
         else{
@@ -362,12 +364,12 @@ NSInteger len = 0;
 
 
 
--(void)enableMixInput:(BOOL)isEnable type:(QAVAudioDataSourceType)type{
+-(void)enableMixInput:(BOOL)isEnable type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     audioCallbackHandler*handler = [_dicRunningState objectForKey:key];
     
     if (isEnable){
-        if (type == QAVAudioDataSource_MixToPlay){
+        if (type == ZZVCAudioDataSource_MixToPlay){
             if (_textSpeakerInput.text.length == 0){
                 [AVUtil ShowMsg:@"扬声器混音输入文件没有文件名"];
                 return;
@@ -378,14 +380,14 @@ NSInteger len = 0;
                 [[AVUtil sharedContext].audioCtrl registerAudioDataCallback:type];
                 int sampleRate = 0, channelNum = 0, ret = 0;
                 ret = sscanf(handler.fileName.UTF8String,_textSpeakerInput.text.UTF8String, &sampleRate, &channelNum);
-                struct QAVAudioFrameDesc desc = {sampleRate, channelNum};
+                struct ZZVCAudioFrameDesc desc = {sampleRate, channelNum};
                 [[AVUtil sharedContext].audioCtrl setAudioDataFormat:type desc:desc];
                 struct auidoTransmitInfo info = {channelNum, sampleRate,0};
                 
                 handler.transInfo = info;
             }
         }
-        else if (type == QAVAudioDataSource_MixToSend) {
+        else if (type == ZZVCAudioDataSource_MixToSend) {
             if (_textMixInput.text.length == 0){
                 [AVUtil ShowMsg:@"发送混音输入文件没有文件名"];
                 return;
@@ -396,7 +398,7 @@ NSInteger len = 0;
                 [[AVUtil sharedContext].audioCtrl registerAudioDataCallback:type];
                 int sampleRate = 0, channelNum = 0, ret = 0;
                 ret = sscanf(handler.fileName.UTF8String,_textMixInput.text.UTF8String, &sampleRate, &channelNum);
-                struct QAVAudioFrameDesc desc = {sampleRate, channelNum,16};
+                struct ZZVCAudioFrameDesc desc = {sampleRate, channelNum,16};
                 [[AVUtil sharedContext].audioCtrl setAudioDataFormat:type desc:desc];
                 
                 struct auidoTransmitInfo info = {channelNum, sampleRate,0};
@@ -413,7 +415,7 @@ NSInteger len = 0;
   
 }
 
--(void)enableAudioOutput:(BOOL)isEnable type:(QAVAudioDataSourceType)type{
+-(void)enableAudioOutput:(BOOL)isEnable type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     //audioCallbackHandler*handler = [_dicRunningState objectForKey:key];
     
@@ -454,17 +456,17 @@ NSInteger len = 0;
     [super dealloc];
 }
 
--(NSString*)getTypeString:(QAVAudioDataSourceType)type{
+-(NSString*)getTypeString:(ZZVCAudioDataSourceType)type{
     NSArray * array = @[@"Mic",@"MixToSend",@"Send",@"MixToPlay",@"Play",@"NetStream"];
 
     return array[type];
 }
 
--(void)writeNetStream:(QAVAudioFrame*)audioFrame{
+-(void)writeNetStream:(ZZVCAudioFrame*)audioFrame{
     if (audioFrame.identifier.length == 0)
         return;
     
-    NSString*key = [NSString stringWithFormat:@"%ld", QAVAudioDataSource_NetStream];
+    NSString*key = [NSString stringWithFormat:@"%ld", ZZVCAudioDataSource_NetStream];
     audioCallbackHandler*handler = _dicRunningState[key];
     if (handler){
         if (handler.transInfo.channel != audioFrame.desc.ChannelNum || handler.transInfo.sampleRate != audioFrame.desc.SampleRate){
@@ -501,17 +503,17 @@ NSInteger len = 0;
     }
 }
 
-#pragma mark QAVAUDIACALLBACK
--(QAVResult)audioDataComes:(QAVAudioFrame*)audioFrame type:(QAVAudioDataSourceType)type{
+#pragma mark ZZVCAUDIACALLBACK
+-(QAVResult)audioDataComes:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     NSString*typeString = [self getTypeString:type];
     audioCallbackHandler*handler = _dicRunningState[key];
     
-    if (type == QAVAudioDataSource_NetStream){
+    if (type == ZZVCAudioDataSource_NetStream){
         if (handler){
             [self writeNetStream:audioFrame];
         }
-        return QAV_OK;
+        return ZZVC_OK;
     }
     else{
         if (handler){
@@ -529,7 +531,7 @@ NSInteger len = 0;
                 fwrite(audioFrame.buffer.bytes, 1, audioFrame.buffer.length, handler.file);
             }
         }
-        return QAV_OK;
+        return ZZVC_OK;
     }
 
 }
@@ -537,21 +539,21 @@ NSInteger len = 0;
 
 
 
--(QAVResult)audioDataShouInput:(QAVAudioFrame*)audioFrame type:(QAVAudioDataSourceType)type{
+-(QAVResult)audioDataShouInput:(ZZVCAudioFrame*)audioFrame type:(ZZVCAudioDataSourceType)type{
     NSString*key = [NSString stringWithFormat:@"%ld", type];
     audioCallbackHandler*handler = [_dicRunningState objectForKey:key];
     if (handler && handler.fileName && handler.file){
         int sampleRate = 0, channelNum = 0, ret = 0;
         ret = sscanf(handler.fileName.UTF8String, "%d_%d.pcm", &sampleRate, &channelNum);
         if (ret < 2)
-            return QAV_ERR_FAILED;
+            return ZZVC_ERR_FAILED;
 
         if (sampleRate != audioFrame.desc.ChannelNum || channelNum != audioFrame.desc.SampleRate){
             
             
         }
         
-        struct QAVAudioFrameDesc desc;
+        struct ZZVCAudioFrameDesc desc;
         desc.ChannelNum = channelNum;
         desc.SampleRate = sampleRate;
         
@@ -567,10 +569,10 @@ NSInteger len = 0;
         
         audioFrame.buffer = [NSData dataWithBytesNoCopy:(void*)audioFrame.buffer.bytes length:frameLen];
         
-        return QAV_OK;
+        return ZZVC_OK;
         
     }
-    return QAV_OK;
+    return ZZVC_OK;
 }
 
 @end

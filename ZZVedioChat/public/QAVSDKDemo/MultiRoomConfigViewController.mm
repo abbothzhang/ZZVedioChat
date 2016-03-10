@@ -1,6 +1,6 @@
 //
 //  RoomConfigViewController.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-19.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
@@ -8,13 +8,16 @@
 
 #import "MultiRoomConfigViewController.h"
 #import "MSDynamicsDrawerViewController.h"
-#import "QAVSDK/QAVContext.h"
+//#import "ZZVCSDK/ZZVCContext.h"
 #import "UserConfig.h"
 #include <time.h>
 #include <string>
 #include <vector>
 #import "AVUtil.h"
 #import "AVUtilController.h"
+#import "ZZVideoChat.h"
+#import "ZZVCVideoFrame.h"
+
 
 using namespace std;
 
@@ -116,14 +119,14 @@ using namespace std;
     
     _buf = temp;
     
-    QAVVideoFrame*qAVFrame = [[[QAVVideoFrame alloc]init]autorelease];
-    qAVFrame.frameDesc = [[QAVFrameDesc alloc]init];
-    qAVFrame.frameDesc.width = width;
-    qAVFrame.frameDesc.height = height;
-    //QAVFrame.frameDesc.srcType =
-    qAVFrame.data = temp;
-    qAVFrame.dataSize = size;
-    qAVFrame.identifier = [AVUtil sharedContext].Config.identifier;
+    ZZVCVideoFrame*ZZVCFrame = [[[ZZVCVideoFrame alloc]init]autorelease];
+    ZZVCFrame.frameDesc = [[ZZVCFrameDesc alloc]init];
+    ZZVCFrame.frameDesc.width = width;
+    ZZVCFrame.frameDesc.height = height;
+    //ZZVCFrame.frameDesc.srcType =
+    ZZVCFrame.data = temp;
+    ZZVCFrame.dataSize = size;
+    ZZVCFrame.identifier = [AVUtil sharedContext].Config.identifier;
     while(!_ExitVideo){
         
         if( size != fread((void*)temp , 1, size, _videoFileInput) )
@@ -133,7 +136,7 @@ using namespace std;
         }
 
         
-        if (![[AVUtil sharedContext].videoCtrl fillExternalCaptureFrame:qAVFrame])
+        if (![[AVUtil sharedContext].videoCtrl fillExternalCaptureFrame:ZZVCFrame])
         
 //        if (![[AVMultiManager shareManager]captureVideo:width height:height data:temp size:size])
 //            break;
@@ -252,7 +255,7 @@ using namespace std;
             break;
         case 1:
         {
-            [AVUtil sharedContext].audioCtrl.outputMode = selected ? QAVOUTPUTMODE_EARPHONE : QAVOUTPUTMODE_SPEAKER;
+            [AVUtil sharedContext].audioCtrl.outputMode = selected ? ZZVCOUTPUTMODE_EARPHONE : ZZVCOUTPUTMODE_SPEAKER;
         }
             break;
         case 2:
@@ -356,9 +359,9 @@ using namespace std;
     if (![AVUtil sharedContext].room)
         return NO;
     
-    QAVMultiRoom*multiRoom = (QAVMultiRoom*)[AVUtil sharedContext].room;
+    ZZVCMultiRoom*multiRoom = (ZZVCMultiRoom*)[AVUtil sharedContext].room;
     QAVResult ret = [multiRoom ChangeAuthority:authPirvateMap];
-    return (ret == QAV_OK) ? YES :NO;
+    return (ret == ZZVC_OK) ? YES :NO;
 }
 
 

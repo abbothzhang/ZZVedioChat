@@ -1,6 +1,6 @@
 //
 //  LoginViewController.m
-//  QAVSDKDemo_P
+//  ZZVCSDKDemo_P
 //
 //  Created by TOBINCHEN on 14-11-17.
 //  Copyright (c) 2014年 TOBINCHEN. All rights reserved.
@@ -28,6 +28,8 @@
 #import <TLSSDK/TLSLoginHelper.h>
 
 #import "AppDelegate.h"
+
+#import "ZZVideoChat.h"
 
 @interface NLoginViewController (){
     BOOL _isLogin;
@@ -92,7 +94,7 @@
         }
         
         [[AVUtil sharedContext] startContext:^(QAVResult result) {
-            if(result == QAV_OK)
+            if(result == ZZVC_OK)
             {
                 //创建model
                 MultiRoomMemberModel* model=[[[MultiRoomMemberModel alloc] init] autorelease];

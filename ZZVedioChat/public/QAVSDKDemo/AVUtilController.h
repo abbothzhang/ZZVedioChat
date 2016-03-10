@@ -1,13 +1,13 @@
 //
 //  AVUtilController.h
-//  QAVSDKDemo
+//  ZZVCSDKDemo
 //
 //  Created by xianhuanlin on 15/12/2.
 //  Copyright © 2015年 TOBINCHEN. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "QAVSDK/QAVSDK.h"
+#import "ZZVideoChat.h"
 
 struct auidoTransmitInfo{
     NSInteger channel;
@@ -39,7 +39,7 @@ struct auidoTransmitInfo{
 
 @end
 
-@interface AVUtilController : UITableViewController<UIPickerViewDataSource,UIPickerViewDelegate,QAVAudioDataDelegate>{
+@interface AVUtilController : UITableViewController<UIPickerViewDataSource,UIPickerViewDelegate,ZZVCAudioDataDelegate>{
     NSArray*g_audioDdataTypes;
     NSArray*g_audioDataSampleRates;
     NSArray*g_audioDataChannelNums;

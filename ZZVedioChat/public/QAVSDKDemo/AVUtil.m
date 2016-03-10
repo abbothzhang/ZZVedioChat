@@ -1,6 +1,6 @@
 //
 //  util.m
-//  QAVSDKDemo
+//  ZZVCSDKDemo
 //
 //  Created by xianhuanlin on 15/6/25.
 //  Copyright (c) 2015年 TOBINCHEN. All rights reserved.
@@ -8,9 +8,11 @@
 
 #import "AVUtil.h"
 #import "UserConfig.h"
+#import "ZZVCContext.h"
+#import "ZZVCContextConfig.h"
 
 BOOL _isEnableRocord = NO;
-QAVContext*g_context = nil;
+ZZVCContext*g_context = nil;
 
 @implementation AVUtil
 
@@ -32,24 +34,24 @@ QAVContext*g_context = nil;
     return _isEnableRocord;
 }
 
-+(QAVContext*)sharedContext{
++(ZZVCContext*)sharedContext{
 
     if (!g_context){
         
-        QAVContextConfig*config = [[[QAVContextConfig alloc]init] autorelease];
+        ZZVCContextConfig*config = [[[ZZVCContextConfig alloc]init] autorelease];
         config.sdkAppId = [UserConfig shareConfig].sdkAppId;
         config.appIdAtThird = [UserConfig shareConfig].AppIdThird;
         config.identifier = [UserConfig shareConfig].currentUser[Identifier];
         config.accountType = [UserConfig shareConfig].accountType;
 
-        g_context = [QAVContext CreateContext:config];
+        g_context = [ZZVCContext CreateContext:config];
     }
     return g_context;
 }
 
 +(void)destroyShardContext{
     if (g_context){
-        [QAVContext DestroyContext:g_context];
+        [ZZVCContext DestroyContext:g_context];
         [g_context release];
         g_context = nil;
     }
