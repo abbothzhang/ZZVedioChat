@@ -1,7 +1,7 @@
 //
 //  UserSelectViewController.h
 //  QAVSDKDemo_P
-//
+//  选择账号页面
 //
 
 #import <UIKit/UIKit.h>

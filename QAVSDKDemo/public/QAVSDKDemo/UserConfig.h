@@ -20,8 +20,8 @@ extern NSString* UserTokenKey;
 }
 
 @property (copy,nonatomic)  NSString* AppIdThird;       //App使用的OAuth授权体系分配的AppId。
-@property (copy,nonatomic)  NSString* sdkAppId;         //腾讯为每个使用SDK的App分配多AppId。
-@property (copy,nonatomic)  NSString* accountType;      //腾讯为每个接入方分配的账号类型。
+@property (copy,nonatomic)  NSString* sdkAppId;         //每个使用SDK的App分配的多AppId。
+@property (copy,nonatomic)  NSString* accountType;      //每个接入方分配的账号类型。
 @property (copy,nonatomic)  NSString* sdkAppIdToken;
 
 @property (copy,nonatomic)  NSString* audioInputName;

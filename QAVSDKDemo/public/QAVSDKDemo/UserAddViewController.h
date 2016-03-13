@@ -1,7 +1,7 @@
 //
 //  UserAddViewController.h
 //  QAVSDKDemo_P
-//
+//  添加账号页面
 //
 
 #import <UIKit/UIKit.h>

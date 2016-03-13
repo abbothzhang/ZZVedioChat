@@ -1,7 +1,7 @@
 //
 //  SettingViewController.h
 //  QAVSDKDemo_P
-//
+//  设置页面
 //
 
 #import <UIKit/UIKit.h>
@@ -17,6 +17,12 @@
 }
 @property (retain, nonatomic) IBOutlet UITableView *settingTableView;
 @property (assign, nonatomic) NSInteger selectedCategory;
+
+///
+
+///
+///
+
 -(IBAction)save:(id)sender;
 -(IBAction)reset:(id)sender;
 @end

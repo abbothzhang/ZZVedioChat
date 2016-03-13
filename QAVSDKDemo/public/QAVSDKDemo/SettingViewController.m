@@ -47,6 +47,8 @@
 
 }
 
+
+
 -(IBAction)OnSegChange:(id)sender{
     NSInteger index = [_segType selectedSegmentIndex];
     if (index == 0){

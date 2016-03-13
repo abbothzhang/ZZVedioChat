@@ -1,7 +1,7 @@
 //
 //  UserSelectViewController.m
 //  QAVSDKDemo_P
-//
+//  选择账号页面
 //
 
 #import "UserSelectViewController.h"
