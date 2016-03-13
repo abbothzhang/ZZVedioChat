@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MSDynamicsDrawerViewControllerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/dynamicsDrawerViewController:didUpdateToPaneState:forDirection:">- dynamicsDrawerViewController:didUpdateToPaneState:forDirection:</option>
+		
+		<option value="//api/name/dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:">- dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:</option>
+		
+		<option value="//api/name/dynamicsDrawerViewController:shouldBeginPanePan:">- dynamicsDrawerViewController:shouldBeginPanePan:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MSDynamicsDrawerViewControllerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MSDynamicsDrawerViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>To respond to the updates to <code>paneState</code> for an instance of <a href="../Classes/MSDynamicsDrawerViewController.html"><code>MSDynamicsDrawerViewController</code></a>, configure a custom class to adopt the <code>MSDynamicsDrawerViewControllerDelegate</code> protocol and set it as the <code>delegate</code> object.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:" title="dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:">&ndash;&nbsp;dynamicsDrawerViewController:mayUpdateToPaneState:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate that the drawer view controller will attempt to update to a pane state in the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)<em>drawerViewController</em> mayUpdateToPaneState:(MSDynamicsDrawerPaneState)<em>paneState</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>drawerViewController</code></th>
+						<td><p>The drawer view controller that the delegate is registered with.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneState</code></th>
+						<td><p>The pane state that the view controller will attempt to update to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>When the pane state is updating to <code>MSDynamicsDrawerPaneStateClosed</code>: the direction that the drawer view controller is transitioning from. When the pane state is updating to <code>MSDynamicsDrawerPaneStateOpen</code> or <code>MSDynamicsDrawerPaneStateOpenWide</code>: the direction that the drawer view controller is transitioning to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate that the drawer view controller will attempt to update to a pane state in the specified direction.</p>
+
+<p>It is important to note that the user is able to interrupt this change, and therefore is it not guaranteed that this update will occur. If desired, the user can be prevented from interrupting by passing <code>NO</code> for the <code>allowingUserInterruption</code> parameter in methods that update the <code>paneState</code>. For the aforementioned reasons, this method does not always pair with an invocation of <a href="#//api/name/dynamicsDrawerViewController:didUpdateToPaneState:forDirection:"><code>dynamicsDrawerViewController:didUpdateToPaneState:forDirection:</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicsDrawerViewController:didUpdateToPaneState:forDirection:" title="dynamicsDrawerViewController:didUpdateToPaneState:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicsDrawerViewController:didUpdateToPaneState:forDirection:">&ndash;&nbsp;dynamicsDrawerViewController:didUpdateToPaneState:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate that the drawer view controller did update to a pane state in the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)<em>drawerViewController</em> didUpdateToPaneState:(MSDynamicsDrawerPaneState)<em>paneState</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>drawerViewController</code></th>
+						<td><p>The drawer view controller that the delegate is registered with.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneState</code></th>
+						<td><p>The pane state that the view controller did update to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>When the pane state is updating to <code>MSDynamicsDrawerPaneStateClosed</code>: the direction that the drawer view controller is transitioning from. When the pane state is updating to <code>MSDynamicsDrawerPaneStateOpen</code> or <code>MSDynamicsDrawerPaneStateOpenWide</code>: the direction that the drawer view controller is transitioning to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate that the drawer view controller did update to a pane state in the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicsDrawerViewController:shouldBeginPanePan:" title="dynamicsDrawerViewController:shouldBeginPanePan:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicsDrawerViewController:shouldBeginPanePan:">&ndash;&nbsp;dynamicsDrawerViewController:shouldBeginPanePan:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Queries the delegate for whether the dynamics drawer view controller should begin a pane pan</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)<em>drawerViewController</em> shouldBeginPanePan:(UIPanGestureRecognizer *)<em>panGestureRecognizer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>drawerViewController</code></th>
+						<td><p>The drawer view controller that the delegate is registered with.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>panGestureRecognizer</code></th>
+						<td><p>The internal pan gesture recognizer that is responsible for panning the pane. The behavior resulting from modifying attributes of this gesture recognizer is undefined and not recommended.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Whether the drawer view controller should begin a pane pan</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Queries the delegate for whether the dynamics drawer view controller should begin a pane pan</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DDTTYLogger Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/automaticallyAppendNewlineForCustomFormatters">automaticallyAppendNewlineForCustomFormatters</option>
+		
+		<option value="//api/name/colorsEnabled">colorsEnabled</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/codeIndexForColor:">+ codeIndexForColor:</option>
+		
+		<option value="//api/name/initialize_colors_16">+ initialize_colors_16</option>
+		
+		<option value="//api/name/initialize_colors_256">+ initialize_colors_256</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearColorsForFlag:">- clearColorsForFlag:</option>
+		
+		<option value="//api/name/loggerName">- loggerName</option>
+		
+		<option value="//api/name/setForegroundColor:backgroundColor:forFlag:">- setForegroundColor:backgroundColor:forFlag:</option>
+		
+		<option value="//api/name/setForegroundColor:backgroundColor:forFlag:context:">- setForegroundColor:backgroundColor:forFlag:context:</option>
+		
+		<option value="//api/name/setForegroundColor:backgroundColor:forTag:">- setForegroundColor:backgroundColor:forTag:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DDTTYLogger Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/DDAbstractLogger.html">DDAbstractLogger</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/DDLogger.html">DDLogger</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DDTTYLogger.h<br />DDTTYLogger.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides a logger for Terminal output or Xcode console output,
+depending on where you are running your code.</p>
+
+<p>As described in the &ldquo;Getting Started&rdquo; page,
+the traditional NSLog() function directs it&rsquo;s output to two places:</p>
+
+<ul>
+<li>Apple System Log (so it shows up in Console.app)</li>
+<li>StdErr (if stderr is a TTY, so log statements show up in Xcode console)</li>
+</ul>
+
+
+<p>To duplicate NSLog() functionality you can simply add this logger and an asl logger.
+However, if you instead choose to use file logging (for faster performance),
+you may choose to use only a file logger and a tty logger.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/colorsEnabled" title="colorsEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/colorsEnabled">&nbsp;&nbsp;colorsEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Want to use different colors for different log levels?
+Enable this property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, assign) BOOL colorsEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Want to use different colors for different log levels?
+Enable this property.</p>
+
+<p>If you run the application via the Terminal (not Xcode),
+the logger will map colors to xterm-256color or xterm-color (if available).</p>
+
+<p>Xcode does NOT natively support colors in the Xcode debugging console.
+You&rsquo;ll need to install the XcodeColors plugin to see colors in the Xcode console.
+<a href="https://github.com/robbiehanson/XcodeColors">https://github.com/robbiehanson/XcodeColors</a></p>
+
+<p>The default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/automaticallyAppendNewlineForCustomFormatters" title="automaticallyAppendNewlineForCustomFormatters"></a>
+	<h3 class="method-title"><code><a href="#//api/name/automaticallyAppendNewlineForCustomFormatters">&nbsp;&nbsp;automaticallyAppendNewlineForCustomFormatters</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When using a custom formatter you can set the logMessage method not to append
+&lsquo;\n&rsquo; character after each output. This allows for some greater flexibility with
+custom formatters. Default value is YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, assign) BOOL automaticallyAppendNewlineForCustomFormatters</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When using a custom formatter you can set the logMessage method not to append
+&lsquo;\n&rsquo; character after each output. This allows for some greater flexibility with
+custom formatters. Default value is YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setForegroundColor:backgroundColor:forFlag:" title="setForegroundColor:backgroundColor:forFlag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setForegroundColor:backgroundColor:forFlag:">&ndash;&nbsp;setForegroundColor:backgroundColor:forFlag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The default color set (foregroundColor, backgroundColor) is:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setForegroundColor:(DDColor *)<em>txtColor</em> backgroundColor:(DDColor *)<em>bgColor</em> forFlag:(DDLogFlag)<em>mask</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The default color set (foregroundColor, backgroundColor) is:</p>
+
+<ul>
+<li>DDLogFlagError   = (red, nil)</li>
+<li>DDLogFlagWarning = (orange, nil)</li>
+</ul>
+
+
+<p>You can customize the colors however you see fit.
+Please note that you are passing a flag, NOT a level.</p>
+
+<p>GOOD : [ttyLogger setForegroundColor:pink backgroundColor:nil forFlag:DDLogFlagInfo];  // &lt;- Good :)
+BAD : [ttyLogger setForegroundColor:pink backgroundColor:nil forFlag:DDLogLevelInfo]; // &lt;- BAD! :(</p>
+
+<p>DDLogFlagInfo  = 0&hellip;00100
+DDLogLevelInfo = 0&hellip;00111 &lt;- Would match DDLogFlagInfo and DDLogFlagWarning and DDLogFlagError</p>
+
+<p>If you run the application within Xcode, then the XcodeColors plugin is required.</p>
+
+<p>If you run the application from a shell, then DDTTYLogger will automatically map the given color to
+the closest available color. (xterm-256color or xterm-color which have 256 and 16 supported colors respectively.)</p>
+
+<p>This method invokes <a href="#//api/name/setForegroundColor:backgroundColor:forFlag:context:">setForegroundColor:backgroundColor:forFlag:context:</a> and applies it to <code>LOG_CONTEXT_ALL</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setForegroundColor:backgroundColor:forFlag:context:" title="setForegroundColor:backgroundColor:forFlag:context:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setForegroundColor:backgroundColor:forFlag:context:">&ndash;&nbsp;setForegroundColor:backgroundColor:forFlag:context:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Just like setForegroundColor:backgroundColor:flag, but allows you to specify a particular logging context.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setForegroundColor:(DDColor *)<em>txtColor</em> backgroundColor:(DDColor *)<em>bgColor</em> forFlag:(DDLogFlag)<em>mask</em> context:(int)<em>ctxt</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Just like setForegroundColor:backgroundColor:flag, but allows you to specify a particular logging context.</p>
+
+<p>A logging context is often used to identify log messages coming from a 3rd party framework,
+although logging context&rsquo;s can be used for many different functions.</p>
+
+<p>Use LOG_CONTEXT_ALL to set the deafult color for all contexts that have no specific color set defined.</p>
+
+<p>Logging context&rsquo;s are explained in further detail here:
+Documentation/CustomContext.md</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setForegroundColor:backgroundColor:forTag:" title="setForegroundColor:backgroundColor:forTag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setForegroundColor:backgroundColor:forTag:">&ndash;&nbsp;setForegroundColor:backgroundColor:forTag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Similar to the methods above, but allows you to map DDLogMessage->tag to a particular color profile.
+For example, you could do something like this:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setForegroundColor:(DDColor *)<em>txtColor</em> backgroundColor:(DDColor *)<em>bgColor</em> forTag:(id&lt;NSCopying&gt;)<em>tag</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Similar to the methods above, but allows you to map DDLogMessage->tag to a particular color profile.
+For example, you could do something like this:</p>
+
+<p>static NSString *const PurpleTag = @&ldquo;PurpleTag&rdquo;;</p>
+
+<h1>define DDLogPurple(frmt, &hellip;) LOG_OBJC_TAG_MACRO(NO, 0, 0, 0, PurpleTag, frmt, ##<strong>VA_ARGS</strong>)</h1>
+
+<p>And then where you configure CocoaLumberjack:</p>
+
+<p>purple = DDMakeColor((64/255.0), (0/255.0), (128/255.0));</p>
+
+<p>or any UIColor/NSColor constructor.</p>
+
+<p>Note: For CLI OS X projects that don&rsquo;t link with AppKit use CLIColor objects instead</p>
+
+<p>[[DDTTYLogger sharedInstance] setForegroundColor:purple backgroundColor:nil forTag:PurpleTag];
+[DDLog addLogger:[DDTTYLogger sharedInstance]];</p>
+
+<p>This would essentially give you a straight NSLog replacement that prints in purple:</p>
+
+<p>DDLogPurple(@&ldquo;I&rsquo;m a purple log message!&rdquo;);</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearColorsForFlag:" title="clearColorsForFlag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearColorsForFlag:">&ndash;&nbsp;clearColorsForFlag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clearing color profiles.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearColorsForFlag:(DDLogFlag)<em>mask</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Clearing color profiles.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initialize_colors_16" title="initialize_colors_16"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialize_colors_16">+&nbsp;initialize_colors_16</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the colors array, as well as the codes_fg and codes_bg arrays, for 16 color mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initialize_colors_16</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the colors array, as well as the codes_fg and codes_bg arrays, for 16 color mode.</p>
+
+<p>This method is used when the application is running from within a shell that only supports 16 color mode.
+This method is not invoked if the application is running within Xcode, or via normal UI app launch.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initialize_colors_256" title="initialize_colors_256"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialize_colors_256">+&nbsp;initialize_colors_256</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the colors array, as well as the codes_fg and codes_bg arrays, for 256 color mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initialize_colors_256</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the colors array, as well as the codes_fg and codes_bg arrays, for 256 color mode.</p>
+
+<p>This method is used when the application is running from within a shell that supports 256 color mode.
+This method is not invoked if the application is running within Xcode, or via normal UI app launch.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/codeIndexForColor:" title="codeIndexForColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/codeIndexForColor:">+&nbsp;codeIndexForColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Maps the given color to the closest available color supported by the shell.
+The shell may support 256 colors, or only 16.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSUInteger)codeIndexForColor:(DDColor *)<em>inColor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Maps the given color to the closest available color supported by the shell.
+The shell may support 256 colors, or only 16.</p>
+
+<p>This method loops through the known supported color set, and calculates the closest color.
+The array index of that color, within the colors array, is then returned.
+This array index may also be used as the index within the codes_fg and codes_bg arrays.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDTTYLogger.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loggerName" title="loggerName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loggerName">&ndash;&nbsp;loggerName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)loggerName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

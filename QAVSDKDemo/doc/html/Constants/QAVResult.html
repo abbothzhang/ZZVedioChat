@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>QAVResult Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">QAVResult Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>QAVError.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">QAVResult</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>错误码</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, QAVResult ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_OK</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_FAILED</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_REPEATED_OPERATION</a> = 1001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_EXCLUSIVE_OPERATION</a> = 1002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_HAS_IN_THE_STATE</a> = 1003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_INVALID_ARGUMENT</a> = 1004,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_TIMEOUT</a> = 1005,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_NOT_IMPLEMENTED</a> = 1006,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_NOT_IN_MAIN_THREAD</a> = 1007,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_CONTEXT_NOT_EXIST</a> = 1101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_CONTEXT_NOT_STOPPED</a> = 1102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_ROOM_NOT_EXIST</a> = 1201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_ROOM_NOT_EXITED</a> = 1202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_DEVICE_NOT_EXIST</a> = 1301,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_ENDPOINT_NOT_EXIST</a> = 1401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_ENDPOINT_HAS_NOT_VIDEO</a> = 1402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_TINYID_TO_OPENID_FAILED</a> = 1501,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_OPENID_TO_TINYID_FAILED</a> = 1502,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_INVITE_FAILED</a> = 1801,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_ACCEPT_FAILED</a> = 1802,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_REFUSE_FAILED</a> = 1803,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_FAILED</a> = 10001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_INVALID_ARGUMENT</a> = 10002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_NO_PERMISSION</a> = 10003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_TIMEOUT</a> = 10004,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_ALLOC_RESOURCE_FAILED</a> = 10005,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_ID_NOT_IN_ROOM</a> = 10006,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_NOT_IMPLEMENT</a> = 10007,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_REPEATED_OPERATION</a> = 10008,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_ROOM_NOT_EXIST</a> = 10009,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_ENDPOINT_NOT_EXIST</a> = 10010,<br>
+                            
+                            &nbsp;&nbsp; <a href="">QAV_ERR_SERVER_INVALID_ABILITY</a> = 10011,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="QAV_OK"></a><code>QAV_OK</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_FAILED"></a><code>QAV_ERR_FAILED</code></dt>
+<dd>
+
+
+<p><strong><strong><strong><em>客户端错误</em></strong></strong></strong>**</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_REPEATED_OPERATION"></a><code>QAV_ERR_REPEATED_OPERATION</code></dt>
+<dd>
+
+
+<p>基础共用相关(1001 to 1100)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_EXCLUSIVE_OPERATION"></a><code>QAV_ERR_EXCLUSIVE_OPERATION</code></dt>
+<dd>
+
+
+<p>重复操作。已经在进行某种操作，再次去做同样的操作，则返回这个错误。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_HAS_IN_THE_STATE"></a><code>QAV_ERR_HAS_IN_THE_STATE</code></dt>
+<dd>
+
+
+<p>互斥操作。已经在进行某种操作，再次去做同类型的其他操作，则返回这个错误。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_INVALID_ARGUMENT"></a><code>QAV_ERR_INVALID_ARGUMENT</code></dt>
+<dd>
+
+
+<p>已经处于所要状态，无需再操作。如设备已经打开，再次去打开，就返回这个错误码。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_TIMEOUT"></a><code>QAV_ERR_TIMEOUT</code></dt>
+<dd>
+
+
+<p>错误参数。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_NOT_IMPLEMENTED"></a><code>QAV_ERR_NOT_IMPLEMENTED</code></dt>
+<dd>
+
+
+<p>操作超时。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_NOT_IN_MAIN_THREAD"></a><code>QAV_ERR_NOT_IN_MAIN_THREAD</code></dt>
+<dd>
+
+
+<p>功能未实现。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_CONTEXT_NOT_EXIST"></a><code>QAV_ERR_CONTEXT_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>CONTEXT相关(1101 to 1200)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_CONTEXT_NOT_STOPPED"></a><code>QAV_ERR_CONTEXT_NOT_STOPPED</code></dt>
+<dd>
+
+
+<p>AVContext不存在。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_ROOM_NOT_EXIST"></a><code>QAV_ERR_ROOM_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>房间相关(1201 to 1300)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_ROOM_NOT_EXITED"></a><code>QAV_ERR_ROOM_NOT_EXITED</code></dt>
+<dd>
+
+
+<p>房间不存在。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_DEVICE_NOT_EXIST"></a><code>QAV_ERR_DEVICE_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>设备相关(1301 to 1400)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_ENDPOINT_NOT_EXIST"></a><code>QAV_ERR_ENDPOINT_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>成员相关(1401 to 1500)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_ENDPOINT_HAS_NOT_VIDEO"></a><code>QAV_ERR_ENDPOINT_HAS_NOT_VIDEO</code></dt>
+<dd>
+
+
+<p>房间成员不存在。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_TINYID_TO_OPENID_FAILED"></a><code>QAV_ERR_TINYID_TO_OPENID_FAILED</code></dt>
+<dd>
+
+
+<p>APPLogic相关(1501 to 1600)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_OPENID_TO_TINYID_FAILED"></a><code>QAV_ERR_OPENID_TO_TINYID_FAILED</code></dt>
+<dd>
+
+
+<p>tiny id转换至identifier失败。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_INVITE_FAILED"></a><code>QAV_ERR_INVITE_FAILED</code></dt>
+<dd>
+
+
+<p>邀请模块(1801 to 1900)。注意：邀请模块只是用于DEMO演示方便用，对外暂不支持邀请功能，所以业务侧不需要处理这些错误码。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_ACCEPT_FAILED"></a><code>QAV_ERR_ACCEPT_FAILED</code></dt>
+<dd>
+
+
+<p>发送邀请失败。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_REFUSE_FAILED"></a><code>QAV_ERR_REFUSE_FAILED</code></dt>
+<dd>
+
+
+<p>接受邀请失败。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_FAILED"></a><code>QAV_ERR_SERVER_FAILED</code></dt>
+<dd>
+
+
+<p><strong><strong><strong><em>服务器错误</em></strong></strong></strong>**</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_INVALID_ARGUMENT"></a><code>QAV_ERR_SERVER_INVALID_ARGUMENT</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_NO_PERMISSION"></a><code>QAV_ERR_SERVER_NO_PERMISSION</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_TIMEOUT"></a><code>QAV_ERR_SERVER_TIMEOUT</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_ALLOC_RESOURCE_FAILED"></a><code>QAV_ERR_SERVER_ALLOC_RESOURCE_FAILED</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_ID_NOT_IN_ROOM"></a><code>QAV_ERR_SERVER_ID_NOT_IN_ROOM</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_NOT_IMPLEMENT"></a><code>QAV_ERR_SERVER_NOT_IMPLEMENT</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_REPEATED_OPERATION"></a><code>QAV_ERR_SERVER_REPEATED_OPERATION</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_ROOM_NOT_EXIST"></a><code>QAV_ERR_SERVER_ROOM_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_ENDPOINT_NOT_EXIST"></a><code>QAV_ERR_SERVER_ENDPOINT_NOT_EXIST</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="QAV_ERR_SERVER_INVALID_ABILITY"></a><code>QAV_ERR_SERVER_INVALID_ABILITY</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">QAVError.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">QAVError.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>QAVAudioCtrl Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/dynamicVolume">dynamicVolume</option>
+		
+		<option value="//api/name/outputMode">outputMode</option>
+		
+		<option value="//api/name/volume">volume</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/enableLoopBack:">- enableLoopBack:</option>
+		
+		<option value="//api/name/enableMic:">- enableMic:</option>
+		
+		<option value="//api/name/enableSpeaker:">- enableSpeaker:</option>
+		
+		<option value="//api/name/getAudioDataFormat:">- getAudioDataFormat:</option>
+		
+		<option value="//api/name/getAudioDataVolume:">- getAudioDataVolume:</option>
+		
+		<option value="//api/name/getQualityTips">- getQualityTips</option>
+		
+		<option value="//api/name/registerAudioDataCallback:">- registerAudioDataCallback:</option>
+		
+		<option value="//api/name/setAudioDataEventDelegate:">- setAudioDataEventDelegate:</option>
+		
+		<option value="//api/name/setAudioDataFormat:desc:">- setAudioDataFormat:desc:</option>
+		
+		<option value="//api/name/setAudioDataVolume:volume:">- setAudioDataVolume:volume:</option>
+		
+		<option value="//api/name/unregisterAudioDataCallback:">- unregisterAudioDataCallback:</option>
+		
+		<option value="//api/name/unregisterAudioDataCallbackAll">- unregisterAudioDataCallbackAll</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">QAVAudioCtrl Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>QAVAudioCtrl.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>音频控制器的封装类</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/volume" title="volume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/volume">&nbsp;&nbsp;volume</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>麦克风数字音量,数字音量取值范围[0,100]</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) UInt32 volume</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>麦克风数字音量,数字音量取值范围[0,100]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicVolume" title="dynamicVolume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicVolume">&nbsp;&nbsp;dynamicVolume</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>麦克风动态音量,动态音量取值范围[0,100]</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) UInt32 dynamicVolume</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>麦克风动态音量,动态音量取值范围[0,100]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/outputMode" title="outputMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/outputMode">&nbsp;&nbsp;outputMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>外放模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) QAVOutputMode outputMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>外放模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getQualityTips" title="getQualityTips"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getQualityTips">&ndash;&nbsp;getQualityTips</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取通话中实时音频质量相关信息，业务侧可以不用关心，主要用来查看通话情况、排查问题等。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getQualityTips</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>以字符串形式返回音频相关的质量参数。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableSpeaker:" title="enableSpeaker:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableSpeaker:">&ndash;&nbsp;enableSpeaker:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开/关闭扬声器。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)enableSpeaker:(BOOL)<em>bEnable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>是否打开。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES表示操作成功，NO表示操作失败。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableMic:" title="enableMic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableMic:">&ndash;&nbsp;enableMic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开/关闭麦克风。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)enableMic:(BOOL)<em>isEnable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isEnable</code></th>
+						<td><p>是否打开。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES表示操作成功，NO表示操作失败。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLoopBack:" title="enableLoopBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLoopBack:">&ndash;&nbsp;enableLoopBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开/关闭自监听。打开之后可以用mic听自己的声音</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)enableLoopBack:(BOOL)<em>isEnable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isEnable</code></th>
+						<td><p>是否打开。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES表示操作成功，NO表示操作失败。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAudioDataEventDelegate:" title="setAudioDataEventDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAudioDataEventDelegate:">&ndash;&nbsp;setAudioDataEventDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置音频回调的delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)setAudioDataEventDelegate:(id&lt;QAVAudioDataDelegate&gt;)<em>dlg</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dlg</code></th>
+						<td><p>继承了QAudioDataDelegate的对象实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>具体参考<a href="../Constants/QAVResult.html">QAVResult</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerAudioDataCallback:" title="registerAudioDataCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerAudioDataCallback:">&ndash;&nbsp;registerAudioDataCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册音频数据类型的回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)registerAudioDataCallback:(QAVAudioDataSourceType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>要注册监听的音频数据源类型，具体参考<a href="../Constants/QAVAudioDataSourceType.html">QAVAudioDataSourceType</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>具体参考<a href="../Constants/QAVResult.html">QAVResult</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterAudioDataCallback:" title="unregisterAudioDataCallback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterAudioDataCallback:">&ndash;&nbsp;unregisterAudioDataCallback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>反注册音频数据类型的回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)unregisterAudioDataCallback:(QAVAudioDataSourceType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>要反注册监听的音频数据源类型，具体参考<a href="../Constants/QAVAudioDataSourceType.html">QAVAudioDataSourceType</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>具体参考<a href="../Constants/QAVResult.html">QAVResult</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterAudioDataCallbackAll" title="unregisterAudioDataCallbackAll"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterAudioDataCallbackAll">&ndash;&nbsp;unregisterAudioDataCallbackAll</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>反注册所有数据的回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)unregisterAudioDataCallbackAll</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>具体参考<a href="../Constants/QAVResult.html">QAVResult</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAudioDataFormat:desc:" title="setAudioDataFormat:desc:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAudioDataFormat:desc:">&ndash;&nbsp;setAudioDataFormat:desc:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置某类型的音频格式参数。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)setAudioDataFormat:(QAVAudioDataSourceType)<em>srcType</em> desc:(struct QAVAudioFrameDesc)<em>audioDesc</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcType</code></th>
+						<td><p>音频数据类型。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioDesc</code></th>
+						<td><p>音频数据的格式。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>成功返回QAV_OK, 否则返回QAV_ERR_FAILED。
+@remark 会直接影响callback传入的AudioFrame的格式。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAudioDataFormat:" title="getAudioDataFormat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAudioDataFormat:">&ndash;&nbsp;getAudioDataFormat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取某类型的音频格式参数。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (struct QAVAudioFrameDesc)getAudioDataFormat:(QAVAudioDataSourceType)<em>srcType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcType</code></th>
+						<td><p>音频数据类型。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回struct QAVAudioFrameDesc。
+@remark 无。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAudioDataVolume:volume:" title="setAudioDataVolume:volume:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAudioDataVolume:volume:">&ndash;&nbsp;setAudioDataVolume:volume:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置某类型的音频音量。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVResult)setAudioDataVolume:(QAVAudioDataSourceType)<em>srcType</em> volume:(float)<em>volume</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcType</code></th>
+						<td><p>音频数据类型。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>volume</code></th>
+						<td><p>音量 (范围 0-1)。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>成功返回QAV_OK, 否则返回QAV_ERR_FAILED。
+@remark 没有注册对应类型的callback会直接返回AV_ERR_FAILED。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAudioDataVolume:" title="getAudioDataVolume:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAudioDataVolume:">&ndash;&nbsp;getAudioDataVolume:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取某类型的音频音量。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (float)getAudioDataVolume:(QAVAudioDataSourceType)<em>srcType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcType</code></th>
+						<td><p>音频数据类型。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回音量 (范围 0-1)
+@remark 没有注册对应类型的callback会直接返回QAV_ERR_FAILED。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVAudioCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

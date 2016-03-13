@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TIMFriendshipManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/AddBlackList:succ:fail:">- AddBlackList:succ:fail:</option>
+		
+		<option value="//api/name/AddFriend:succ:fail:">- AddFriend:succ:fail:</option>
+		
+		<option value="//api/name/AddFriendsToFriendGroup:users:succ:fail:">- AddFriendsToFriendGroup:users:succ:fail:</option>
+		
+		<option value="//api/name/CreateFriendGroup:users:succ:fail:">- CreateFriendGroup:users:succ:fail:</option>
+		
+		<option value="//api/name/DelBlackList:succ:fail:">- DelBlackList:succ:fail:</option>
+		
+		<option value="//api/name/DelFriend:users:succ:fail:">- DelFriend:users:succ:fail:</option>
+		
+		<option value="//api/name/DelFriendsFromFriendGroup:users:succ:fail:">- DelFriendsFromFriendGroup:users:succ:fail:</option>
+		
+		<option value="//api/name/DeleteDecide:succ:fail:">- DeleteDecide:succ:fail:</option>
+		
+		<option value="//api/name/DeleteFriendGroup:succ:fail:">- DeleteFriendGroup:succ:fail:</option>
+		
+		<option value="//api/name/DeletePendency:users:succ:fail:">- DeletePendency:users:succ:fail:</option>
+		
+		<option value="//api/name/DeleteRecommend:succ:fail:">- DeleteRecommend:succ:fail:</option>
+		
+		<option value="//api/name/DoResponse:succ:fail:">- DoResponse:succ:fail:</option>
+		
+		<option value="//api/name/GetBlackList:fail:">- GetBlackList:fail:</option>
+		
+		<option value="//api/name/GetFriendGroups:succ:fail:">- GetFriendGroups:succ:fail:</option>
+		
+		<option value="//api/name/GetFriendList:fail:">- GetFriendList:fail:</option>
+		
+		<option value="//api/name/GetFriendListV2:custom:meta:succ:fail:">- GetFriendListV2:custom:meta:succ:fail:</option>
+		
+		<option value="//api/name/GetFriendsProfile:succ:fail:">- GetFriendsProfile:succ:fail:</option>
+		
+		<option value="//api/name/GetFutureFriends:futureFlag:custom:meta:succ:fail:">- GetFutureFriends:futureFlag:custom:meta:succ:fail:</option>
+		
+		<option value="//api/name/GetPendencyFromServer:type:succ:fail:">- GetPendencyFromServer:type:succ:fail:</option>
+		
+		<option value="//api/name/GetSelfProfile:fail:">- GetSelfProfile:fail:</option>
+		
+		<option value="//api/name/PendencyReport:succ:fail:">- PendencyReport:succ:fail:</option>
+		
+		<option value="//api/name/RecommendReport:succ:fail:">- RecommendReport:succ:fail:</option>
+		
+		<option value="//api/name/RenameFriendGroup:newName:succ:fail:">- RenameFriendGroup:newName:succ:fail:</option>
+		
+		<option value="//api/name/SearchUser:pageIndex:pageSize:succ:fail:">- SearchUser:pageIndex:pageSize:succ:fail:</option>
+		
+		<option value="//api/name/SetAllowType:succ:fail:">- SetAllowType:succ:fail:</option>
+		
+		<option value="//api/name/SetFaceURL:succ:fail:">- SetFaceURL:succ:fail:</option>
+		
+		<option value="//api/name/SetFriendRemark:remark:succ:fail:">- SetFriendRemark:remark:succ:fail:</option>
+		
+		<option value="//api/name/SetNickname:succ:fail:">- SetNickname:succ:fail:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TIMFriendshipManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TIMFriendshipManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>好友管理</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取好友管理器实例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (TIMFriendshipManager *)sharedInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>管理器实例</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取好友管理器实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SetFriendRemark:remark:succ:fail:" title="SetFriendRemark:remark:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SetFriendRemark:remark:succ:fail:">&ndash;&nbsp;SetFriendRemark:remark:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置好友备注</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SetFriendRemark:(NSString *)<em>identifier</em> remark:(NSString *)<em>remark</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>用户标识</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nick</code></th>
+						<td><p>备注</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置好友备注</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SetNickname:succ:fail:" title="SetNickname:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SetNickname:succ:fail:">&ndash;&nbsp;SetNickname:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置自己的昵称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SetNickname:(NSString *)<em>nick</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nick</code></th>
+						<td><p>昵称（最大64字节）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置自己的昵称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SetAllowType:succ:fail:" title="SetAllowType:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SetAllowType:succ:fail:">&ndash;&nbsp;SetAllowType:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置好友验证方式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SetAllowType:(TIMFriendAllowType)<em>allowType</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowType</code></th>
+						<td><p>好友验证方式，详见 <a href="../Constants/TIMFriendAllowType.html">TIMFriendAllowType</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置好友验证方式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SetFaceURL:succ:fail:" title="SetFaceURL:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SetFaceURL:succ:fail:">&ndash;&nbsp;SetFaceURL:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置自己的头像</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SetFaceURL:(NSString *)<em>faceURL</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>faceURL</code></th>
+						<td><p>头像</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置自己的头像</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetSelfProfile:fail:" title="GetSelfProfile:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetSelfProfile:fail:">&ndash;&nbsp;GetSelfProfile:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取自己的资料</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetSelfProfile:(TIMGetProfileSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 <a href="../Classes/TIMUserProfile.html">TIMUserProfile</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取自己的资料</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetFriendsProfile:succ:fail:" title="GetFriendsProfile:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetFriendsProfile:succ:fail:">&ndash;&nbsp;GetFriendsProfile:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户资料</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetFriendsProfile:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要获取的用户列表 NSString* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMUserProfile* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户资料</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/AddFriend:succ:fail:" title="AddFriend:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/AddFriend:succ:fail:">&ndash;&nbsp;AddFriend:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加好友</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)AddFriend:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要添加的用户列表 TIMAddFriendRequest* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加好友</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DelFriend:users:succ:fail:" title="DelFriend:users:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DelFriend:users:succ:fail:">&ndash;&nbsp;DelFriend:users:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除好友</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DelFriend:(TIMDelFriendType)<em>delType</em> users:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delType</code></th>
+						<td><p>删除类型（单向好友、双向好友）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要删除的用户列表 NSString* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除好友</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetFriendList:fail:" title="GetFriendList:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetFriendList:fail:">&ndash;&nbsp;GetFriendList:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取好友列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetFriendList:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回好友列表，TIMUserProfile* 列表，只包含identifier，nickname，remark 三个字段</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取好友列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DoResponse:succ:fail:" title="DoResponse:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DoResponse:succ:fail:">&ndash;&nbsp;DoResponse:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>响应对方好友邀请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DoResponse:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>响应的用户列表，TIMFriendResponse列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>响应对方好友邀请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/AddBlackList:succ:fail:" title="AddBlackList:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/AddBlackList:succ:fail:">&ndash;&nbsp;AddBlackList:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加用户到黑名单</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)AddBlackList:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>用户列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加用户到黑名单</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DelBlackList:succ:fail:" title="DelBlackList:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DelBlackList:succ:fail:">&ndash;&nbsp;DelBlackList:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>把用户从黑名单中删除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DelBlackList:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>用户列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>把用户从黑名单中删除</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetBlackList:fail:" title="GetBlackList:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetBlackList:fail:">&ndash;&nbsp;GetBlackList:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取黑名单列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetBlackList:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回NSString*列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取黑名单列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetFriendListV2:custom:meta:succ:fail:" title="GetFriendListV2:custom:meta:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetFriendListV2:custom:meta:succ:fail:">&ndash;&nbsp;GetFriendListV2:custom:meta:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取好友列表（可增量、分页、自定义拉取字段）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetFriendListV2:(TIMProfileFlag)<em>flags</em> custom:(NSArray *)<em>custom</em> meta:(TIMFriendMetaInfo *)<em>meta</em> succ:(TIMGetFriendListV2Succ)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>设置需要拉取的字段</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>自定义字段（目前还不支持）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meta</code></th>
+						<td><p>好友元信息（详见TIMFriendMetaInfo说明）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取好友列表（可增量、分页、自定义拉取字段）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetPendencyFromServer:type:succ:fail:" title="GetPendencyFromServer:type:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetPendencyFromServer:type:succ:fail:">&ndash;&nbsp;GetPendencyFromServer:type:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过网络获取未决请求列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetPendencyFromServer:(TIMFriendPendencyMeta *)<em>meta</em> type:(TIMPendencyGetType)<em>type</em> succ:(TIMGetFriendPendencyListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meta</code></th>
+						<td><p>请求信息，详细参考<a href="../Classes/TIMFriendPendencyMeta.html">TIMFriendPendencyMeta</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>拉取类型（参考TIMPendencyGetType）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过网络获取未决请求列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PendencyReport:succ:fail:" title="PendencyReport:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PendencyReport:succ:fail:">&ndash;&nbsp;PendencyReport:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>未决请求已读上报</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)PendencyReport:(uint64_t)<em>timestamp</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timestamp</code></th>
+						<td><p>已读时间戳，此时间戳以前的消息都将置为已读</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>未决请求已读上报</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/RecommendReport:succ:fail:" title="RecommendReport:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/RecommendReport:succ:fail:">&ndash;&nbsp;RecommendReport:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐好友已读上报</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)RecommendReport:(uint64_t)<em>timestamp</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timestamp</code></th>
+						<td><p>已读时间戳，此时间戳以前的消息都将置为已读</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐好友已读上报</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteRecommend:succ:fail:" title="DeleteRecommend:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteRecommend:succ:fail:">&ndash;&nbsp;DeleteRecommend:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐好友删除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteRecommend:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要删除的推荐好友列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐好友删除</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeletePendency:users:succ:fail:" title="DeletePendency:users:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeletePendency:users:succ:fail:">&ndash;&nbsp;DeletePendency:users:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>未决删除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeletePendency:(TIMPendencyGetType)<em>type</em> users:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>未决好友类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要删除的未决列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>未决删除</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteDecide:succ:fail:" title="DeleteDecide:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteDecide:succ:fail:">&ndash;&nbsp;DeleteDecide:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>已决删除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteDecide:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要删除的已决列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>已决删除</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetFutureFriends:futureFlag:custom:meta:succ:fail:" title="GetFutureFriends:futureFlag:custom:meta:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetFutureFriends:futureFlag:custom:meta:succ:fail:">&ndash;&nbsp;GetFutureFriends:futureFlag:custom:meta:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>未决请求和好友推荐拉取</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetFutureFriends:(TIMProfileFlag)<em>flags</em> futureFlag:(TIMFutureFriendType)<em>futureFlag</em> custom:(NSArray *)<em>custom</em> meta:(TIMFriendFutureMeta *)<em>meta</em> succ:(TIMGetFriendFutureListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>获取的资料标识</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>futureFlag</code></th>
+						<td><p>获取的类型，按位设置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>自定义字段，（尚未实现，填nil）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>meta</code></th>
+						<td><p>请求信息，参见<a href="../Classes/TIMFriendFutureMeta.html">TIMFriendFutureMeta</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>未决请求和好友推荐拉取</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SearchUser:pageIndex:pageSize:succ:fail:" title="SearchUser:pageIndex:pageSize:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SearchUser:pageIndex:pageSize:succ:fail:">&ndash;&nbsp;SearchUser:pageIndex:pageSize:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>按昵称信息搜索用户资料</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SearchUser:(NSString *)<em>nickName</em> pageIndex:(uint64_t)<em>pageIndex</em> pageSize:(uint64_t)<em>pageSize</em> succ:(TIMUserSearchSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nickName</code></th>
+						<td><p>用户名称内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageIndex</code></th>
+						<td><p>分页号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageSize</code></th>
+						<td><p>每页用户数目</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMUserProfile* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>按昵称信息搜索用户资料</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CreateFriendGroup:users:succ:fail:" title="CreateFriendGroup:users:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CreateFriendGroup:users:succ:fail:">&ndash;&nbsp;CreateFriendGroup:users:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>新建好友分组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)CreateFriendGroup:(NSArray *)<em>groupNames</em> users:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupNames</code></th>
+						<td><p>分组名称列表,必须是当前不存在的分组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要添加到分组中的好友列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>新建好友分组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteFriendGroup:succ:fail:" title="DeleteFriendGroup:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteFriendGroup:succ:fail:">&ndash;&nbsp;DeleteFriendGroup:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除好友分组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteFriendGroup:(NSArray *)<em>groupNames</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupNames</code></th>
+						<td><p>要删除的好友分组名称列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除好友分组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/AddFriendsToFriendGroup:users:succ:fail:" title="AddFriendsToFriendGroup:users:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/AddFriendsToFriendGroup:users:succ:fail:">&ndash;&nbsp;AddFriendsToFriendGroup:users:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加好友到一个好友分组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)AddFriendsToFriendGroup:(NSString *)<em>groupName</em> users:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>好友分组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要添加到分组中的好友列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加好友到一个好友分组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DelFriendsFromFriendGroup:users:succ:fail:" title="DelFriendsFromFriendGroup:users:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DelFriendsFromFriendGroup:users:succ:fail:">&ndash;&nbsp;DelFriendsFromFriendGroup:users:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从好友分组中删除好友</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DelFriendsFromFriendGroup:(NSString *)<em>groupName</em> users:(NSArray *)<em>users</em> succ:(TIMFriendSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>好友分组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>users</code></th>
+						<td><p>要移出分组的好友列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendResult* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>从好友分组中删除好友</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/RenameFriendGroup:newName:succ:fail:" title="RenameFriendGroup:newName:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/RenameFriendGroup:newName:succ:fail:">&ndash;&nbsp;RenameFriendGroup:newName:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改好友分组的名称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)RenameFriendGroup:(NSString *)<em>oldName</em> newName:(NSString *)<em>newName</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldName</code></th>
+						<td><p>原来的分组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newName</code></th>
+						<td><p>新的分组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改好友分组的名称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetFriendGroups:succ:fail:" title="GetFriendGroups:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetFriendGroups:succ:fail:">&ndash;&nbsp;GetFriendGroups:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取指定的好友分组信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetFriendGroups:(NSArray *)<em>groupNames</em> succ:(TIMFriendGroupSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupNames</code></th>
+						<td><p>要获取信息的好友分组名称列表,传入nil获得所有分组信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回 TIMFriendGroup* 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发送请求成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取指定的好友分组信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMFriendshipManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

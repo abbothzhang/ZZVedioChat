@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TIMConversation Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/deleteLocalMessage:fail:">- deleteLocalMessage:fail:</option>
+		
+		<option value="//api/name/getLocalMessage:last:cb:">- getLocalMessage:last:cb:</option>
+		
+		<option value="//api/name/getLocalMessage:last:succ:fail:">- getLocalMessage:last:succ:fail:</option>
+		
+		<option value="//api/name/getMessage:last:cb:">- getMessage:last:cb:</option>
+		
+		<option value="//api/name/getMessage:last:succ:fail:">- getMessage:last:succ:fail:</option>
+		
+		<option value="//api/name/getReceiver">- getReceiver</option>
+		
+		<option value="//api/name/getType">- getType</option>
+		
+		<option value="//api/name/getUnReadMessageNum">- getUnReadMessageNum</option>
+		
+		<option value="//api/name/init:receiver:">- init:receiver:</option>
+		
+		<option value="//api/name/saveMessage:sender:isReaded:">- saveMessage:sender:isReaded:</option>
+		
+		<option value="//api/name/sendMessage:cb:">- sendMessage:cb:</option>
+		
+		<option value="//api/name/sendMessage:succ:fail:">- sendMessage:succ:fail:</option>
+		
+		<option value="//api/name/setReadMessage">- setReadMessage</option>
+		
+		<option value="//api/name/setReadMessage:">- setReadMessage:</option>
+		
+		<option value="//api/name/setReadMessage:succ:fail:">- setReadMessage:succ:fail:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TIMConversation Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TIMConversation.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>会话</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init:receiver:" title="init:receiver:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init:receiver:">&ndash;&nbsp;init:receiver:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化会话</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)init:(TIMConversationType)<em>type</em> receiver:(NSString *)<em>receiver</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>会话类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>recever</code></th>
+						<td><p>会话ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化会话</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendMessage:succ:fail:" title="sendMessage:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendMessage:succ:fail:">&ndash;&nbsp;sendMessage:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)sendMessage:(TIMMessage *)<em>msg</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msg</code></th>
+						<td><p>消息体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>发送成功时回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>发送失败时回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 本次操作成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendMessage:cb:" title="sendMessage:cb:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendMessage:cb:">&ndash;&nbsp;sendMessage:cb:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)sendMessage:(TIMMessage *)<em>msg</em> cb:(id&lt;TIMCallback&gt;)<em>cb</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msg</code></th>
+						<td><p>消息体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cb</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveMessage:sender:isReaded:" title="saveMessage:sender:isReaded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveMessage:sender:isReaded:">&ndash;&nbsp;saveMessage:sender:isReaded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>保存消息到消息列表，这里只保存在本地</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)saveMessage:(TIMMessage *)<em>msg</em> sender:(NSString *)<em>sender</em> isReaded:(BOOL)<em>isReaded</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msg</code></th>
+						<td><p>消息体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sender</code></th>
+						<td><p>发送方</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isReaded</code></th>
+						<td><p>是否已读，如果发送方是自己，默认已读</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>保存消息到消息列表，这里只保存在本地</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessage:last:succ:fail:" title="getMessage:last:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessage:last:succ:fail:">&ndash;&nbsp;getMessage:last:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取会话消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getMessage:(int)<em>count</em> last:(TIMMessage *)<em>last</em> succ:(TIMGetMsgSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>获取数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>last</code></th>
+						<td><p>上次最后一条消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功时回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败时回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 本次操作成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取会话消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessage:last:cb:" title="getMessage:last:cb:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessage:last:cb:">&ndash;&nbsp;getMessage:last:cb:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取会话消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getMessage:(int)<em>count</em> last:(TIMMessage *)<em>last</em> cb:(id&lt;TIMGetMessageCallback&gt;)<em>cb</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>获取数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>last</code></th>
+						<td><p>上次最后一条消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cb</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取会话消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocalMessage:last:succ:fail:" title="getLocalMessage:last:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocalMessage:last:succ:fail:">&ndash;&nbsp;getLocalMessage:last:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取本地会话消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getLocalMessage:(int)<em>count</em> last:(TIMMessage *)<em>last</em> succ:(TIMGetMsgSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>获取数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>last</code></th>
+						<td><p>上次最后一条消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功时回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败时回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 本次操作成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取本地会话消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocalMessage:last:cb:" title="getLocalMessage:last:cb:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocalMessage:last:cb:">&ndash;&nbsp;getLocalMessage:last:cb:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取本地会话消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getLocalMessage:(int)<em>count</em> last:(TIMMessage *)<em>last</em> cb:(id&lt;TIMGetMessageCallback&gt;)<em>cb</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>获取数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>last</code></th>
+						<td><p>上次最后一条消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cb</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取本地会话消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteLocalMessage:fail:" title="deleteLocalMessage:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteLocalMessage:fail:">&ndash;&nbsp;deleteLocalMessage:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除本地会话消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)deleteLocalMessage:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功时回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败时回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 本次操作成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除本地会话消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReadMessage:succ:fail:" title="setReadMessage:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReadMessage:succ:fail:">&ndash;&nbsp;setReadMessage:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置已读消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)setReadMessage:(TIMMessage *)<em>readed</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readed</code></th>
+						<td><p>会话内最近一条已读的消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功时回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败时回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 表示成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置已读消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReadMessage:" title="setReadMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReadMessage:">&ndash;&nbsp;setReadMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置已读消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)setReadMessage:(TIMMessage *)<em>readed</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readed</code></th>
+						<td><p>会话内最近一条已读的消息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 表示成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置已读消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReadMessage" title="setReadMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReadMessage">&ndash;&nbsp;setReadMessage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置会话中所有消息为已读状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)setReadMessage</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 表示成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置会话中所有消息为已读状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnReadMessageNum" title="getUnReadMessageNum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnReadMessageNum">&ndash;&nbsp;getUnReadMessageNum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取该会话的未读计数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getUnReadMessageNum</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回未读计数</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取该会话的未读计数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReceiver" title="getReceiver"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReceiver">&ndash;&nbsp;getReceiver</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取会话人，单聊为对方账号，群聊为群组Id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getReceiver</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>会话人</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取会话人，单聊为对方账号，群聊为群组Id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getType" title="getType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getType">&ndash;&nbsp;getType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取会话类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TIMConversationType)getType</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>会话类型</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取会话类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

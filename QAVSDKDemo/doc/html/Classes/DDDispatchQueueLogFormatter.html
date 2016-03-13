@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DDDispatchQueueLogFormatter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/maxQueueLength">maxQueueLength</option>
+		
+		<option value="//api/name/minQueueLength">minQueueLength</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didAddToLogger:">- didAddToLogger:</option>
+		
+		<option value="//api/name/formatLogMessage:">- formatLogMessage:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/replacementStringForQueueLabel:">- replacementStringForQueueLabel:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DDDispatchQueueLogFormatter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/DDLogFormatter.html">DDLogFormatter</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DDDispatchQueueLogFormatter.h<br />DDDispatchQueueLogFormatter.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides a log formatter that prints the dispatch_queue label instead of the mach_thread_id.</p>
+
+<p>A log formatter can be added to any logger to format and/or filter its output.
+You can learn more about log formatters here:
+Documentation/CustomFormatters.md</p>
+
+<p>A typical NSLog (or <a href="../Classes/DDTTYLogger.html">DDTTYLogger</a>) prints detailed info as [&lt;process_id>:&lt;thread_id>].
+For example:</p>
+
+<p>2011-10-17 20:21:45.435 AppName[19928:5207] Your log message here</p>
+
+<p>Where:
+- 19928 = process id
+-  5207 = thread id (mach_thread_id printed in hex)</p>
+
+<p>When using grand central dispatch (GCD), this information is less useful.
+This is because a single serial dispatch queue may be run on any thread from an internally managed thread pool.
+For example:</p>
+
+<p>2011-10-17 20:32:31.111 AppName[19954:4d07] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.112 AppName[19954:5207] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.113 AppName[19954:2c55] Message from my_serial_dispatch_queue</p>
+
+<p>This formatter allows you to replace the standard [box:info] with the dispatch_queue name.
+For example:</p>
+
+<p>2011-10-17 20:32:31.111 AppName[img-scaling] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.112 AppName[img-scaling] Message from my_serial_dispatch_queue
+2011-10-17 20:32:31.113 AppName[img-scaling] Message from my_serial_dispatch_queue</p>
+
+<p>If the dispatch_queue doesn&rsquo;t have a set name, then it falls back to the thread name.
+If the current thread doesn&rsquo;t have a set name, then it falls back to the mach_thread_id in hex (like normal).</p>
+
+<p>Note: If manually creating your own background threads (via NSThread/alloc/init or NSThread/detachNeThread),
+you can use [[NSThread currentThread] setName:(NSString *)].</p>
+
+<p>Method declarations that make it easier to extend/modify DDDispatchQueueLogFormatter</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Standard init method.
+Configure using properties as desired.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Standard init method.
+Configure using properties as desired.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDDispatchQueueLogFormatter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minQueueLength" title="minQueueLength"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minQueueLength">&nbsp;&nbsp;minQueueLength</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, atomic) NSUInteger minQueueLength</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The minQueueLength restricts the minimum size of the [detail box].
+If the minQueueLength is set to 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the minQueueLength is 0: [diskIO]
+If the minQueueLength is 4: [diskIO]
+If the minQueueLength is 5: [diskIO]
+If the minQueueLength is 6: [diskIO]
+If the minQueueLength is 7: [diskIO ]
+If the minQueueLength is 8: [diskIO  ]</p>
+
+<p>The default minQueueLength is 0 (no minimum, so [detail box] won&rsquo;t be padded).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+set both minQueueLength and <a href="#//api/name/maxQueueLength">maxQueueLength</a> to the same value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDDispatchQueueLogFormatter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxQueueLength" title="maxQueueLength"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxQueueLength">&nbsp;&nbsp;maxQueueLength</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, atomic) NSUInteger maxQueueLength</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The maxQueueLength restricts the number of characters that will be inside the [detail box].
+If the maxQueueLength is 0, there is no restriction.</p>
+
+<p>For example, say a dispatch_queue has a label of &ldquo;diskIO&rdquo;:</p>
+
+<p>If the maxQueueLength is 0: [diskIO]
+If the maxQueueLength is 4: [disk]
+If the maxQueueLength is 5: [diskI]
+If the maxQueueLength is 6: [diskIO]
+If the maxQueueLength is 7: [diskIO]
+If the maxQueueLength is 8: [diskIO]</p>
+
+<p>The default maxQueueLength is 0 (no maximum, so [detail box] won&rsquo;t be truncated).</p>
+
+<p>If you want every [detail box] to have the exact same width,
+set both <a href="#//api/name/minQueueLength">minQueueLength</a> and maxQueueLength to the same value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDDispatchQueueLogFormatter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replacementStringForQueueLabel:" title="replacementStringForQueueLabel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replacementStringForQueueLabel:">&ndash;&nbsp;replacementStringForQueueLabel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)replacementStringForQueueLabel:(NSString *)<em>longLabel</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sometimes queue labels have long names like &ldquo;com.apple.main-queue&rdquo;,
+but you&rsquo;d prefer something shorter like simply &ldquo;main&rdquo;.</p>
+
+<p>This method allows you to set such preferred replacements.
+The above example is set by default.</p>
+
+<p>To remove/undo a previous replacement, invoke this method with nil for the &lsquo;shortLabel&rsquo; parameter.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDDispatchQueueLogFormatter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/formatLogMessage:" title="formatLogMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/formatLogMessage:">&ndash;&nbsp;formatLogMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Formatters may optionally be added to any logger.
+This allows for increased flexibility in the logging environment.
+For example, log messages for log files may be formatted differently than log messages for the console.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)formatLogMessage:(DDLogMessage *)<em>logMessage</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Formatters may optionally be added to any logger.
+This allows for increased flexibility in the logging environment.
+For example, log messages for log files may be formatted differently than log messages for the console.</p>
+
+<p>For more information about formatters, see the &ldquo;Custom Formatters&rdquo; page:
+Documentation/CustomFormatters.md</p>
+
+<p>The formatter may also optionally filter the log message by returning nil,
+in which case the logger will not log the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didAddToLogger:" title="didAddToLogger:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didAddToLogger:">&ndash;&nbsp;didAddToLogger:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A single formatter instance can be added to multiple loggers.
+These methods provides hooks to notify the formatter of when it&rsquo;s added/removed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didAddToLogger:(id&lt;DDLogger&gt;)<em>logger</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A single formatter instance can be added to multiple loggers.
+These methods provides hooks to notify the formatter of when it&rsquo;s added/removed.</p>
+
+<p>This is primarily for thread-safety.
+If a formatter is explicitly not thread-safe, it may wish to throw an exception if added to multiple loggers.
+Or if a formatter has potentially thread-unsafe code (e.g. NSDateFormatter),
+it could possibly use these hooks to switch to thread-safe versions of the code.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

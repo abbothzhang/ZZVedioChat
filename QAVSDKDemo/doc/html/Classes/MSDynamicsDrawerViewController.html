@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MSDynamicsDrawerViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/bounceElasticity">bounceElasticity</option>
+		
+		<option value="//api/name/bounceMagnitude">bounceMagnitude</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/drawerView">drawerView</option>
+		
+		<option value="//api/name/elasticity">elasticity</option>
+		
+		<option value="//api/name/gravityMagnitude">gravityMagnitude</option>
+		
+		<option value="//api/name/paneDragRequiresScreenEdgePan">paneDragRequiresScreenEdgePan</option>
+		
+		<option value="//api/name/paneState">paneState</option>
+		
+		<option value="//api/name/paneStateOpenWideEdgeOffset">paneStateOpenWideEdgeOffset</option>
+		
+		<option value="//api/name/paneView">paneView</option>
+		
+		<option value="//api/name/paneViewController">paneViewController</option>
+		
+		<option value="//api/name/paneViewSlideOffAnimationEnabled">paneViewSlideOffAnimationEnabled</option>
+		
+		<option value="//api/name/possibleDrawerDirection">possibleDrawerDirection</option>
+		
+		<option value="//api/name/screenEdgePanCancelsConflictingGestures">screenEdgePanCancelsConflictingGestures</option>
+		
+		<option value="//api/name/shouldAlignStatusBarToPaneView">shouldAlignStatusBarToPaneView</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addStyler:forDirection:">- addStyler:forDirection:</option>
+		
+		<option value="//api/name/addStylersFromArray:forDirection:">- addStylersFromArray:forDirection:</option>
+		
+		<option value="//api/name/bouncePaneOpen">- bouncePaneOpen</option>
+		
+		<option value="//api/name/bouncePaneOpenAllowingUserInterruption:completion:">- bouncePaneOpenAllowingUserInterruption:completion:</option>
+		
+		<option value="//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</option>
+		
+		<option value="//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:">- bouncePaneOpenInDirection:allowUserInterruption:completion:</option>
+		
+		<option value="//api/name/currentRevealWidth">- currentRevealWidth</option>
+		
+		<option value="//api/name/drawerViewControllerForDirection:">- drawerViewControllerForDirection:</option>
+		
+		<option value="//api/name/paneDragRevealEnabledForDirection:">- paneDragRevealEnabledForDirection:</option>
+		
+		<option value="//api/name/paneTapToCloseEnabledForDirection:">- paneTapToCloseEnabledForDirection:</option>
+		
+		<option value="//api/name/registerTouchForwardingClass:">- registerTouchForwardingClass:</option>
+		
+		<option value="//api/name/removeStyler:forDirection:">- removeStyler:forDirection:</option>
+		
+		<option value="//api/name/revealWidthForDirection:">- revealWidthForDirection:</option>
+		
+		<option value="//api/name/setDrawerViewController:forDirection:">- setDrawerViewController:forDirection:</option>
+		
+		<option value="//api/name/setPaneDragRevealEnabled:forDirection:">- setPaneDragRevealEnabled:forDirection:</option>
+		
+		<option value="//api/name/setPaneState:animated:allowUserInterruption:completion:">- setPaneState:animated:allowUserInterruption:completion:</option>
+		
+		<option value="//api/name/setPaneState:inDirection:">- setPaneState:inDirection:</option>
+		
+		<option value="//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:">- setPaneState:inDirection:animated:allowUserInterruption:completion:</option>
+		
+		<option value="//api/name/setPaneTapToCloseEnabled:forDirection:">- setPaneTapToCloseEnabled:forDirection:</option>
+		
+		<option value="//api/name/setPaneViewController:animated:completion:">- setPaneViewController:animated:completion:</option>
+		
+		<option value="//api/name/setRevealWidth:forDirection:">- setRevealWidth:forDirection:</option>
+		
+		<option value="//api/name/stylersForDirection:">- stylersForDirection:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MSDynamicsDrawerViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIViewController</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MSDynamicsDrawerViewController.h<br />MSDynamicsDrawerViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>MSDynamicsDrawerViewController</code> is a container view controller that manages the presentation of a single &ldquo;pane&rdquo; view controller overlaid over one or two &ldquo;drawer&rdquo; view controllers. The drawer view controllers are hidden by default, but can be exposed by a user-initiated swipe in the direction that that drawer view controller is set in.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Managing the Child View Controllers" name="task_Managing the Child View Controllers"></a>
+						<h2 class="task-title">Managing the Child View Controllers</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/paneViewController" title="paneViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneViewController">&nbsp;&nbsp;paneViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The pane view controller is the primary view controller, displayed centered and covering the drawer view controllers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIViewController *paneViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The pane view controller is the primary view controller, displayed centered and covering the drawer view controllers.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setPaneViewController:animated:completion:">- setPaneViewController:animated:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/paneState">@property paneState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPaneViewController:animated:completion:" title="setPaneViewController:animated:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneViewController:animated:completion:">&ndash;&nbsp;setPaneViewController:animated:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the <a href="#//api/name/paneViewController"><code>paneViewController</code></a> with an animated transition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneViewController:(UIViewController *)<em>paneViewController</em> animated:(BOOL)<em>animated</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneViewController</code></th>
+						<td><p>The <a href="#//api/name/paneViewController"><code>paneViewController</code></a> to be added.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>Whether adding the pane should be animated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>An optional completion block called upon the completion of the <a href="#//api/name/paneViewController"><code>paneViewController</code></a> being set.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the <a href="#//api/name/paneViewController"><code>paneViewController</code></a> with an animated transition.</p>
+
+<p>If the value for the <code>animated</code> parameter is <code>NO</code>, then this method is functionally equivalent to using the <a href="#//api/name/paneViewController"><code>paneViewController</code></a> setter.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneViewController">@property paneViewController</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/paneViewSlideOffAnimationEnabled">@property paneViewSlideOffAnimationEnabled</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDrawerViewController:forDirection:" title="setDrawerViewController:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDrawerViewController:forDirection:">&ndash;&nbsp;setDrawerViewController:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the view controller to be revealed as a drawer in the specified direction underneath the pane view controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDrawerViewController:(UIViewController *)<em>drawerViewController</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>drawerViewController</code></th>
+						<td><p>The view controller to revealed as a drawer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the drawer view controller should be revealed in. Does not accept masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the view controller to be revealed as a drawer in the specified direction underneath the pane view controller.</p>
+
+<p>There is a maximum of two drawer view controllers that can be set simultaneously. When a second view controllers is set, it must be in the opposite direction of the first view controller. When a single drawer view controller is set, it can be set in any of the cardinal directions.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/drawerViewControllerForDirection:">- drawerViewControllerForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/drawerViewControllerForDirection:" title="drawerViewControllerForDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/drawerViewControllerForDirection:">&ndash;&nbsp;drawerViewControllerForDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the drawer view controller that has been set for the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)drawerViewControllerForDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the drawer view controller should be revealed. Must not be masked.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The drawer view controller that has been set for the specified direction. If not yet set, <code>nil</code>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the drawer view controller that has been set for the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setDrawerViewController:forDirection:">- setDrawerViewController:forDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneViewSlideOffAnimationEnabled" title="paneViewSlideOffAnimationEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneViewSlideOffAnimationEnabled">&nbsp;&nbsp;paneViewSlideOffAnimationEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If setting a new <a href="#//api/name/paneViewController"><code>paneViewController</code></a> should have an animation that slides off the old view controller before animating the new one into its place.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL paneViewSlideOffAnimationEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If setting a new <a href="#//api/name/paneViewController"><code>paneViewController</code></a> should have an animation that slides off the old view controller before animating the new one into its place.</p>
+
+<p>This animation only occurs when the method <a href="#//api/name/setPaneViewController:animated:completion:"><code>setPaneViewController:animated:completion:</code></a> is invoked with an <code>animated</code> parameter of <code>YES</code>. This is functionally equivalent to always setting the <a href="#//api/name/paneState"><code>paneState</code></a> to <code>MSDynamicsDrawerPaneStateOpenWide</code> prior to replacing the pane view controller. To adjust the amount that the <a href="#//api/name/paneView"><code>paneView</code></a> slides past the edge of the <code>MSDynamicsDrawerViewController</code> instance&rsquo;s view during the transition, use <a href="#//api/name/paneStateOpenWideEdgeOffset"><code>paneStateOpenWideEdgeOffset</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneViewController">@property paneViewController</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneViewController:animated:completion:">- setPaneViewController:animated:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/paneStateOpenWideEdgeOffset">@property paneStateOpenWideEdgeOffset</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldAlignStatusBarToPaneView" title="shouldAlignStatusBarToPaneView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldAlignStatusBarToPaneView">&nbsp;&nbsp;shouldAlignStatusBarToPaneView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If the status bar should align with the pane view as the pane view frame is adjusted by both the user gestures and the internal dynamic animator.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldAlignStatusBarToPaneView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the status bar should align with the pane view as the pane view frame is adjusted by both the user gestures and the internal dynamic animator.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing &amp; Modifying State" name="task_Accessing &amp; Modifying State"></a>
+						<h2 class="task-title">Accessing &amp; Modifying State</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/paneState" title="paneState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneState">&nbsp;&nbsp;paneState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MSDynamicsDrawerPaneState paneState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+
+<p>The possible states are <code>MSDynamicsDrawerPaneStateClosed</code>, where the <a href="#//api/name/drawerView"><code>drawerView</code></a> is entirely hidden by the <a href="#//api/name/paneView"><code>paneView</code></a>, <code>MSDynamicsDrawerPaneStateOpen</code>, wherein the <a href="#//api/name/drawerView"><code>drawerView</code></a> is revealed to the reveal width for the specified direction, and <code>MSDynamicsDrawerPaneStateOpenWide</code> where the <a href="#//api/name/drawerView"><code>drawerView</code></a> in revealed by the <a href="#//api/name/paneView"><code>paneView</code></a> in its entirety such that the <a href="#//api/name/paneView"><code>paneView</code></a> is opened past the edge of the screen. If there is more than one drawer view controller set, use <a href="#//api/name/setPaneState:inDirection:"><code>setPaneState:inDirection:</code></a> instead and specify a direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:">- setPaneState:inDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:animated:allowUserInterruption:completion:">- setPaneState:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:">- setPaneState:inDirection:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPaneState:inDirection:" title="setPaneState:inDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneState:inDirection:">&ndash;&nbsp;setPaneState:inDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneState:(MSDynamicsDrawerPaneState)<em>paneState</em> inDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneState</code></th>
+						<td><p>The state that the pane view controller should be updated to be in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/paneState"><code>paneState</code></a> update should be applied in.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+
+<p>  The possible states are <code>MSDynamicsDrawerPaneStateClosed</code>, where the <a href="#//api/name/drawerView"><code>drawerView</code></a> is entirely hidden by the <a href="#//api/name/paneView"><code>paneView</code></a>, <code>MSDynamicsDrawerPaneStateOpen</code>, wherein the <a href="#//api/name/drawerView"><code>drawerView</code></a> is revealed to the reveal width for the specified direction, and <code>MSDynamicsDrawerPaneStateOpenWide</code> where the <a href="#//api/name/drawerView"><code>drawerView</code></a> in revealed by the <a href="#//api/name/paneView"><code>paneView</code></a> in its entirety such that the <a href="#//api/name/paneView"><code>paneView</code></a> is opened past the edge of the screen. If there is only one drawer view controller set, use <a href="#//api/name/paneState"><code>paneState</code></a> property instead.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneState">@property paneState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:animated:allowUserInterruption:completion:">- setPaneState:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:">- setPaneState:inDirection:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPaneState:animated:allowUserInterruption:completion:" title="setPaneState:animated:allowUserInterruption:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneState:animated:allowUserInterruption:completion:">&ndash;&nbsp;setPaneState:animated:allowUserInterruption:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneState:(MSDynamicsDrawerPaneState)<em>paneState</em> animated:(BOOL)<em>animated</em> allowUserInterruption:(BOOL)<em>allowUserInterruption</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneState</code></th>
+						<td><p>The state that the pane view controller should be updated to be in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>Whether the transition should be animated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowUserInterruption</code></th>
+						<td><p>If the user should be able to interrupt the pane state transition with gestures.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Called upon completion of the update to the pane state. If the user interrupts the transition, the completion will be called when the internal dynamic animator completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+
+<p>If the value for the <code>animated</code> parameter is <code>NO</code>, then this method is functionally equivalent to using the <a href="#//api/name/paneState"><code>paneState</code></a> setter. If there is more than one drawer view controller set, use <a href="#//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:"><code>setPaneState:inDirection:animated:allowUserInterruption:completion:</code></a> instead and specify a direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneState">@property paneState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:">- setPaneState:inDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:">- setPaneState:inDirection:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:" title="setPaneState:inDirection:animated:allowUserInterruption:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneState:inDirection:animated:allowUserInterruption:completion:">&ndash;&nbsp;setPaneState:inDirection:animated:allowUserInterruption:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneState:(MSDynamicsDrawerPaneState)<em>paneState</em> inDirection:(MSDynamicsDrawerDirection)<em>direction</em> animated:(BOOL)<em>animated</em> allowUserInterruption:(BOOL)<em>allowUserInterruption</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneState</code></th>
+						<td><p>The state that the pane view controller should be updated to be in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/paneState"><code>paneState</code></a> update should be applied in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>Whether the transition should be animated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowUserInterruption</code></th>
+						<td><p>If the user should be able to interrupt the pane state transition with gestures.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Called upon completion of the update to the pane state. If the user interrupts the transition, the completion will be called when the internal dynamic animator completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the state of the pane view as defined in a <a href="../Constants/MSDynamicsDrawerPaneState.html"><code>MSDynamicsDrawerPaneState</code></a>.</p>
+
+<p>If the value for the <code>animated</code> parameter is <code>NO</code>, then this method is functionally equivalent to using the <a href="#//api/name/paneState"><code>paneState</code></a> setter. If there is only one drawer view controller set, use <a href="#//api/name/setPaneState:animated:allowUserInterruption:completion:"><code>setPaneState:animated:allowUserInterruption:completion:</code></a> instead.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneState">@property paneState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:inDirection:">- setPaneState:inDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneState:animated:allowUserInterruption:completion:">- setPaneState:animated:allowUserInterruption:completion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneStateOpenWideEdgeOffset" title="paneStateOpenWideEdgeOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneStateOpenWideEdgeOffset">&nbsp;&nbsp;paneStateOpenWideEdgeOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount that the <a href="#//api/name/paneView">paneView</a> should be offset from the edge of the screen when set to the <code>MSDynamicsDrawerPaneStateOpenWide</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat paneStateOpenWideEdgeOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The amount that the <a href="#//api/name/paneView">paneView</a> should be offset from the edge of the screen when set to the <code>MSDynamicsDrawerPaneStateOpenWide</code>.</p>
+
+<p>This property controls the amount that the pane view is offset from the edge of the <code>MSDynamicsDrawerViewController</code> instance&rsquo;s view when the pane view is in the <code>MSDynamicsDrawerPaneStateOpenWide</code> <a href="#//api/name/paneState"><code>paneState</code></a>. When <a href="#//api/name/paneViewSlideOffAnimationEnabled"><code>paneViewSlideOffAnimationEnabled</code></a> is set to <code>YES</code>, this property controls the amount that the <a href="#//api/name/paneView"><code>paneView</code></a> slides beyond the edge of the screen before being replaced, and thus controls the duration of the <code>setPaneViewController:animated:</code> animation. If the <a href="#//api/name/paneView"><code>paneView</code></a> has a shadow, this property can be used to slide the <a href="#//api/name/paneView"><code>paneView</code></a> far enough beyond the edge of the screen so that its shadow isn&rsquo;t visible during the transition. Default value of to <code>20.0</code>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneState">@property paneState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/paneViewSlideOffAnimationEnabled">@property paneViewSlideOffAnimationEnabled</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setPaneViewController:animated:completion:">- setPaneViewController:animated:completion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bouncePaneOpen" title="bouncePaneOpen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bouncePaneOpen">&ndash;&nbsp;bouncePaneOpen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open to reveal the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bouncePaneOpen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open to reveal the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath.</p>
+
+<p>If there is more than one drawer view controller set, use <a href="#//api/name/bouncePaneOpenInDirection:"><code>bouncePaneOpenInDirection:</code></a>. When invoked, <a href="#//api/name/bounceElasticity"><code>bounceElasticity</code></a> and <a href="#//api/name/bounceMagnitude"><code>bounceMagnitude</code></a> are used as the dynamics values for the <a href="#//api/name/paneView"><code>paneView</code></a>. The bounce can be interrupted by a user touch. To override this behavior, use <code>bouncePaneOpenAllowUserInterruption:completion:</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenAllowingUserInterruption:completion:">- bouncePaneOpenAllowingUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:">- bouncePaneOpenInDirection:allowUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceElasticity">@property bounceElasticity</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceMagnitude">@property bounceMagnitude</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bouncePaneOpenAllowingUserInterruption:completion:" title="bouncePaneOpenAllowingUserInterruption:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bouncePaneOpenAllowingUserInterruption:completion:">&ndash;&nbsp;bouncePaneOpenAllowingUserInterruption:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open to reveal the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath. Executes <code>completion</code> when the dynamic animation finishes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bouncePaneOpenAllowingUserInterruption:(BOOL)<em>allowingUserInterruption</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowingUserInterruption</code></th>
+						<td><p>If the user should be able to interrupt the bounce animation with gestures.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that is run when the dynamic animator finishes animating the bounce.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open to reveal the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath. Executes <code>completion</code> when the dynamic animation finishes.</p>
+
+<p>If there is more than one drawer view controller set, use <a href="#//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:"><code>bouncePaneOpenInDirection:allowUserInterruption:completion:</code></a>. When invoked, <a href="#//api/name/bounceElasticity"><code>bounceElasticity</code></a> and <a href="#//api/name/bounceMagnitude"><code>bounceMagnitude</code></a> are used as the dynamics values for the <a href="#//api/name/paneView"><code>paneView</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpen">- bouncePaneOpen</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:">- bouncePaneOpenInDirection:allowUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceElasticity">@property bounceElasticity</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceMagnitude">@property bounceMagnitude</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bouncePaneOpenInDirection:" title="bouncePaneOpenInDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bouncePaneOpenInDirection:">&ndash;&nbsp;bouncePaneOpenInDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open in the specified direction, revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bouncePaneOpenInDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/paneView"><code>paneView</code></a> will be bounced open in.
+?</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open in the specified direction, revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath.</p>
+
+<p>If there is only one drawer view controller, use <a href="#//api/name/bouncePaneOpen"><code>bouncePaneOpen</code></a> instead. When invoked, <a href="#//api/name/bounceElasticity"><code>bounceElasticity</code></a> and <a href="#//api/name/bounceMagnitude"><code>bounceMagnitude</code></a> are used as the dynamics values for the <a href="#//api/name/paneView"><code>paneView</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpen">- bouncePaneOpen</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenAllowingUserInterruption:completion:">- bouncePaneOpenAllowingUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:">- bouncePaneOpenInDirection:allowUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceElasticity">@property bounceElasticity</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceMagnitude">@property bounceMagnitude</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:" title="bouncePaneOpenInDirection:allowUserInterruption:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bouncePaneOpenInDirection:allowUserInterruption:completion:">&ndash;&nbsp;bouncePaneOpenInDirection:allowUserInterruption:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open in the specified direction, revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath. Executes <code>completion</code> when the dynamic animation finishes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bouncePaneOpenInDirection:(MSDynamicsDrawerDirection)<em>direction</em> allowUserInterruption:(BOOL)<em>allowUserInterruption</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/paneView"><code>paneView</code></a> will be bounced open in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowUserInterruption</code></th>
+						<td><p>If the user should be able to interrupt the bounce animation with gestures.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that is run when the dynamic animator finishes animating the bounce.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Bounces the <a href="#//api/name/paneView"><code>paneView</code></a> open in the specified direction, revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath. Executes <code>completion</code> when the dynamic animation finishes.</p>
+
+<p>If there is only one drawer view controller, use <code>bouncePaneOpenAllowUserInterruption:completion:</code> instead. When invoked, <a href="#//api/name/bounceElasticity"><code>bounceElasticity</code></a> and <a href="#//api/name/bounceMagnitude"><code>bounceMagnitude</code></a> are used as the dynamics values for the <a href="#//api/name/paneView"><code>paneView</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpen">- bouncePaneOpen</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenAllowingUserInterruption:completion:">- bouncePaneOpenAllowingUserInterruption:completion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceElasticity">@property bounceElasticity</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bounceMagnitude">@property bounceMagnitude</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/possibleDrawerDirection" title="possibleDrawerDirection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/possibleDrawerDirection">&nbsp;&nbsp;possibleDrawerDirection</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The directions that the <a href="#//api/name/paneView"><code>paneView</code></a> can be opened in.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) MSDynamicsDrawerDirection possibleDrawerDirection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The directions that the <a href="#//api/name/paneView"><code>paneView</code></a> can be opened in.</p>
+
+<p>Corresponds to the directions that there are drawer view controllers set for. If more than one drawer view controller is set, this will be a bitmask of the directions that the drawer view controllers are set in.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring Dynamics Behaviors" name="task_Configuring Dynamics Behaviors"></a>
+						<h2 class="task-title">Configuring Dynamics Behaviors</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/gravityMagnitude" title="gravityMagnitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gravityMagnitude">&nbsp;&nbsp;gravityMagnitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The magnitude of the gravity vector that affects the pane view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat gravityMagnitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The magnitude of the gravity vector that affects the pane view.</p>
+
+<p>Default value of <code>2.0</code>. A magnitude value of <code>1.0</code> represents an acceleration of 1000 points / second².</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/elasticity" title="elasticity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/elasticity">&nbsp;&nbsp;elasticity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The elasticity applied to the pane view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat elasticity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The elasticity applied to the pane view.</p>
+
+<p>Default value of <code>0.0</code>. Valid range is from <code>0.0</code> for no bounce upon collision, to <code>1.0</code> for completely elastic collisions.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bounceElasticity" title="bounceElasticity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bounceElasticity">&nbsp;&nbsp;bounceElasticity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount of <a href="#//api/name/elasticity">elasticity</a> applied to the pane view when it is bounced open.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat bounceElasticity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The amount of <a href="#//api/name/elasticity">elasticity</a> applied to the pane view when it is bounced open.</p>
+
+<p>Applies when the pane is bounced open. Default value of <code>0.5</code>. Valid range is from <code>0.0</code> for no bounce upon collision, to <code>1.0</code> for completely elastic collisions.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpen">- bouncePaneOpen</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bounceMagnitude" title="bounceMagnitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bounceMagnitude">&nbsp;&nbsp;bounceMagnitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The magnitude of the push vector that is applied to the pane view when <a href="#//api/name/bouncePaneOpen">bouncePaneOpen</a> is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat bounceMagnitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The magnitude of the push vector that is applied to the pane view when <a href="#//api/name/bouncePaneOpen">bouncePaneOpen</a> is called.</p>
+
+<p>Applies when the pane is bounced open. Default of 60.0. A magnitude value of 1.0 represents an acceleration of 1000 points / second².</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpen">- bouncePaneOpen</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/bouncePaneOpenInDirection:">- bouncePaneOpenInDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring Gestures" name="task_Configuring Gestures"></a>
+						<h2 class="task-title">Configuring Gestures</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setPaneDragRevealEnabled:forDirection:" title="setPaneDragRevealEnabled:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneDragRevealEnabled:forDirection:">&ndash;&nbsp;setPaneDragRevealEnabled:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets if a user-initiated pan gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can move the pane in the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneDragRevealEnabled:(BOOL)<em>paneDraggingEnabled</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneDraggingEnabled</code></th>
+						<td><p>Whether dragging should be enabled.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that dragging should be enabled for. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets if a user-initiated pan gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can move the pane in the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneDragRevealEnabledForDirection:">- paneDragRevealEnabledForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneDragRevealEnabledForDirection:" title="paneDragRevealEnabledForDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneDragRevealEnabledForDirection:">&ndash;&nbsp;paneDragRevealEnabledForDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns if a user-initiated pan gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can move the pane in the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)paneDragRevealEnabledForDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction to check against. Does not accept masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If dragging is enabled in the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns if a user-initiated pan gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can move the pane in the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setPaneDragRevealEnabled:forDirection:">- setPaneDragRevealEnabled:forDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPaneTapToCloseEnabled:forDirection:" title="setPaneTapToCloseEnabled:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPaneTapToCloseEnabled:forDirection:">&ndash;&nbsp;setPaneTapToCloseEnabled:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets if a user-initiated tap gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can close it while it is opened.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPaneTapToCloseEnabled:(BOOL)<em>paneTapToCloseEnabled</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paneTapToCloseEnabled</code></th>
+						<td><p>Whether tap-to-close should be enabled.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that tap-to-close should be enabled for. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets if a user-initiated tap gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can close it while it is opened.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneTapToCloseEnabledForDirection:">- paneTapToCloseEnabledForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneTapToCloseEnabledForDirection:" title="paneTapToCloseEnabledForDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneTapToCloseEnabledForDirection:">&ndash;&nbsp;paneTapToCloseEnabledForDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns if a user-initiated tap gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can close it while it is opened.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)paneTapToCloseEnabledForDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction to check against. Does not accept masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>If tap-to-close is enabled for the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns if a user-initiated tap gesture on the <a href="#//api/name/paneView"><code>paneView</code></a> can close it while it is opened.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setPaneTapToCloseEnabled:forDirection:">- setPaneTapToCloseEnabled:forDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneDragRequiresScreenEdgePan" title="paneDragRequiresScreenEdgePan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneDragRequiresScreenEdgePan">&nbsp;&nbsp;paneDragRequiresScreenEdgePan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the only pans that can open the drawer should be those that originate from the screen&rsquo;s edges.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL paneDragRequiresScreenEdgePan</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether the only pans that can open the drawer should be those that originate from the screen&rsquo;s edges.</p>
+
+<p>If set to <code>YES</code>, pans that originate elsewhere are ignored and have no effect on the drawer. This property is designed to mimic the behavior of the <code>UIScreenEdgePanGestureRecognizer</code> as applied to the <code>MSDynamicsDrawerViewController</code> interaction paradigm. Setting this property to <code>YES</code> yields a similar behavior to that of screen edge pans within a <code>UINavigationController</code> in iOS7+. Defaults to <code>NO</code>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/screenEdgePanCancelsConflictingGestures">@property screenEdgePanCancelsConflictingGestures</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/screenEdgePanCancelsConflictingGestures" title="screenEdgePanCancelsConflictingGestures"></a>
+	<h3 class="method-title"><code><a href="#//api/name/screenEdgePanCancelsConflictingGestures">&nbsp;&nbsp;screenEdgePanCancelsConflictingGestures</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether gestures that start at the edge of the screen should be cancelled under the assumption that the user is dragging the pane view to reveal a drawer underneath.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL screenEdgePanCancelsConflictingGestures</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether gestures that start at the edge of the screen should be cancelled under the assumption that the user is dragging the pane view to reveal a drawer underneath.</p>
+
+<p>  This behavior only applies to edges that have a corresponding drawer view controller set in the same direction as the edge that the gesture originated in. The primary use of this property is the case of having a <code>UIScrollView</code> within the view of the active pane view controller. When the drawers are closed and the user starts a pan-like gesture at the edge of the screen, all other conflicting gesture recognizers will be required to fail, yielding to the internal <code>UIPanGestureRecognizer</code> in the <code>MSDynamicsDrawerViewController</code> instance. Effectually, this property makes it easier for the user to open the drawers. Defaults to <code>YES</code>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/paneDragRequiresScreenEdgePan">@property paneDragRequiresScreenEdgePan</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerTouchForwardingClass:" title="registerTouchForwardingClass:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerTouchForwardingClass:">&ndash;&nbsp;registerTouchForwardingClass:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Attempts to register a <code>UIView</code> subclass that the pane view should forward dragging through.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerTouchForwardingClass:(Class)<em>touchForwardingClass</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>touchForwardingClass</code></th>
+						<td><p>The class that should not allow pan gestures through.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Attempts to register a <code>UIView</code> subclass that the pane view should forward dragging through.</p>
+
+<p>When the user drags the <a href="#//api/name/paneView"><code>paneView</code></a> to reveal the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath, if the pan gesture is performed on an instance of a class that has been registed as a touch forwarding class, the gesture is ignored. By default, <code>UISlider</code> and <code>UISwitch</code> are registered as touch forwarding classes.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring Stylers" name="task_Configuring Stylers"></a>
+						<h2 class="task-title">Configuring Stylers</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addStyler:forDirection:" title="addStyler:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addStyler:forDirection:">&ndash;&nbsp;addStyler:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a styler (a class that conforms to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addStyler:(id&lt;MSDynamicsDrawerStyler&gt;)<em>styler</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>styler</code></th>
+						<td><p>The styler that should be added.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the styler apply to. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds a styler (a class that conforms to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addStylersFromArray:forDirection:">- addStylersFromArray:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/removeStyler:forDirection:">- removeStyler:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/stylersForDirection:">- stylersForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeStyler:forDirection:" title="removeStyler:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeStyler:forDirection:">&ndash;&nbsp;removeStyler:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a styler (a class that conforms to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeStyler:(id&lt;MSDynamicsDrawerStyler&gt;)<em>styler</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>styler</code></th>
+						<td><p>The styler that should be removed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that they styler should be removed for. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes a styler (a class that conforms to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addStyler:forDirection:">- addStyler:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/addStylersFromArray:forDirection:">- addStylersFromArray:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/stylersForDirection:">- stylersForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addStylersFromArray:forDirection:" title="addStylersFromArray:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addStylersFromArray:forDirection:">&ndash;&nbsp;addStylersFromArray:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an array of <a href="#//api/name/stylers">stylers</a> (classes that conform to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addStylersFromArray:(NSArray *)<em>stylers</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stylers</code></th>
+						<td><p>The array of <a href="#//api/name/stylers">stylers</a> that should be added.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/stylers">stylers</a> apply to. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an array of <a href="#//api/name/stylers">stylers</a> (classes that conform to the <a href="../Protocols/MSDynamicsDrawerStyler.html"><code>MSDynamicsDrawerStyler</code></a> protocol).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addStyler:forDirection:">- addStyler:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/removeStyler:forDirection:">- removeStyler:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/stylersForDirection:">- stylersForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stylersForDirection:" title="stylersForDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stylersForDirection:">&ndash;&nbsp;stylersForDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of the <a href="#//api/name/stylers">stylers</a> that are set in a specified direction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)stylersForDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/stylers">stylers</a> should be returned for. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of <a href="#//api/name/stylers">stylers</a> that are</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array of the <a href="#//api/name/stylers">stylers</a> that are set in a specified direction</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/addStyler:forDirection:">- addStyler:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/addStylersFromArray:forDirection:">- addStylersFromArray:forDirection:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/stylersForDirection:">- stylersForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring Reveal Width" name="task_Configuring Reveal Width"></a>
+						<h2 class="task-title">Configuring Reveal Width</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setRevealWidth:forDirection:" title="setRevealWidth:forDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRevealWidth:forDirection:">&ndash;&nbsp;setRevealWidth:forDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the width that the <a href="#//api/name/paneView"><code>paneView</code></a> opens when revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath for the specified direction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRevealWidth:(CGFloat)<em>revealWidth</em> forDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>revealWidth</code></th>
+						<td><p>The width that the <a href="#//api/name/paneView"><code>paneView</code></a> opens when revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the <a href="#//api/name/revealWidth"><code>revealWidth</code></a> should be applied in. Accepts masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the width that the <a href="#//api/name/paneView"><code>paneView</code></a> opens when revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> underneath for the specified direction.</p>
+
+<p>Defaults to <code>MSDynamicsDrawerDefaultOpenStateRevealWidthHorizontal</code> when drawer view controllers are set in a horizontal direction. Defaults to <code>MSDynamicsDrawerDefaultOpenStateRevealWidthVertical</code> when drawer view controllers are set in a vertical direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/revealWidthForDirection:">- revealWidthForDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/revealWidthForDirection:" title="revealWidthForDirection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/revealWidthForDirection:">&ndash;&nbsp;revealWidthForDirection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the reveal width that the <a href="#//api/name/paneView"><code>paneView</code></a> opens when revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> for the specified direction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)revealWidthForDirection:(MSDynamicsDrawerDirection)<em>direction</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>direction</code></th>
+						<td><p>The direction that the reveal width should be returned for. Does not accept masked direction values.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The reveal width for the specified direction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the reveal width that the <a href="#//api/name/paneView"><code>paneView</code></a> opens when revealing the <a href="#//api/name/drawerView"><code>drawerView</code></a> for the specified direction</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setRevealWidth:forDirection:">- setRevealWidth:forDirection:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentRevealWidth" title="currentRevealWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentRevealWidth">&ndash;&nbsp;currentRevealWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the distance (in points) that the drawer is currently opened.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)currentRevealWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the distance (in points) that the drawer is currently opened.</p>
+
+<p>When the drawer is closed, returns <code>0</code>. When the drawer is fully opened, returns the appropriate <a href="#//api/name/revealWidthForDirection:"><code>revealWidthForDirection:</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Container Views" name="task_Container Views"></a>
+						<h2 class="task-title">Container Views</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/drawerView" title="drawerView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/drawerView">&nbsp;&nbsp;drawerView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The drawer view contains the currently visible drawer view controller&rsquo;s view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *drawerView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The drawer view contains the currently visible drawer view controller&rsquo;s view.</p>
+
+<p>The <code>drawerView</code> is always presented underneath the <a href="#//api/name/paneView"><code>paneView</code></a>. The frame of the <code>drawerView</code> never moves, and it is not affected by dynamics.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paneView" title="paneView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paneView">&nbsp;&nbsp;paneView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The pane view contains the pane view controller&rsquo;s view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *paneView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The pane view contains the pane view controller&rsquo;s view.</p>
+
+<p>The user can slide the <code>paneView</code> in any of the directions defined in <a href="#//api/name/possibleDrawerDirection"><code>possibleDrawerDirection</code></a> to reveal the drawer view controller underneath. The frame of the <code>paneView</code> is frequently updated by internal dynamics and user gestures.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing the Delegate Object" name="task_Accessing the Delegate Object"></a>
+						<h2 class="task-title">Accessing the Delegate Object</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate you want to receive dynamics drawer view controller messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;MSDynamicsDrawerViewControllerDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The delegate you want to receive dynamics drawer view controller messages.</p>
+
+<p>The dynamics drawer view controller informs its delegate of changes to the state of the drawer view controller. For more information about the methods you can implement in your delegate, <a href="../Protocols/MSDynamicsDrawerViewControllerDelegate.html"><code>MSDynamicsDrawerViewControllerDelegate</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MSDynamicsDrawerViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

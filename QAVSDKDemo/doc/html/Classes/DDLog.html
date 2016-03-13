@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DDLog Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/addLogger:">+ addLogger:</option>
+		
+		<option value="//api/name/addLogger:withLevel:">+ addLogger:withLevel:</option>
+		
+		<option value="//api/name/flushLog">+ flushLog</option>
+		
+		<option value="//api/name/initialize">+ initialize</option>
+		
+		<option value="//api/name/log:level:flag:context:file:function:line:tag:format:">+ log:level:flag:context:file:function:line:tag:format:</option>
+		
+		<option value="//api/name/log:level:flag:context:file:function:line:tag:format:args:">+ log:level:flag:context:file:function:line:tag:format:args:</option>
+		
+		<option value="//api/name/log:message:">+ log:message:</option>
+		
+		<option value="//api/name/log:message:level:flag:context:file:function:line:tag:">+ log:message:level:flag:context:file:function:line:tag:</option>
+		
+		<option value="//api/name/loggingQueue">+ loggingQueue</option>
+		
+		<option value="//api/name/registeredClasses">+ registeredClasses</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DDLog Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DDLog.h<br />DDLog.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/loggingQueue" title="loggingQueue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loggingQueue">+&nbsp;loggingQueue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides access to the underlying logging queue.
+This may be helpful to Logger classes for things like thread synchronization.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (dispatch_queue_t)loggingQueue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Provides access to the underlying logging queue.
+This may be helpful to Logger classes for things like thread synchronization.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/log:level:flag:context:file:function:line:tag:format:" title="log:level:flag:context:file:function:line:tag:format:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/log:level:flag:context:file:function:line:tag:format:">+&nbsp;log:level:flag:context:file:function:line:tag:format:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logging Primitive.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)log:(BOOL)<em>synchronous</em> level:(DDLogLevel)<em>level</em> flag:(DDLogFlag)<em>flag</em> context:(int)<em>context</em> file:(const char *)<em>file</em> function:(const char *)<em>function</em> line:(int)<em>line</em> tag:(id)<em>tag</em> format:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Logging Primitive.</p>
+
+<p>This method is used by the macros above.
+It is suggested you stick with the macros as they&rsquo;re easier to use.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/log:level:flag:context:file:function:line:tag:format:args:" title="log:level:flag:context:file:function:line:tag:format:args:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/log:level:flag:context:file:function:line:tag:format:args:">+&nbsp;log:level:flag:context:file:function:line:tag:format:args:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logging Primitive.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)log:(BOOL)<em>asynchronous</em> level:(DDLogLevel)<em>level</em> flag:(DDLogFlag)<em>flag</em> context:(int)<em>context</em> file:(const char *)<em>file</em> function:(const char *)<em>function</em> line:(int)<em>line</em> tag:(id)<em>tag</em> format:(NSString *)<em>format</em> args:(va_list)<em>argList</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Logging Primitive.</p>
+
+<p>This method can be used if you have a prepared va_list.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/log:message:level:flag:context:file:function:line:tag:" title="log:message:level:flag:context:file:function:line:tag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/log:message:level:flag:context:file:function:line:tag:">+&nbsp;log:message:level:flag:context:file:function:line:tag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logging Primitive.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)log:(BOOL)<em>asynchronous</em> message:(NSString *)<em>message</em> level:(DDLogLevel)<em>level</em> flag:(DDLogFlag)<em>flag</em> context:(int)<em>context</em> file:(const char *)<em>file</em> function:(const char *)<em>function</em> line:(int)<em>line</em> tag:(id)<em>tag</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Logging Primitive.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/log:message:" title="log:message:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/log:message:">+&nbsp;log:message:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logging Primitive.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)log:(BOOL)<em>asynchronous</em> message:(DDLogMessage *)<em>logMessage</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Logging Primitive.</p>
+
+<p>This method can be used if you manualy prepared <a href="../Classes/DDLogMessage.html">DDLogMessage</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flushLog" title="flushLog"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flushLog">+&nbsp;flushLog</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Since logging can be asynchronous, there may be times when you want to flush the logs.
+The framework invokes this automatically when the application quits.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)flushLog</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Since logging can be asynchronous, there may be times when you want to flush the logs.
+The framework invokes this automatically when the application quits.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addLogger:" title="addLogger:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addLogger:">+&nbsp;addLogger:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the logger to the system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addLogger:(id&lt;DDLogger&gt;)<em>logger</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the logger to the system.</p>
+
+<p>This is equivalent to invoking [DDLog addLogger:logger with<a href="../Constants/LogLevel.html">LogLevel</a>:DDLogLevelAll].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addLogger:withLevel:" title="addLogger:withLevel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addLogger:withLevel:">+&nbsp;addLogger:withLevel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the logger to the system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addLogger:(id&lt;DDLogger&gt;)<em>logger</em> withLevel:(DDLogLevel)<em>level</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the logger to the system.</p>
+
+<p>The level that you provide here is a preemptive filter (for performance).
+That is, the level specified here will be used to filter out logMessages so that
+the logger is never even invoked for the messages.</p>
+
+<p>More information:
+When you issue a log statement, the logging framework iterates over each logger,
+and checks to see if it should forward the logMessage to the logger.
+This check is done using the level parameter passed to this method.</p>
+
+<p>For example:</p>
+
+<p>[DDLog addLogger:consoleLogger with<a href="../Constants/LogLevel.html">LogLevel</a>:DDLogLevelVerbose];
+[DDLog addLogger:fileLogger    with<a href="../Constants/LogLevel.html">LogLevel</a>:DDLogLevelWarning];</p>
+
+<p>DDLogError(@&ldquo;oh no&rdquo;); => gets forwarded to consoleLogger &amp; fileLogger
+DDLogInfo(@&ldquo;hi&rdquo;);     => gets forwarded to consoleLogger only</p>
+
+<p>It is important to remember that Lumberjack uses a BITMASK.
+Many developers &amp; third party frameworks may define extra log levels &amp; flags.
+For example:</p>
+
+<h1>define SOME_FRAMEWORK_LOG_FLAG_TRACE (1 &lt;&lt; 6) // 0&hellip;1000000</h1>
+
+<p>So if you specify DDLogLevelVerbose to this method, you won&rsquo;t see the framework&rsquo;s trace messages.</p>
+
+<p>(SOME_FRAMEWORK_LOG_FLAG_TRACE &amp; DDLogLevelVerbose) => (01000000 &amp; 00011111) => NO</p>
+
+<p>Consider passing DDLogLevelAll to this method, which has all bits set.
+You can also use the exclusive-or bitwise operator to get a bitmask that has all flags set,
+except the ones you explicitly don&rsquo;t want. For example, if you wanted everything except verbose &amp; debug:</p>
+
+<p>((DDLogLevelAll ^ DDLogLevelVerbose) | DDLogLevelInfo)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registeredClasses" title="registeredClasses"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registeredClasses">+&nbsp;registeredClasses</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registered Dynamic Logging</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)registeredClasses</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Registered Dynamic Logging</p>
+
+<p>These methods allow you to obtain a list of classes that are using registered dynamic logging,
+and also provides methods to get and set their log level during run time.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initialize" title="initialize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialize">+&nbsp;initialize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The runtime sends initialize to each class in a program exactly one time just before the class,
+or any class that inherits from it, is sent its first message from within the program. (Thus the
+method may never be invoked if the class is not used.) The runtime sends the initialize message to
+classes in a thread-safe manner. Superclasses receive this message before their subclasses.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initialize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The runtime sends initialize to each class in a program exactly one time just before the class,
+or any class that inherits from it, is sent its first message from within the program. (Thus the
+method may never be invoked if the class is not used.) The runtime sends the initialize message to
+classes in a thread-safe manner. Superclasses receive this message before their subclasses.</p>
+
+<p>This method may also be called directly (assumably by accident), hence the safety mechanism.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DDLog.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

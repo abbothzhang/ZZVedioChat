@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NMultiVideoViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/OnChangeAuthority:">- OnChangeAuthority:</option>
+		
+		<option value="//api/name/OnEndpointsUpdateInfo:endpointlist:">- OnEndpointsUpdateInfo:endpointlist:</option>
+		
+		<option value="//api/name/OnEnterRoomComplete:">- OnEnterRoomComplete:</option>
+		
+		<option value="//api/name/OnExitRoomComplete:">- OnExitRoomComplete:</option>
+		
+		<option value="//api/name/OnVideoPreview:">- OnVideoPreview:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NMultiVideoViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>TipsViewController : UIViewController</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/QAVRemoteVideoDelegate.html">QAVRemoteVideoDelegate</a><br /><a href="../Protocols/QAVRoomDelegate.html">QAVRoomDelegate</a><br /><a href="../Protocols/QAVScreenVideoDelegate.html">QAVScreenVideoDelegate</a><br />UICollectionViewDataSource<br />UICollectionViewDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NMultiVideoViewController.h<br />NMultiVideoViewController.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/OnVideoPreview:" title="OnVideoPreview:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnVideoPreview:">&ndash;&nbsp;OnVideoPreview:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>远程画面回调
+@param 远端视频帧数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnVideoPreview:(QAVVideoFrame *)<em>frameData</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVVideoCtrl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnEnterRoomComplete:" title="OnEnterRoomComplete:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnEnterRoomComplete:">&ndash;&nbsp;OnEnterRoomComplete:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QAVContext的enterRoom的回调函数。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnEnterRoomComplete:(int)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>错误码：
+\n QAV_OK 执行成功；
+\n QAV_ERR_INTERFACE_SERVER_NOT_EXISTS 没有分配到接口机。
+\n QAV_ERR_FAILED 解包失败或者超时。
+\n 其他值 其他原因导致的执行失败。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>此函数用来异步返回QAVContext的enterRoom的执行结果。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVRoom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnExitRoomComplete:" title="OnExitRoomComplete:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnExitRoomComplete:">&ndash;&nbsp;OnExitRoomComplete:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QAVContext的exitRoom的回调函数。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnExitRoomComplete:(int)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>错误码：
+\n QAV_OK 执行成功；
+\n 其他值 其他原因导致执行失败。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>此函数用来异步返回QAVContext的exitRoom的执行结果。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVRoom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnEndpointsUpdateInfo:endpointlist:" title="OnEndpointsUpdateInfo:endpointlist:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnEndpointsUpdateInfo:endpointlist:">&ndash;&nbsp;OnEndpointsUpdateInfo:endpointlist:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>房间成员状态更新通知。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnEndpointsUpdateInfo:(QAVUpdateEvent)<em>eventID</em> endpointlist:(NSArray *)<em>endpoints</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eventID</code></th>
+						<td><p>成员事件id，表示这次状态更新所发生的事件。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endpoints</code></th>
+						<td><p>状态变化的成员列表，列表元素的生命周期由SDK控制，不需要App负责销毁。</p>
+
+<p>@remark 状态更新通知前后，房间成员的总人数没有变化。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当房间成员状态发生变化(如是否发语音、是否发视频等)的时候，服务器会向所有成员推送这部分状态变化成员的列表。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVRoom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnChangeAuthority:" title="OnChangeAuthority:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnChangeAuthority:">&ndash;&nbsp;OnChangeAuthority:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVRoomMulti::ChangeAuthority()的回调函数。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnChangeAuthority:(int)<em>ret</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ret_code</code></th>
+						<td><p>错误码：
+\n QAV_OK 执行成功；
+\n QAV_ERR_FAILED 执行失败。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>此函数用来异步返回AVRoomMulti::ChangeAuthority()的执行结果。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">QAVRoom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

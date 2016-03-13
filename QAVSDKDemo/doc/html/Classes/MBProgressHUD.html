@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MBProgressHUD Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/activityIndicatorColor">activityIndicatorColor</option>
+		
+		<option value="//api/name/animationType">animationType</option>
+		
+		<option value="//api/name/color">color</option>
+		
+		<option value="//api/name/completionBlock">completionBlock</option>
+		
+		<option value="//api/name/cornerRadius">cornerRadius</option>
+		
+		<option value="//api/name/customView">customView</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/detailsLabelColor">detailsLabelColor</option>
+		
+		<option value="//api/name/detailsLabelFont">detailsLabelFont</option>
+		
+		<option value="//api/name/detailsLabelText">detailsLabelText</option>
+		
+		<option value="//api/name/dimBackground">dimBackground</option>
+		
+		<option value="//api/name/labelColor">labelColor</option>
+		
+		<option value="//api/name/labelFont">labelFont</option>
+		
+		<option value="//api/name/labelText">labelText</option>
+		
+		<option value="//api/name/margin">margin</option>
+		
+		<option value="//api/name/minShowTime">minShowTime</option>
+		
+		<option value="//api/name/minSize">minSize</option>
+		
+		<option value="//api/name/mode">mode</option>
+		
+		<option value="//api/name/opacity">opacity</option>
+		
+		<option value="//api/name/progress">progress</option>
+		
+		<option value="//api/name/removeFromSuperViewOnHide">removeFromSuperViewOnHide</option>
+		
+		<option value="//api/name/size">size</option>
+		
+		<option value="//api/name/square">square</option>
+		
+		<option value="//api/name/taskInProgress">taskInProgress</option>
+		
+		<option value="//api/name/xOffset">xOffset</option>
+		
+		<option value="//api/name/yOffset">yOffset</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/HUDForView:">+ HUDForView:</option>
+		
+		<option value="//api/name/allHUDsForView:">+ allHUDsForView:</option>
+		
+		<option value="//api/name/hideAllHUDsForView:animated:">+ hideAllHUDsForView:animated:</option>
+		
+		<option value="//api/name/hideHUDForView:animated:">+ hideHUDForView:animated:</option>
+		
+		<option value="//api/name/showHUDAddedTo:animated:">+ showHUDAddedTo:animated:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/hide:">- hide:</option>
+		
+		<option value="//api/name/hide:afterDelay:">- hide:afterDelay:</option>
+		
+		<option value="//api/name/initWithView:">- initWithView:</option>
+		
+		<option value="//api/name/initWithWindow:">- initWithWindow:</option>
+		
+		<option value="//api/name/show:">- show:</option>
+		
+		<option value="//api/name/showAnimated:whileExecutingBlock:">- showAnimated:whileExecutingBlock:</option>
+		
+		<option value="//api/name/showAnimated:whileExecutingBlock:completionBlock:">- showAnimated:whileExecutingBlock:completionBlock:</option>
+		
+		<option value="//api/name/showAnimated:whileExecutingBlock:onQueue:">- showAnimated:whileExecutingBlock:onQueue:</option>
+		
+		<option value="//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:">- showAnimated:whileExecutingBlock:onQueue:completionBlock:</option>
+		
+		<option value="//api/name/showWhileExecuting:onTarget:withObject:animated:">- showWhileExecuting:onTarget:withObject:animated:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MBProgressHUD Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MBProgressHUD.h<br />MBProgressHUD.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Displays a simple HUD window containing a <a href="#//api/name/progress">progress</a> indicator and two optional labels for short messages.</p>
+
+<p>This is a simple drop-in class for displaying a <a href="#//api/name/progress">progress</a> HUD view similar to Apple&rsquo;s private UIProgressHUD class.
+The MBProgressHUD window spans over the entire space given to it by the initWithFrame constructor and catches all
+user input on this region, thereby preventing the user operations on components below the view. The HUD itself is
+drawn centered as a rounded semi-transparent view which resizes depending on the user specified content.</p>
+
+<p>This view supports four modes of operation:
+- MBProgressHUDModeIndeterminate - shows a UIActivityIndicatorView
+- MBProgressHUDModeDeterminate - shows a custom round <a href="#//api/name/progress">progress</a> indicator
+- MBProgressHUDModeAnnularDeterminate - shows a custom annular <a href="#//api/name/progress">progress</a> indicator
+- MBProgressHUDModeCustomView - shows an arbitrary, user specified view (@see <a href="#//api/name/customView">customView</a>)</p>
+
+<p>All three modes can have optional labels assigned:
+- If the <a href="#//api/name/labelText">labelText</a> property is set and non-empty then a label containing the provided content is placed below the
+indicator view.
+- If also the <a href="#//api/name/detailsLabelText">detailsLabelText</a> property is set then another label is placed below the first label.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showHUDAddedTo:animated:" title="showHUDAddedTo:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showHUDAddedTo:animated:">+&nbsp;showHUDAddedTo:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new HUD, adds it to provided view and shows it. The counterpart to this method is <a href="#//api/name/hideHUDForView:animated:">hideHUDForView:animated:</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MB_INSTANCETYPE)showHUDAddedTo:(UIView *)<em>view</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view that the HUD will be added to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will appear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while appearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A reference to the created HUD.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new HUD, adds it to provided view and shows it. The counterpart to this method is <a href="#//api/name/hideHUDForView:animated:">hideHUDForView:animated:</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/hideHUDForView:animated:">+ hideHUDForView:animated:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideHUDForView:animated:" title="hideHUDForView:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideHUDForView:animated:">+&nbsp;hideHUDForView:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Finds the top-most HUD subview and hides it. The counterpart to this method is <a href="#//api/name/showHUDAddedTo:animated:">showHUDAddedTo:animated:</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)hideHUDForView:(UIView *)<em>view</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view that is going to be searched for a HUD subview.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will disappear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while disappearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if a HUD was found and removed, NO otherwise.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Finds the top-most HUD subview and hides it. The counterpart to this method is <a href="#//api/name/showHUDAddedTo:animated:">showHUDAddedTo:animated:</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/showHUDAddedTo:animated:">+ showHUDAddedTo:animated:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideAllHUDsForView:animated:" title="hideAllHUDsForView:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideAllHUDsForView:animated:">+&nbsp;hideAllHUDsForView:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Finds all the HUD subviews and hides them.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSUInteger)hideAllHUDsForView:(UIView *)<em>view</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view that is going to be searched for HUD subviews.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUDs will disappear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUDs will not use
+animations while disappearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the number of HUDs found and removed.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Finds all the HUD subviews and hides them.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/hideHUDForView:animated:">+ hideHUDForView:animated:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HUDForView:" title="HUDForView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HUDForView:">+&nbsp;HUDForView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Finds the top-most HUD subview and returns it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MB_INSTANCETYPE)HUDForView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view that is going to be searched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A reference to the last HUD subview discovered.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Finds the top-most HUD subview and returns it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allHUDsForView:" title="allHUDsForView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allHUDsForView:">+&nbsp;allHUDsForView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Finds all HUD subviews and returns them.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)allHUDsForView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view that is going to be searched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>All found HUD views (array of MBProgressHUD objects).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Finds all HUD subviews and returns them.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithWindow:" title="initWithWindow:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithWindow:">&ndash;&nbsp;initWithWindow:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A convenience constructor that initializes the HUD with the window&rsquo;s bounds. Calls the designated constructor with
+window.bounds as the parameter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithWindow:(UIWindow *)<em>window</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>window</code></th>
+						<td><p>The window instance that will provide the bounds for the HUD. Should be the same instance as
+the HUD&rsquo;s superview (i.e., the window that the HUD will be added to).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A convenience constructor that initializes the HUD with the window&rsquo;s bounds. Calls the designated constructor with
+window.bounds as the parameter.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:" title="initWithView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:">&ndash;&nbsp;initWithView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A convenience constructor that initializes the HUD with the view&rsquo;s bounds. Calls the designated constructor with
+view.bounds as the parameter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>The view instance that will provide the bounds for the HUD. Should be the same instance as
+the HUD&rsquo;s superview (i.e., the view that the HUD will be added to).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A convenience constructor that initializes the HUD with the view&rsquo;s bounds. Calls the designated constructor with
+view.bounds as the parameter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/show:" title="show:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/show:">&ndash;&nbsp;show:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Display the HUD. You need to make sure that the main thread completes its run loop soon after this method call so
+the user interface can be updated. Call this method when your task is already set-up to be executed in a new thread
+(e.g., when using something like NSOperation or calling an asynchronous call like NSURLRequest).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)show:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will appear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while appearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Display the HUD. You need to make sure that the main thread completes its run loop soon after this method call so
+the user interface can be updated. Call this method when your task is already set-up to be executed in a new thread
+(e.g., when using something like NSOperation or calling an asynchronous call like NSURLRequest).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hide:" title="hide:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hide:">&ndash;&nbsp;hide:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hide the HUD. This still calls the hudWasHidden: <a href="#//api/name/delegate">delegate</a>. This is the counterpart of the <a href="#//api/name/show:">show:</a> method. Use it to
+hide the HUD when your task completes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hide:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will disappear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while disappearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Hide the HUD. This still calls the hudWasHidden: <a href="#//api/name/delegate">delegate</a>. This is the counterpart of the <a href="#//api/name/show:">show:</a> method. Use it to
+hide the HUD when your task completes.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hide:afterDelay:" title="hide:afterDelay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hide:afterDelay:">&ndash;&nbsp;hide:afterDelay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hide the HUD after a delay. This still calls the hudWasHidden: <a href="#//api/name/delegate">delegate</a>. This is the counterpart of the <a href="#//api/name/show:">show:</a> method. Use it to
+hide the HUD when your task completes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hide:(BOOL)<em>animated</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will disappear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while disappearing.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delay</code></th>
+						<td><p>Delay in seconds until the HUD is hidden.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Hide the HUD after a delay. This still calls the hudWasHidden: <a href="#//api/name/delegate">delegate</a>. This is the counterpart of the <a href="#//api/name/show:">show:</a> method. Use it to
+hide the HUD when your task completes.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/animationType">@property animationType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showWhileExecuting:onTarget:withObject:animated:" title="showWhileExecuting:onTarget:withObject:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showWhileExecuting:onTarget:withObject:animated:">&ndash;&nbsp;showWhileExecuting:onTarget:withObject:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows the HUD while a background task is executing in a new thread, then hides the HUD.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showWhileExecuting:(SEL)<em>method</em> onTarget:(id)<em>target</em> withObject:(id)<em>object</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>method</code></th>
+						<td><p>The method to be executed while the HUD is shown. This method will be executed in a new thread.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>The object that the target method belongs to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>object</code></th>
+						<td><p>An optional object to be passed to the method.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will (dis)appear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will not use
+animations while (dis)appearing.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows the HUD while a background task is executing in a new thread, then hides the HUD.</p>
+
+<p>This method also takes care of autorelease pools so your method does not have to be concerned with setting up a
+pool.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAnimated:whileExecutingBlock:" title="showAnimated:whileExecutingBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAnimated:whileExecutingBlock:">&ndash;&nbsp;showAnimated:whileExecutingBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows the HUD while a block is executing on a background queue, then hides the HUD.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showAnimated:(BOOL)<em>animated</em> whileExecutingBlock:(dispatch_block_t)<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows the HUD while a block is executing on a background queue, then hides the HUD.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:">- showAnimated:whileExecutingBlock:onQueue:completionBlock:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAnimated:whileExecutingBlock:completionBlock:" title="showAnimated:whileExecutingBlock:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAnimated:whileExecutingBlock:completionBlock:">&ndash;&nbsp;showAnimated:whileExecutingBlock:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows the HUD while a block is executing on a background queue, then hides the HUD.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showAnimated:(BOOL)<em>animated</em> whileExecutingBlock:(dispatch_block_t)<em>block</em> completionBlock:(MBProgressHUDCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows the HUD while a block is executing on a background queue, then hides the HUD.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:">- showAnimated:whileExecutingBlock:onQueue:completionBlock:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAnimated:whileExecutingBlock:onQueue:" title="showAnimated:whileExecutingBlock:onQueue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAnimated:whileExecutingBlock:onQueue:">&ndash;&nbsp;showAnimated:whileExecutingBlock:onQueue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows the HUD while a block is executing on the specified dispatch queue, then hides the HUD.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showAnimated:(BOOL)<em>animated</em> whileExecutingBlock:(dispatch_block_t)<em>block</em> onQueue:(dispatch_queue_t)<em>queue</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows the HUD while a block is executing on the specified dispatch queue, then hides the HUD.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:">- showAnimated:whileExecutingBlock:onQueue:completionBlock:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:" title="showAnimated:whileExecutingBlock:onQueue:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAnimated:whileExecutingBlock:onQueue:completionBlock:">&ndash;&nbsp;showAnimated:whileExecutingBlock:onQueue:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shows the HUD while a block is executing on the specified dispatch queue, executes completion block on the main queue, and then hides the HUD.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showAnimated:(BOOL)<em>animated</em> whileExecutingBlock:(dispatch_block_t)<em>block</em> onQueue:(dispatch_queue_t)<em>queue</em> completionBlock:(MBProgressHUDCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>If set to YES the HUD will (dis)appear using the current <a href="#//api/name/animationType">animationType</a>. If set to NO the HUD will
+not use animations while (dis)appearing.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be executed while the HUD is shown.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queue</code></th>
+						<td><p>The dispatch queue on which the block should be executed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The block to be executed on completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shows the HUD while a block is executing on the specified dispatch queue, executes completion block on the main queue, and then hides the HUD.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/completionBlock">@property completionBlock</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completionBlock" title="completionBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completionBlock">&nbsp;&nbsp;completionBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A block that gets called after the HUD was completely hidden.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) MBProgressHUDCompletionBlock completionBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A block that gets called after the HUD was completely hidden.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mode" title="mode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mode">&nbsp;&nbsp;mode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>MBProgressHUD operation mode. The default is MBProgressHUDModeIndeterminate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) MBProgressHUDMode mode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>MBProgressHUD operation mode. The default is MBProgressHUDModeIndeterminate.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p>MBProgressHUD<a href="../Constants/Mode.html">Mode</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animationType" title="animationType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animationType">&nbsp;&nbsp;animationType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The animation type that should be used when the HUD is shown and hidden.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) MBProgressHUDAnimation animationType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The animation type that should be used when the HUD is shown and hidden.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/customView" title="customView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/customView">&nbsp;&nbsp;customView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The UIView (e.g., a UIImageView) to be shown when the HUD is in MBProgressHUDModeCustomView.
+For best results use a 37 by 37 pixel view (so the bounds match the built in <a href="#//api/name/indicator">indicator</a> bounds).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIView *customView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The UIView (e.g., a UIImageView) to be shown when the HUD is in MBProgressHUDModeCustomView.
+For best results use a 37 by 37 pixel view (so the bounds match the built in <a href="#//api/name/indicator">indicator</a> bounds).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The HUD delegate object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_WEAK) id&lt;MBProgressHUDDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The HUD delegate object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/MBProgressHUDDelegate.html">MBProgressHUDDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/labelText" title="labelText"></a>
+	<h3 class="method-title"><code><a href="#//api/name/labelText">&nbsp;&nbsp;labelText</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An optional short message to be displayed below the activity <a href="#//api/name/indicator">indicator</a>. The HUD is automatically resized to fit
+the entire text. If the text is too long it will get clipped by displaying &ldquo;&hellip;&rdquo; at the end. If left unchanged or
+set to @&ldquo;&rdquo;, then no message is displayed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) NSString *labelText</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An optional short message to be displayed below the activity <a href="#//api/name/indicator">indicator</a>. The HUD is automatically resized to fit
+the entire text. If the text is too long it will get clipped by displaying &ldquo;&hellip;&rdquo; at the end. If left unchanged or
+set to @&ldquo;&rdquo;, then no message is displayed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/detailsLabelText" title="detailsLabelText"></a>
+	<h3 class="method-title"><code><a href="#//api/name/detailsLabelText">&nbsp;&nbsp;detailsLabelText</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An optional details message displayed below the <a href="#//api/name/labelText">labelText</a> message. This message is displayed only if the <a href="#//api/name/labelText">labelText</a>
+property is also set and is different from an empty string (@&ldquo;&rdquo;). The details text can span multiple lines.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) NSString *detailsLabelText</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An optional details message displayed below the <a href="#//api/name/labelText">labelText</a> message. This message is displayed only if the <a href="#//api/name/labelText">labelText</a>
+property is also set and is different from an empty string (@&ldquo;&rdquo;). The details text can span multiple lines.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/opacity" title="opacity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/opacity">&nbsp;&nbsp;opacity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The opacity of the HUD window. Defaults to 0.8 (80% opacity).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float opacity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The opacity of the HUD window. Defaults to 0.8 (80% opacity).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/color" title="color"></a>
+	<h3 class="method-title"><code><a href="#//api/name/color">&nbsp;&nbsp;color</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The color of the HUD window. Defaults to black. If this property is set, color is set using
+this UIColor and the opacity property is not used.  using retain because performing copy on
+UIColor base colors (like [UIColor greenColor]) cause problems with the copyZone.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIColor *color</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The color of the HUD window. Defaults to black. If this property is set, color is set using
+this UIColor and the opacity property is not used.  using retain because performing copy on
+UIColor base colors (like [UIColor greenColor]) cause problems with the copyZone.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/xOffset" title="xOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/xOffset">&nbsp;&nbsp;xOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The x-axis offset of the HUD relative to the centre of the superview.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float xOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The x-axis offset of the HUD relative to the centre of the superview.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/yOffset" title="yOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/yOffset">&nbsp;&nbsp;yOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The y-axis offset of the HUD relative to the centre of the superview.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float yOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The y-axis offset of the HUD relative to the centre of the superview.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/margin" title="margin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/margin">&nbsp;&nbsp;margin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount of space between the HUD edge and the HUD elements (labels, indicators or custom views).
+Defaults to 20.0</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float margin</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The amount of space between the HUD edge and the HUD elements (labels, indicators or custom views).
+Defaults to 20.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cornerRadius" title="cornerRadius"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cornerRadius">&nbsp;&nbsp;cornerRadius</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The corner radius for the HUD
+Defaults to 10.0</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float cornerRadius</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The corner radius for the HUD
+Defaults to 10.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dimBackground" title="dimBackground"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dimBackground">&nbsp;&nbsp;dimBackground</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cover the HUD background view with a radial gradient.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) BOOL dimBackground</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Cover the HUD background view with a radial gradient.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minShowTime" title="minShowTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minShowTime">&nbsp;&nbsp;minShowTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum time (in seconds) that the HUD is shown.
+This avoids the problem of the HUD being shown and than instantly hidden.
+Defaults to 0 (no minimum show time).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float minShowTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The minimum time (in seconds) that the HUD is shown.
+This avoids the problem of the HUD being shown and than instantly hidden.
+Defaults to 0 (no minimum show time).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskInProgress" title="taskInProgress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskInProgress">&nbsp;&nbsp;taskInProgress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates that the executed operation is in <a href="#//api/name/progress">progress</a>. Needed for correct graceTime operation.
+If you don&rsquo;t set a graceTime (different than 0.0) this does nothing.
+This property is automatically set when using <a href="#//api/name/showWhileExecuting:onTarget:withObject:animated:">showWhileExecuting:onTarget:withObject:animated:</a>.
+When threading is <a href="#//api/name/done">done</a> outside of the HUD (i.e., when the <a href="#//api/name/show:">show:</a> and <a href="#//api/name/hide:">hide:</a> methods are used directly),
+you need to set this property when your task starts and completes in order to have normal graceTime
+functionality.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) BOOL taskInProgress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates that the executed operation is in <a href="#//api/name/progress">progress</a>. Needed for correct graceTime operation.
+If you don&rsquo;t set a graceTime (different than 0.0) this does nothing.
+This property is automatically set when using <a href="#//api/name/showWhileExecuting:onTarget:withObject:animated:">showWhileExecuting:onTarget:withObject:animated:</a>.
+When threading is <a href="#//api/name/done">done</a> outside of the HUD (i.e., when the <a href="#//api/name/show:">show:</a> and <a href="#//api/name/hide:">hide:</a> methods are used directly),
+you need to set this property when your task starts and completes in order to have normal graceTime
+functionality.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeFromSuperViewOnHide" title="removeFromSuperViewOnHide"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeFromSuperViewOnHide">&nbsp;&nbsp;removeFromSuperViewOnHide</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes the HUD from its parent view when hidden.
+Defaults to NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) BOOL removeFromSuperViewOnHide</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes the HUD from its parent view when hidden.
+Defaults to NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/labelFont" title="labelFont"></a>
+	<h3 class="method-title"><code><a href="#//api/name/labelFont">&nbsp;&nbsp;labelFont</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Font to be used for the main label. Set this property if the default is not adequate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIFont *labelFont</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Font to be used for the main label. Set this property if the default is not adequate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/labelColor" title="labelColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/labelColor">&nbsp;&nbsp;labelColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Color to be used for the main label. Set this property if the default is not adequate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIColor *labelColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Color to be used for the main label. Set this property if the default is not adequate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/detailsLabelFont" title="detailsLabelFont"></a>
+	<h3 class="method-title"><code><a href="#//api/name/detailsLabelFont">&nbsp;&nbsp;detailsLabelFont</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Font to be used for the details label. Set this property if the default is not adequate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIFont *detailsLabelFont</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Font to be used for the details label. Set this property if the default is not adequate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/detailsLabelColor" title="detailsLabelColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/detailsLabelColor">&nbsp;&nbsp;detailsLabelColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Color to be used for the details label. Set this property if the default is not adequate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIColor *detailsLabelColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Color to be used for the details label. Set this property if the default is not adequate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activityIndicatorColor" title="activityIndicatorColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activityIndicatorColor">&nbsp;&nbsp;activityIndicatorColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The color of the activity indicator. Defaults to [UIColor whiteColor]
+Does nothing on pre iOS 5.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (MB_STRONG) UIColor *activityIndicatorColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The color of the activity indicator. Defaults to [UIColor whiteColor]
+Does nothing on pre iOS 5.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/progress" title="progress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/progress">&nbsp;&nbsp;progress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The progress of the progress <a href="#//api/name/indicator">indicator</a>, from 0.0 to 1.0. Defaults to 0.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) float progress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The progress of the progress <a href="#//api/name/indicator">indicator</a>, from 0.0 to 1.0. Defaults to 0.0.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minSize" title="minSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minSize">&nbsp;&nbsp;minSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum <a href="#//api/name/size">size</a> of the HUD bezel. Defaults to CGSizeZero (no minimum <a href="#//api/name/size">size</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign) CGSize minSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The minimum <a href="#//api/name/size">size</a> of the HUD bezel. Defaults to CGSizeZero (no minimum <a href="#//api/name/size">size</a>).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="method-title"><code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The actual size of the HUD bezel.
+You can use this to limit touch handling on the bezel aria only.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (atomic, assign, readonly) CGSize size</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The actual size of the HUD bezel.
+You can use this to limit touch handling on the bezel aria only.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="https://github.com/jdg/MBProgressHUD/pull/200">https://github.com/jdg/MBProgressHUD/pull/200</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/square" title="square"></a>
+	<h3 class="method-title"><code><a href="#//api/name/square">&nbsp;&nbsp;square</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Force the HUD dimensions to be equal if possible.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, getter=isSquare) BOOL square</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Force the HUD dimensions to be equal if possible.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MBProgressHUD.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

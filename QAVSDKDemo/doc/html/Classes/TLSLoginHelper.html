@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TLSLoginHelper Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:">- TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:</option>
+		
+		<option value="//api/name/TLSGuestLogin:">- TLSGuestLogin:</option>
+		
+		<option value="//api/name/TLSPwdLogin:andPassword:andTLSPwdLoginListener:">- TLSPwdLogin:andPassword:andTLSPwdLoginListener:</option>
+		
+		<option value="//api/name/TLSPwdLoginReaskImgCode:">- TLSPwdLoginReaskImgCode:</option>
+		
+		<option value="//api/name/TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:">- TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:</option>
+		
+		<option value="//api/name/TLSRefreshTicket:andTLSRefreshTicketListener:">- TLSRefreshTicket:andTLSRefreshTicketListener:</option>
+		
+		<option value="//api/name/TLSSmsAskCode:andTLSSmsLoginListener:">- TLSSmsAskCode:andTLSSmsLoginListener:</option>
+		
+		<option value="//api/name/TLSSmsLogin:andTLSSmsLoginListener:">- TLSSmsLogin:andTLSSmsLoginListener:</option>
+		
+		<option value="//api/name/TLSSmsReaskCode:andTLSSmsLoginListener:">- TLSSmsReaskCode:andTLSSmsLoginListener:</option>
+		
+		<option value="//api/name/TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:">- TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:</option>
+		
+		<option value="//api/name/clearUserInfo:withOption:">- clearUserInfo:withOption:</option>
+		
+		<option value="//api/name/getAllUserInfo">- getAllUserInfo</option>
+		
+		<option value="//api/name/getGUID">- getGUID</option>
+		
+		<option value="//api/name/getGuestIdentifier">- getGuestIdentifier</option>
+		
+		<option value="//api/name/getLastUserInfo">- getLastUserInfo</option>
+		
+		<option value="//api/name/getSDKVersion">- getSDKVersion</option>
+		
+		<option value="//api/name/getSSOTicket:">- getSSOTicket:</option>
+		
+		<option value="//api/name/getTLSUserSig:">- getTLSUserSig:</option>
+		
+		<option value="//api/name/init:andAccountType:andAppVer:">- init:andAccountType:andAppVer:</option>
+		
+		<option value="//api/name/needLogin:">- needLogin:</option>
+		
+		<option value="//api/name/setLocalId:">- setLocalId:</option>
+		
+		<option value="//api/name/setLogcat:">- setLogcat:</option>
+		
+		<option value="//api/name/setTimeOut:">- setTimeOut:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TLSLoginHelper Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TLSLoginHelper.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>登录类</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取TLSLoginHelper 实例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (TLSLoginHelper *)getInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回TLSLoginHelper 实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init:andAccountType:andAppVer:" title="init:andAccountType:andAppVer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init:andAccountType:andAppVer:">&ndash;&nbsp;init:andAccountType:andAppVer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化TLSLoginHelper 实例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TLSLoginHelper *)init:(int)<em>sdkAppid</em> andAccountType:(int)<em>accountType</em> andAppVer:(NSString *)<em>appVer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sdkAppid</code></th>
+						<td><ul>
+<li>用于TLS SDK的appid</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accountType</code></th>
+						<td><ul>
+<li>账号类型</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appVer</code></th>
+						<td><ul>
+<li>app 版本号，格式为 x.x.x.x， 例如，客户端版本为1.1，传入参数为 @&ldquo;1.1.0.0&rdquo;</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回TLSLoginHelper 实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTimeOut:" title="setTimeOut:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTimeOut:">&ndash;&nbsp;setTimeOut:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置请求超时时间，默认为10000毫秒。
+sdk与后台交互时，如果超时，会重试5次，所以不应设置太大的值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTimeOut:(int)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><ul>
+<li>超时时间（单位毫秒）</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置请求超时时间，默认为10000毫秒。
+sdk与后台交互时，如果超时，会重试5次，所以不应设置太大的值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocalId:" title="setLocalId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocalId:">&ndash;&nbsp;setLocalId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置语言类型（支持国际化）
+目前有以下类型供选择：
+2052：简体中文;1028：繁体中文;1033：英文; 1041: 日语; 1036: 法语</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocalId:(int)<em>localid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localid</code></th>
+						<td><ul>
+<li>语言类型</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置语言类型（支持国际化）
+目前有以下类型供选择：
+2052：简体中文;1028：繁体中文;1033：英文; 1041: 日语; 1036: 法语</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLogcat:" title="setLogcat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLogcat:">&ndash;&nbsp;setLogcat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打印调试日志</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLogcat:(BOOL)<em>show</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>show</code></th>
+						<td><ul>
+<li>是否输出日志到logcat</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>打印调试日志</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSDKVersion" title="getSDKVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDKVersion">&ndash;&nbsp;getSDKVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取TLS SDK的版本信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSDKVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SDK的版本信息</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取TLS SDK的版本信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGUID" title="getGUID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGUID">&ndash;&nbsp;getGUID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取guid</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)getGUID</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>guid</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取guid</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllUserInfo" title="getAllUserInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllUserInfo">&ndash;&nbsp;getAllUserInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取登录过当前app的帐号列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getAllUserInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>账号列表信息 TLSUserInfo数组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取登录过当前app的帐号列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLastUserInfo" title="getLastUserInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLastUserInfo">&ndash;&nbsp;getLastUserInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取最后一次登录记录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TLSUserInfo *)getLastUserInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>账号信息</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取最后一次登录记录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearUserInfo:withOption:" title="clearUserInfo:withOption:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearUserInfo:withOption:">&ndash;&nbsp;clearUserInfo:withOption:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>清除用户登录数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)clearUserInfo:(NSString *)<em>identifier</em> withOption:(BOOL)<em>deleteAccount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deleteAccount</code></th>
+						<td><ul>
+<li>是否将identifier从历史登录账号列表中删除 NO表示不删除 YES表示删除</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>ture</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>清除用户登录数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/needLogin:" title="needLogin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needLogin:">&ndash;&nbsp;needLogin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断是否需要用户登录（输入密码或者短信验证）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)needLogin:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户帐号</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>true：需要用户登录；false：本地已有登录态，无需登录，可直接换票</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断是否需要用户登录（输入密码或者短信验证）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSSOTicket:" title="getSSOTicket:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSSOTicket:">&ndash;&nbsp;getSSOTicket:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取本地保存的SSO票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)getSSOTicket:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>{&ldquo;A2&rdquo;: xxx, &ldquo;A2Key&rdquo;: xxx, &ldquo;D2&rdquo;: xxx, &ldquo;D2Key&rdquo;: xxx, &ldquo;tinyID&rdquo;:xxx}
+除了tinyID是NSString外，其他的都是NSData类型</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取本地保存的SSO票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTLSUserSig:" title="getTLSUserSig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTLSUserSig:">&ndash;&nbsp;getTLSUserSig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取本地保存TLS票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getTLSUserSig:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>json webtoken</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取本地保存TLS票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSPwdLogin:andPassword:andTLSPwdLoginListener:" title="TLSPwdLogin:andPassword:andTLSPwdLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSPwdLogin:andPassword:andTLSPwdLoginListener:">&ndash;&nbsp;TLSPwdLogin:andPassword:andTLSPwdLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>密码登录，获取票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSPwdLogin:(NSString *)<em>identifier</em> andPassword:(NSString *)<em>password</em> andTLSPwdLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户账号</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><ul>
+<li>用户密码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSPwdLoginListener.html">TLSPwdLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>密码登录，获取票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSPwdLoginReaskImgCode:" title="TLSPwdLoginReaskImgCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSPwdLoginReaskImgCode:">&ndash;&nbsp;TLSPwdLoginReaskImgCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>刷新图片验证码</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSPwdLoginReaskImgCode:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSPwdLoginListener.html">TLSPwdLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>刷新图片验证码</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:" title="TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:">&ndash;&nbsp;TLSPwdLoginVerifyImgCode:andTLSPwdLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>验证图片验证码，如果验证成功则登录成功，否则要重新验证</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSPwdLoginVerifyImgCode:(NSString *)<em>imgCode</em> andTLSPwdLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imgCode</code></th>
+						<td><ul>
+<li>用户账号</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSPwdLoginListener.html">TLSPwdLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>验证图片验证码，如果验证成功则登录成功，否则要重新验证</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSRefreshTicket:andTLSRefreshTicketListener:" title="TLSRefreshTicket:andTLSRefreshTicketListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSRefreshTicket:andTLSRefreshTicketListener:">&ndash;&nbsp;TLSRefreshTicket:andTLSRefreshTicketListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>换票，刷新票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSRefreshTicket:(NSString *)<em>identifier</em> andTLSRefreshTicketListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><ul>
+<li>用户账号</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSRefreshTicketListener.html">TLSRefreshTicketListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>换票，刷新票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSSmsAskCode:andTLSSmsLoginListener:" title="TLSSmsAskCode:andTLSSmsLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSSmsAskCode:andTLSSmsLoginListener:">&ndash;&nbsp;TLSSmsAskCode:andTLSSmsLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短信登录，手机号验证</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSSmsAskCode:(NSString *)<em>mobile</em> andTLSSmsLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobile</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSSmsLoginListener.html">TLSSmsLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短信登录，手机号验证</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSSmsReaskCode:andTLSSmsLoginListener:" title="TLSSmsReaskCode:andTLSSmsLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSSmsReaskCode:andTLSSmsLoginListener:">&ndash;&nbsp;TLSSmsReaskCode:andTLSSmsLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短信登录，刷新短信验证码
+注意：一定是TLSSmsAskCode调用成功了，但是没有收到验证码，才可以调用此接口，否则可能会报错</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSSmsReaskCode:(NSString *)<em>mobile</em> andTLSSmsLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobile</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSSmsLoginListener.html">TLSSmsLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短信登录，刷新短信验证码
+注意：一定是TLSSmsAskCode调用成功了，但是没有收到验证码，才可以调用此接口，否则可能会报错</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:" title="TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:">&ndash;&nbsp;TLSSmsVerifyCode:andCode:andTLSSmsLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短信登录，验证短信验证码</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSSmsVerifyCode:(NSString *)<em>mobile</em> andCode:(NSString *)<em>code</em> andTLSSmsLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobile</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><ul>
+<li>验证码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSSmsLoginListener.html">TLSSmsLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短信登录，验证短信验证码</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSSmsLogin:andTLSSmsLoginListener:" title="TLSSmsLogin:andTLSSmsLoginListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSSmsLogin:andTLSSmsLoginListener:">&ndash;&nbsp;TLSSmsLogin:andTLSSmsLoginListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短信登录，获取票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSSmsLogin:(NSString *)<em>mobile</em> andTLSSmsLoginListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobile</code></th>
+						<td><ul>
+<li>用户手机号码</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><ul>
+<li><a href="../Protocols/TLSSmsLoginListener.html">TLSSmsLoginListener</a> 回调对象</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示调用成功；其它表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短信登录，获取票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:" title="TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:">&ndash;&nbsp;TLSExchangeTicket:andAccountType:andIdentifier:andAppidAt3rd:andUserSig:andTLSExchangeTicketListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>独立模式下换票 usersig换取A2、D2等票据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSExchangeTicket:(uint32_t)<em>sdkappid</em> andAccountType:(uint32_t)<em>accountType</em> andIdentifier:(NSString *)<em>identifier</em> andAppidAt3rd:(NSString *)<em>appidAt3rd</em> andUserSig:(NSString *)<em>userSig</em> andTLSExchangeTicketListener:(id)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sdkappid</code></th>
+						<td><p>业务在TLS申请账号集成时得到的appid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accountType</code></th>
+						<td><p>账号对应的accountType</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>帐号名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appidAt3rd</code></th>
+						<td><p>第三方帐号的appid，可选参数，没有请传入nil</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userSig</code></th>
+						<td><p>业务后台生成的TLS用户票据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>处理回调 需要实现TLSExchangeTicketListener协议
+在本接口的成功回调时通过getSSOTicket接口获取A2、D2等票据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示成功；其他表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>独立模式下换票 usersig换取A2、D2等票据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TLSGuestLogin:" title="TLSGuestLogin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TLSGuestLogin:">&ndash;&nbsp;TLSGuestLogin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登录匿名账号，无需注册直接登录，在不清数据的情况下会登录上次登录的匿名账号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)TLSGuestLogin:(id&lt;TLSGuestLoginListener&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>处理回调 需要实现TLSGuestLoginListener协议</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0表示成功；其他表示调用失败</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登录匿名账号，无需注册直接登录，在不清数据的情况下会登录上次登录的匿名账号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGuestIdentifier" title="getGuestIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGuestIdentifier">&ndash;&nbsp;getGuestIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取本地匿名账号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TLSUserInfo *)getGuestIdentifier</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>匿名账号的userinfo，若没有则返回nil</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取本地匿名账号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TLSLoginHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

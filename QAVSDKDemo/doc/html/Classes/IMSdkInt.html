@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IMSdkInt Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getTinyId">- getTinyId</option>
+		
+		<option value="//api/name/logBugly:tag:log:">- logBugly:tag:log:</option>
+		
+		<option value="//api/name/reportMeasureSpeedResult:bussType:authType:succ:fail:">- reportMeasureSpeedResult:bussType:authType:succ:fail:</option>
+		
+		<option value="//api/name/request:body:succ:fail:">- request:body:succ:fail:</option>
+		
+		<option value="//api/name/requestMeasureSpeedWith:authType:succ:fail:">- requestMeasureSpeedWith:authType:succ:fail:</option>
+		
+		<option value="//api/name/requestMultiVideoApp:okBlock:errBlock:">- requestMultiVideoApp:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:">- requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestMultiVideoRecorderStop:okBlock:errBlock:">- requestMultiVideoRecorderStop:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:">- requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:">- requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestOpenImRelay:req:okBlock:errBlock:">- requestOpenImRelay:req:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestQualityReport:type:succ:fail:">- requestQualityReport:type:succ:fail:</option>
+		
+		<option value="//api/name/requestSharpSvr:req:okBlock:errBlock:">- requestSharpSvr:req:okBlock:errBlock:</option>
+		
+		<option value="//api/name/requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:">- requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:</option>
+		
+		<option value="//api/name/setAvSDKVersion:">- setAvSDKVersion:</option>
+		
+		<option value="//api/name/setReqTimeout:">- setReqTimeout:</option>
+		
+		<option value="//api/name/setSharpSvrPushListener:errBlock:">- setSharpSvrPushListener:errBlock:</option>
+		
+		<option value="//api/name/tinyIdToUserId:okBlock:errBlock:">- tinyIdToUserId:okBlock:errBlock:</option>
+		
+		<option value="//api/name/userIdToTinyId:okBlock:errBlock:">- userIdToTinyId:okBlock:errBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">IMSdkInt Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>IMSdkInt.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>音视频接口</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取 IMSdkInt 全局对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (IMSdkInt *)sharedInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>IMSdkInt 对象</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 IMSdkInt 全局对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTinyId" title="getTinyId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTinyId">&ndash;&nbsp;getTinyId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前登陆用户 TinyID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (unsigned long long)getTinyId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>tinyid</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前登陆用户 TinyID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAvSDKVersion:" title="setAvSDKVersion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAvSDKVersion:">&ndash;&nbsp;setAvSDKVersion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置音视频版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAvSDKVersion:(NSString *)<em>ver</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置音视频版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userIdToTinyId:okBlock:errBlock:" title="userIdToTinyId:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userIdToTinyId:okBlock:errBlock:">&ndash;&nbsp;userIdToTinyId:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UserId 转 TinyId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)userIdToTinyId:(NSArray *)<em>userIdList</em> okBlock:(OMUserIdSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userIdList</code></th>
+						<td><p>userId列表，<a href="../Classes/IMUserId.html">IMUserId</a> 结构体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>UserId 转 TinyId</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tinyIdToUserId:okBlock:errBlock:" title="tinyIdToUserId:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tinyIdToUserId:okBlock:errBlock:">&ndash;&nbsp;tinyIdToUserId:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>TinyId 转 UserId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)tinyIdToUserId:(NSArray *)<em>tinyIdList</em> okBlock:(OMUserIdSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tinyIdList</code></th>
+						<td><p>tinyId列表，unsigned long long类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>TinyId 转 UserId</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMultiVideoApp:okBlock:errBlock:" title="requestMultiVideoApp:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMultiVideoApp:okBlock:errBlock:">&ndash;&nbsp;requestMultiVideoApp:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>多人音视频请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMultiVideoApp:(NSData *)<em>reqbody</em> okBlock:(OMCommandSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reqbody</code></th>
+						<td><p>请求二进制数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>多人音视频请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMeasureSpeedWith:authType:succ:fail:" title="requestMeasureSpeedWith:authType:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMeasureSpeedWith:authType:succ:fail:">&ndash;&nbsp;requestMeasureSpeedWith:authType:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频测速请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMeasureSpeedWith:(short)<em>bussType</em> authType:(short)<em>authType</em> succ:(OMCommandSucc)<em>succ</em> fail:(OMErr)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bussType</code></th>
+						<td><p>业务类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authType</code></th>
+						<td><p>鉴权类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>音频测速请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportMeasureSpeedResult:bussType:authType:succ:fail:" title="reportMeasureSpeedResult:bussType:authType:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportMeasureSpeedResult:bussType:authType:succ:fail:">&ndash;&nbsp;reportMeasureSpeedResult:bussType:authType:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频测速结果上报</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)reportMeasureSpeedResult:(TIMAVTestSpeedResp_PKG *)<em>resp</em> bussType:(short)<em>bussType</em> authType:(short)<em>authType</em> succ:(OMCommandSucc)<em>succ</em> fail:(OMErr)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resp</code></th>
+						<td><p>requestMeasureSpeedWith:authType:succ:fail 成功时返回的响应中序列化出来的对像</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bussType</code></th>
+						<td><p>鉴权类型(同requestMeasureSpeedWith:authType:succ:fail 中的 bussType)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authType</code></th>
+						<td><p>鉴权类型(同requestMeasureSpeedWith:authType:succ:fail 中的 authtype)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>音频测速结果上报</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestOpenImRelay:req:okBlock:errBlock:" title="requestOpenImRelay:req:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestOpenImRelay:req:okBlock:errBlock:">&ndash;&nbsp;requestOpenImRelay:req:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>多人音视频发送请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestOpenImRelay:(NSString *)<em>serviceCmd</em> req:(NSData *)<em>reqbody</em> okBlock:(OMCommandSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceCmd</code></th>
+						<td><p>命令字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reqbody</code></th>
+						<td><p>发送包体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>多人音视频发送请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setReqTimeout:" title="setReqTimeout:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setReqTimeout:">&ndash;&nbsp;setReqTimeout:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置超时时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setReqTimeout:(int)<em>timeout</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>超时时间</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置超时时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSharpSvr:req:okBlock:errBlock:" title="requestSharpSvr:req:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSharpSvr:req:okBlock:errBlock:">&ndash;&nbsp;requestSharpSvr:req:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>双人音视频请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestSharpSvr:(unsigned long long)<em>tinyid</em> req:(NSData *)<em>reqbody</em> okBlock:(OMCommandSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tinyid</code></th>
+						<td><p>接收方 tinyid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reqbody</code></th>
+						<td><p>请求包体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>双人音视频请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSharpSvrPushListener:errBlock:" title="setSharpSvrPushListener:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSharpSvrPushListener:errBlock:">&ndash;&nbsp;setSharpSvrPushListener:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置双人音视频监听回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)setSharpSvrPushListener:(OMCommandSucc)<em>succ</em> errBlock:(OMErr)<em>err</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，有在线消息时调用</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>err</code></th>
+						<td><p>失败回调，在线消息解析失败或者包体错误码不为0时调用</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置双人音视频监听回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/request:body:succ:fail:" title="request:body:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/request:body:succ:fail:">&ndash;&nbsp;request:body:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)request:(NSString *)<em>cmd</em> body:(NSData *)<em>body</em> succ:(OMRequestSucc)<em>succ</em> fail:(OMRequsetFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cmd</code></th>
+						<td><p>命令字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>body</code></th>
+						<td><p>包体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回响应数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调，返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:" title="requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:">&ndash;&nbsp;requestMultiVideoStreamerStart:streamInfo:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送创建直播频道,开启推流的请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMultiVideoStreamerStart:(OMAVRoomInfo *)<em>roomInfo</em> streamInfo:(AVStreamInfo *)<em>streamInfo</em> okBlock:(OMMultiVideoStreamerStartSucc)<em>succ</em> errBlock:(OMMultiFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomInfo</code></th>
+						<td><p>房间信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>streamInfo</code></th>
+						<td><p>推流参数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调,返回频道ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调,返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送创建直播频道,开启推流的请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:" title="requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:">&ndash;&nbsp;requestMultiVideoStreamerStop:channelIDs:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送关闭直播频道,停止推流的请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMultiVideoStreamerStop:(OMAVRoomInfo *)<em>roomInfo</em> channelIDs:(NSArray *)<em>channelIDs</em> okBlock:(OMMultiSucc)<em>succ</em> errBlock:(OMMultiFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomInfo</code></th>
+						<td><p>房间信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channelIDs</code></th>
+						<td><p>频道ID NSNumber*列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调,返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送关闭直播频道,停止推流的请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:" title="requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:">&ndash;&nbsp;requestMultiVideoRecorderStart:recordInfo:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送开始录制请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMultiVideoRecorderStart:(OMAVRoomInfo *)<em>roomInfo</em> recordInfo:(AVRecordInfo *)<em>recordInfo</em> okBlock:(OMMultiSucc)<em>succ</em> errBlock:(OMMultiFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomInfo</code></th>
+						<td><p>房间信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>recordInfo</code></th>
+						<td><p>录制请求参数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调，返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送开始录制请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMultiVideoRecorderStop:okBlock:errBlock:" title="requestMultiVideoRecorderStop:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMultiVideoRecorderStop:okBlock:errBlock:">&ndash;&nbsp;requestMultiVideoRecorderStop:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送停止录制请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestMultiVideoRecorderStop:(OMAVRoomInfo *)<em>roomInfo</em> okBlock:(OMMultiVideoRecorderStopSucc)<em>succ</em> errBlock:(OMMultiFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomInfo</code></th>
+						<td><p>房间信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，返回文件ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调，返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送停止录制请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:" title="requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:">&ndash;&nbsp;requestVideoInvitation:authType:authid:requestType:receivers:roomid:bytesBuffer:okBlock:errBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>发送多人音视频邀请
+*</li>
+<li>@param bussType 业务类型</li>
+<li>@param authType 鉴权类型</li>
+<li>@param authid  鉴权ID</li>
+<li>@param requestType:</li>
+<li>1&mdash;&ndash;发起发发起音视频邀请
+ 2&mdash;&ndash;发起方取消音视频邀请
+ 3&mdash;&ndash;接收方接受音视频邀请
+ 4&mdash;&ndash;接收方拒绝音视频邀请</li>
+<li>@param receiversArray  向这些人发送邀请, NSString 数组</li>
+<li>@roomid 房间号</li>
+<li>@param byteBuf : 业务自定义buf</li>
+<li>@param succ 成功回调</li>
+<li>@param fail 失败回调，返回错误码
+*</li>
+<li>@return 0 发包成功</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestVideoInvitation:(int)<em>bussType</em> authType:(int)<em>authType</em> authid:(unsigned int)<em>authid</em> requestType:(int)<em>requestType</em> receivers:(NSArray *)<em>receiversArray</em> roomid:(long long)<em>roomid</em> bytesBuffer:(NSData *)<em>byteBuf</em> okBlock:(OMCommandSucc)<em>succ</em> errBlock:(OMErr)<em>fail</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>发送多人音视频邀请
+*</li>
+<li>@param bussType 业务类型</li>
+<li>@param authType 鉴权类型</li>
+<li>@param authid  鉴权ID</li>
+<li>@param requestType:</li>
+<li>1&mdash;&ndash;发起发发起音视频邀请
+ 2&mdash;&ndash;发起方取消音视频邀请
+ 3&mdash;&ndash;接收方接受音视频邀请
+ 4&mdash;&ndash;接收方拒绝音视频邀请</li>
+<li>@param receiversArray  向这些人发送邀请, NSString 数组</li>
+<li>@roomid 房间号</li>
+<li>@param byteBuf : 业务自定义buf</li>
+<li>@param succ 成功回调</li>
+<li>@param fail 失败回调，返回错误码
+*</li>
+<li>@return 0 发包成功</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestQualityReport:type:succ:fail:" title="requestQualityReport:type:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestQualityReport:type:succ:fail:">&ndash;&nbsp;requestQualityReport:type:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送质量上报请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)requestQualityReport:(NSData *)<em>data</em> type:(unsigned int)<em>type</em> succ:(OMMultiSucc)<em>succ</em> fail:(OMMultiFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>上报的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>上报数据类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调，返回错误码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 发包成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送质量上报请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logBugly:tag:log:" title="logBugly:tag:log:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logBugly:tag:log:">&ndash;&nbsp;logBugly:tag:log:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Crash 日志</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logBugly:(TIMLogLevel)<em>level</em> tag:(NSString *)<em>tag</em> log:(NSString *)<em>content</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><p>日志级别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tag</code></th>
+						<td><p>日志模块分类</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>content</code></th>
+						<td><p>日志内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Crash 日志</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IMSdkInt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

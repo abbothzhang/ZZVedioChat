@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DDLogFlag Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DDLogFlag Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>DDLog.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">DDLogFlag</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Define the standard options.</p>
+
+<p>We default to only 4 levels because it makes it easier for beginners
+to make the transition to a logging framework.</p>
+
+<p>More advanced users may choose to completely customize the levels (and level names) to suite their needs.
+For more information on this see the &ldquo;Custom Log Levels&rdquo; page:
+Documentation/CustomLogLevels.md</p>
+
+<p>Advanced users may also notice that we&rsquo;re using a bitmask.
+This is to allow for custom fine grained logging:
+Documentation/FineGrainedLogging.md</p>
+
+<p>&ndash; Flags &ndash;</p>
+
+<p>Typically you will use the LOG_LEVELS (see below), but the flags may be used directly in certain situations.
+For example, say you have a lot of warning log messages, and you wanted to disable them.
+However, you still needed to see your error and info log messages.
+You could accomplish that with the following:</p>
+
+<p>static const <a href="../Constants/DDLogLevel.html">DDLogLevel</a> dd<a href="../Constants/LogLevel.html">LogLevel</a> = DDLogFlagError | DDLogFlagInfo;</p>
+
+<p>When LOG_LEVEL_DEF is defined as dd<a href="../Constants/LogLevel.html">LogLevel</a>.</p>
+
+<p>Flags may also be consulted when writing custom log formatters,
+as the <a href="../Classes/DDLogMessage.html">DDLogMessage</a> class captures the individual flag that caused the log message to fire.</p>
+
+<p>&ndash; Levels &ndash;</p>
+
+<p>Log levels are simply the proper bitmask of the flags.</p>
+
+<p>&ndash; Booleans &ndash;</p>
+
+<p>The booleans may be used when your logging code involves more than one line.
+For example:</p>
+
+<p>if (LOG_VERBOSE) {
+for (id sprocket in sprockets)
+DDLogVerbose(@&ldquo;sprocket: %@&rdquo;, [sprocket description])
+}</p>
+
+<p>&ndash; Async &ndash;</p>
+
+<p>Defines the default asynchronous options.
+The default philosophy for asynchronous logging is very simple:</p>
+
+<p>Log messages with errors should be executed synchronously.
+After all, an error just occurred. The application could be unstable.</p>
+
+<p>All other log messages, such as debug output, are executed asynchronously.
+After all, if it wasn&rsquo;t an error, then it was just informational output,
+or something the application was easily able to recover from.</p>
+
+<p>&ndash; Changes &ndash;</p>
+
+<p>You are strongly discouraged from modifying this file.
+If you do, you make it more difficult on yourself to merge future bug fixes and improvements from the project.
+Instead, create your own MyLogging.h or ApplicationNameLogging.h or CompanyLogging.h</p>
+
+<p>For an example of customizing your logging experience, see the &ldquo;Custom Log Levels&rdquo; page:
+Documentation/CustomLogLevels.md</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_OPTIONS(NSUInteger, DDLogFlag ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">DDLogFlagError</a> = ( 1 &lt; &lt; 0 ),<br>
+                            
+                            &nbsp;&nbsp; <a href="">DDLogFlagWarning</a> = ( 1 &lt; &lt; 1 ),<br>
+                            
+                            &nbsp;&nbsp; <a href="">DDLogFlagInfo</a> = ( 1 &lt; &lt; 2 ),<br>
+                            
+                            &nbsp;&nbsp; <a href="">DDLogFlagDebug</a> = ( 1 &lt; &lt; 3 ),<br>
+                            
+                            &nbsp;&nbsp; <a href="">DDLogFlagVerbose</a> = ( 1 &lt; &lt; 4 ),<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="DDLogFlagError"></a><code>DDLogFlagError</code></dt>
+<dd>
+
+
+<p>Define the standard options.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">DDLog.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="DDLogFlagWarning"></a><code>DDLogFlagWarning</code></dt>
+<dd>
+
+
+<p>Define the standard options.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">DDLog.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="DDLogFlagInfo"></a><code>DDLogFlagInfo</code></dt>
+<dd>
+
+
+<p>Define the standard options.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">DDLog.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="DDLogFlagDebug"></a><code>DDLogFlagDebug</code></dt>
+<dd>
+
+
+<p>Define the standard options.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">DDLog.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="DDLogFlagVerbose"></a><code>DDLogFlagVerbose</code></dt>
+<dd>
+
+
+<p>Define the standard options.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">DDLog.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">DDLog.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

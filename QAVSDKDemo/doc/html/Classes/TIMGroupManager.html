@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TIMGroupManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">QAVSDKDemo </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">com.zh.albert</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/CreateChatRoomGroup:groupName:succ:fail:">- CreateChatRoomGroup:groupName:succ:fail:</option>
+		
+		<option value="//api/name/CreateGroup:members:groupName:groupId:succ:fail:">- CreateGroup:members:groupName:groupId:succ:fail:</option>
+		
+		<option value="//api/name/CreatePrivateGroup:groupName:succ:fail:">- CreatePrivateGroup:groupName:succ:fail:</option>
+		
+		<option value="//api/name/CreatePublicGroup:groupName:succ:fail:">- CreatePublicGroup:groupName:succ:fail:</option>
+		
+		<option value="//api/name/DeleteGroup:succ:fail:">- DeleteGroup:succ:fail:</option>
+		
+		<option value="//api/name/DeleteGroupMember:members:succ:fail:">- DeleteGroupMember:members:succ:fail:</option>
+		
+		<option value="//api/name/DeleteGroupMemberWithReason:reason:members:succ:fail:">- DeleteGroupMemberWithReason:reason:members:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupInfo:succ:fail:">- GetGroupInfo:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupList:fail:">- GetGroupList:fail:</option>
+		
+		<option value="//api/name/GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:">- GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupMembers:succ:fail:">- GetGroupMembers:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupMembersV2:flags:custom:nextSeq:succ:fail:">- GetGroupMembersV2:flags:custom:nextSeq:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupPublicInfo:succ:fail:">- GetGroupPublicInfo:succ:fail:</option>
+		
+		<option value="//api/name/GetGroupPublicInfoV2:flags:custom:succ:fail:">- GetGroupPublicInfoV2:flags:custom:succ:fail:</option>
+		
+		<option value="//api/name/GetReciveMessageOpt:succ:fail:">- GetReciveMessageOpt:succ:fail:</option>
+		
+		<option value="//api/name/InviteGroupMember:members:succ:fail:">- InviteGroupMember:members:succ:fail:</option>
+		
+		<option value="//api/name/JoinGroup:msg:succ:fail:">- JoinGroup:msg:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupAddOpt:opt:succ:fail:">- ModifyGroupAddOpt:opt:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupFaceUrl:url:succ:fail:">- ModifyGroupFaceUrl:url:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupIntroduction:introduction:succ:fail:">- ModifyGroupIntroduction:introduction:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:">- ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupMemberInfoSetRole:user:role:succ:fail:">- ModifyGroupMemberInfoSetRole:user:role:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:">- ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupName:groupName:succ:fail:">- ModifyGroupName:groupName:succ:fail:</option>
+		
+		<option value="//api/name/ModifyGroupNotification:notification:succ:fail:">- ModifyGroupNotification:notification:succ:fail:</option>
+		
+		<option value="//api/name/ModifyReciveMessageOpt:opt:succ:fail:">- ModifyReciveMessageOpt:opt:succ:fail:</option>
+		
+		<option value="//api/name/QuitGroup:succ:fail:">- QuitGroup:succ:fail:</option>
+		
+		<option value="//api/name/SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:">- SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TIMGroupManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TIMGroupManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群管理器实例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (TIMGroupManager *)sharedInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>管理器实例</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群管理器实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CreatePrivateGroup:groupName:succ:fail:" title="CreatePrivateGroup:groupName:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CreatePrivateGroup:groupName:succ:fail:">&ndash;&nbsp;CreatePrivateGroup:groupName:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建私有群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)CreatePrivateGroup:(NSArray *)<em>members</em> groupName:(NSString *)<em>groupName</em> succ:(TIMCreateGroupSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>群成员，NSString* 数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>群名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建私有群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CreatePublicGroup:groupName:succ:fail:" title="CreatePublicGroup:groupName:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CreatePublicGroup:groupName:succ:fail:">&ndash;&nbsp;CreatePublicGroup:groupName:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建公有群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)CreatePublicGroup:(NSArray *)<em>members</em> groupName:(NSString *)<em>groupName</em> succ:(TIMCreateGroupSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>群成员，NSString* 数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>群名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建公有群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CreateChatRoomGroup:groupName:succ:fail:" title="CreateChatRoomGroup:groupName:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CreateChatRoomGroup:groupName:succ:fail:">&ndash;&nbsp;CreateChatRoomGroup:groupName:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建聊天室</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)CreateChatRoomGroup:(NSArray *)<em>members</em> groupName:(NSString *)<em>groupName</em> succ:(TIMCreateGroupSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>群成员，NSString* 数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>群名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建聊天室</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CreateGroup:members:groupName:groupId:succ:fail:" title="CreateGroup:members:groupName:groupId:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CreateGroup:members:groupName:groupId:succ:fail:">&ndash;&nbsp;CreateGroup:members:groupName:groupId:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)CreateGroup:(NSString *)<em>type</em> members:(NSArray *)<em>members</em> groupName:(NSString *)<em>groupName</em> groupId:(NSString *)<em>groupId</em> succ:(TIMCreateGroupSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>群类型,Private,Public,ChatRoom</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>待加入群组的成员列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>群组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>自定义群组id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteGroup:succ:fail:" title="DeleteGroup:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteGroup:succ:fail:">&ndash;&nbsp;DeleteGroup:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>解散群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteGroup:(NSString *)<em>group</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>解散群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/InviteGroupMember:members:succ:fail:" title="InviteGroupMember:members:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/InviteGroupMember:members:succ:fail:">&ndash;&nbsp;InviteGroupMember:members:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>邀请好友入群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)InviteGroupMember:(NSString *)<em>group</em> members:(NSArray *)<em>members</em> succ:(TIMGroupMemberSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>要加入的成员列表（NSString* 类型数组）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>邀请好友入群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteGroupMember:members:succ:fail:" title="DeleteGroupMember:members:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteGroupMember:members:succ:fail:">&ndash;&nbsp;DeleteGroupMember:members:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除群成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteGroupMember:(NSString *)<em>group</em> members:(NSArray *)<em>members</em> succ:(TIMGroupMemberSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>要删除的成员列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除群成员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DeleteGroupMemberWithReason:reason:members:succ:fail:" title="DeleteGroupMemberWithReason:reason:members:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DeleteGroupMemberWithReason:reason:members:succ:fail:">&ndash;&nbsp;DeleteGroupMemberWithReason:reason:members:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除群成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)DeleteGroupMemberWithReason:(NSString *)<em>group</em> reason:(NSString *)<em>reason</em> members:(NSArray *)<em>members</em> succ:(TIMGroupMemberSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>删除原因</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>members</code></th>
+						<td><p>要删除的成员列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除群成员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/JoinGroup:msg:succ:fail:" title="JoinGroup:msg:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/JoinGroup:msg:succ:fail:">&ndash;&nbsp;JoinGroup:msg:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>申请加群</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)JoinGroup:(NSString *)<em>group</em> msg:(NSString *)<em>msg</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>申请加入的群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msg</code></th>
+						<td><p>申请消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调（申请成功等待审批）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>申请加群</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/QuitGroup:succ:fail:" title="QuitGroup:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/QuitGroup:succ:fail:">&ndash;&nbsp;QuitGroup:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>主动退出群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)QuitGroup:(NSString *)<em>group</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>主动退出群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupList:fail:" title="GetGroupList:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupList:fail:">&ndash;&nbsp;GetGroupList:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupList:(TIMGroupListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调，NSArray列表为 TIMGroupInfo，结构体只包含 group\groupName\groupType\faceUrl 信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupInfo:succ:fail:" title="GetGroupInfo:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupInfo:succ:fail:">&ndash;&nbsp;GetGroupInfo:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupInfo:(NSArray *)<em>groups</em> succ:(TIMGroupListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupName:groupName:succ:fail:" title="ModifyGroupName:groupName:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupName:groupName:succ:fail:">&ndash;&nbsp;ModifyGroupName:groupName:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群名</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupName:(NSString *)<em>group</em> groupName:(NSString *)<em>groupName</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>新群名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群名</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupIntroduction:introduction:succ:fail:" title="ModifyGroupIntroduction:introduction:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupIntroduction:introduction:succ:fail:">&ndash;&nbsp;ModifyGroupIntroduction:introduction:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群简介</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupIntroduction:(NSString *)<em>group</em> introduction:(NSString *)<em>introduction</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>introduction</code></th>
+						<td><p>群简介（最长120字节）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群简介</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupNotification:notification:succ:fail:" title="ModifyGroupNotification:notification:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupNotification:notification:succ:fail:">&ndash;&nbsp;ModifyGroupNotification:notification:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群公告</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupNotification:(NSString *)<em>group</em> notification:(NSString *)<em>notification</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>群公告（最长150字节）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群公告</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupFaceUrl:url:succ:fail:" title="ModifyGroupFaceUrl:url:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupFaceUrl:url:succ:fail:">&ndash;&nbsp;ModifyGroupFaceUrl:url:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群头像</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupFaceUrl:(NSString *)<em>group</em> url:(NSString *)<em>url</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>群头像地址（最长100字节）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群头像</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupAddOpt:opt:succ:fail:" title="ModifyGroupAddOpt:opt:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupAddOpt:opt:succ:fail:">&ndash;&nbsp;ModifyGroupAddOpt:opt:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改加群选项</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupAddOpt:(NSString *)<em>group</em> opt:(TIMGroupAddOpt)<em>opt</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opt</code></th>
+						<td><p>加群选项，详见 <a href="../Constants/TIMGroupAddOpt.html">TIMGroupAddOpt</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改加群选项</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetReciveMessageOpt:succ:fail:" title="GetReciveMessageOpt:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetReciveMessageOpt:succ:fail:">&ndash;&nbsp;GetReciveMessageOpt:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取接受消息选项</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetReciveMessageOpt:(NSString *)<em>group</em> succ:(TIMGroupReciveMessageOptSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取接受消息选项</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyReciveMessageOpt:opt:succ:fail:" title="ModifyReciveMessageOpt:opt:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyReciveMessageOpt:opt:succ:fail:">&ndash;&nbsp;ModifyReciveMessageOpt:opt:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改接受消息选项</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyReciveMessageOpt:(NSString *)<em>group</em> opt:(TIMGroupReceiveMessageOpt)<em>opt</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opt</code></th>
+						<td><p>接受消息选项，详见 <a href="../Constants/TIMGroupReceiveMessageOpt.html">TIMGroupReceiveMessageOpt</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改接受消息选项</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupMemberInfoSetRole:user:role:succ:fail:" title="ModifyGroupMemberInfoSetRole:user:role:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupMemberInfoSetRole:user:role:succ:fail:">&ndash;&nbsp;ModifyGroupMemberInfoSetRole:user:role:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群成员角色</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupMemberInfoSetRole:(NSString *)<em>group</em> user:(NSString *)<em>identifier</em> role:(TIMGroupMemberRole)<em>role</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>被修改角色的用户identifier</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opt</code></th>
+						<td><p>角色（注意：不能修改为群主），详见 <a href="../Constants/TIMGroupMemberRole.html">TIMGroupMemberRole</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群成员角色</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:" title="ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:">&ndash;&nbsp;ModifyGroupMemberInfoSetSilence:user:stime:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>禁言用户（只有管理员或群主能够调用）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupMemberInfoSetSilence:(NSString *)<em>group</em> user:(NSString *)<em>identifier</em> stime:(uint32_t)<em>stime</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>被禁言的用户identifier</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stime</code></th>
+						<td><p>禁言时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>禁言用户（只有管理员或群主能够调用）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:" title="ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:">&ndash;&nbsp;ModifyGroupMemberInfoSetNameCard:user:nameCard:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改群名片（只有本人、管理员或群主能够调用）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)ModifyGroupMemberInfoSetNameCard:(NSString *)<em>group</em> user:(NSString *)<em>identifier</em> nameCard:(NSString *)<em>nameCard</em> succ:(TIMSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>被操作用户identifier</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nameCard</code></th>
+						<td><p>群名片</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改群名片（只有本人、管理员或群主能够调用）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupMembers:succ:fail:" title="GetGroupMembers:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupMembers:succ:fail:">&ndash;&nbsp;GetGroupMembers:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群成员列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupMembers:(NSString *)<em>group</em> succ:(TIMGroupMemberSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调(TIMGroupMemberInfo列表)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群成员列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupPublicInfo:succ:fail:" title="GetGroupPublicInfo:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupPublicInfo:succ:fail:">&ndash;&nbsp;GetGroupPublicInfo:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群公开信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupPublicInfo:(NSArray *)<em>groups</em> succ:(TIMGroupListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groups</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群公开信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupMembersV2:flags:custom:nextSeq:succ:fail:" title="GetGroupMembersV2:flags:custom:nextSeq:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupMembersV2:flags:custom:nextSeq:succ:fail:">&ndash;&nbsp;GetGroupMembersV2:flags:custom:nextSeq:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群成员列表（支持按字段拉取，分页）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupMembersV2:(NSString *)<em>group</em> flags:(TIMGetGroupMemInfoFlag)<em>flags</em> custom:(NSArray *)<em>custom</em> nextSeq:(uint64_t)<em>nextSeq</em> succ:(TIMGroupMemberSuccV2)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>拉取资料标志</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>要获取的自定义key列表，暂不支持，传nil</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nextSeq</code></th>
+						<td><p>分页拉取标志，第一次拉取填0，回调成功如果不为零，需要分页，传入再次拉取，直至为0</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群成员列表（支持按字段拉取，分页）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:" title="GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:">&ndash;&nbsp;GetGroupMembers:ByFilter:flags:custom:nextSeq:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取指定类型的成员列表（支持按字段拉取，分页）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupMembers:(NSString *)<em>group</em> ByFilter:(TIMGroupMemberFilter)<em>filter</em> flags:(TIMGetGroupMemInfoFlag)<em>flags</em> custom:(NSArray *)<em>custom</em> nextSeq:(uint64_t)<em>nextSeq</em> succ:(TIMGroupMemberSuccV2)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id：（NSString*) 列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filter</code></th>
+						<td><p>群成员角色过滤方式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>拉取资料标志</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>要获取的自定义key（NSString*）列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nextSeq</code></th>
+						<td><p>分页拉取标志，第一次拉取填0，回调成功如果不为零，需要分页，传入再次拉取，直至为0</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取指定类型的成员列表（支持按字段拉取，分页）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetGroupPublicInfoV2:flags:custom:succ:fail:" title="GetGroupPublicInfoV2:flags:custom:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetGroupPublicInfoV2:flags:custom:succ:fail:">&ndash;&nbsp;GetGroupPublicInfoV2:flags:custom:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取群公开资料（可指定字段拉取）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)GetGroupPublicInfoV2:(NSArray *)<em>groups</em> flags:(TIMGetGroupBaseInfoFlag)<em>flags</em> custom:(NSArray *)<em>custom</em> succ:(TIMGroupListSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>拉取资料标志</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>要获取的自定义key（NSString*）列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>群组Id：（NSString*) 列表</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取群公开资料（可指定字段拉取）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:" title="SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:">&ndash;&nbsp;SearchGroup:flags:custom:pageIndex:pageSize:succ:fail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过名称信息获取群资料（可指定字段拉取）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)SearchGroup:(NSString *)<em>groupName</em> flags:(TIMGetGroupBaseInfoFlag)<em>flags</em> custom:(NSArray *)<em>custom</em> pageIndex:(uint32_t)<em>pageIndex</em> pageSize:(uint32_t)<em>pageSize</em> succ:(TIMGroupSearchSucc)<em>succ</em> fail:(TIMFail)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>群组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flags</code></th>
+						<td><p>拉取资料标志</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>custom</code></th>
+						<td><p>要获取的自定义key（NSString*）列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageIndex</code></th>
+						<td><p>分页号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageSize</code></th>
+						<td><p>每页群组数目</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过名称信息获取群资料（可指定字段拉取）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TIMGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 com.zh.albert. All rights reserved. Updated: 2016-03-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
