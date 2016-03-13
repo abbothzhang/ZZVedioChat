@@ -58,3 +58,6 @@
 #define QQ_OPEN_SCHEMA @"tencent1104778508"
 #define WX_OPEN_ID @"wx307d66cbc308cf1f"
 #define WX_OPEN_KEY @"69aed8b3fd41ed72efcfbdbca1e99a27"
+
+
+

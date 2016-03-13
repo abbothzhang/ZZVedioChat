@@ -81,16 +81,6 @@
 
 
 
--(void)tencentDidNotNetWork{
-    NSLog(@"%s", __func__);
-}
--(void)tencentDidLogin{
-    NSLog(@"%s", __func__);
-    
-}
--(void)tencentDidNotLogin:(BOOL)cancelled{
-    NSLog(@"%s %d", __func__, cancelled);
-}
 
 -(BOOL)application:(UIApplication*)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     NSLog(@"%s %@", __func__, url);

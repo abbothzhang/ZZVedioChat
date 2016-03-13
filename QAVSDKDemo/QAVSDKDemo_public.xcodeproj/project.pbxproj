@@ -840,7 +840,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objc";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jshow.zh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zh.albert;
 				PRODUCT_NAME = QAVSDKDemo_public;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -890,7 +890,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objc";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jshow.zh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zh.albert;
 				PRODUCT_NAME = QAVSDKDemo_public;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -984,7 +984,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objc";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jshow.zh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zh.albert;
 				PRODUCT_NAME = QAVSDKDemo_public;
 				PROVISIONING_PROFILE = "3f46d0ec-a2f6-45f8-9182-173cffc8c8b7";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3f46d0ec-a2f6-45f8-9182-173cffc8c8b7";
