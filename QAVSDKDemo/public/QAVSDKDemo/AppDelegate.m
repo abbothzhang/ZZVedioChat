@@ -33,57 +33,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
-//    [DDLog addLogger:[DDASLLogger sharedInstance]];
-//    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-//    
-//    fileLogger = [[DDFileLogger alloc] init];
-//    fileLogger.rollingFrequency = 60 * 60 * 24;
-//    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
-//    
-//    [DDLog addLogger:fileLogger];
-//    
-//    DDLogInfo(@"QAVSDK Demo did Finish Launching");
-//    
-//    DDLogInfo(@"log path:%@",[fileLogger currentLogFileInfo].filePath);
-    
-    
-    //    [[CrashReporter sharedInstance] enableLog:YES];
-    //    [[CrashReporter sharedInstance] installWithAppkey:@"com.tencent.qavsdkdemo"];
-    //    [[CrashReporter sharedInstance] setChannel:@"RDM"];
-    
-    
-    //exp_call_back_func = &my_exp_callback;
-    
-    //设置userid，可选, 用于标识用户
-    //[[CrashReporter sharedInstance] setUserId:@”youruserid”];
-    //deviceid, 可选，默认rqd会自己生产一个deviceid。如果用户想使用自己的deviceid，可以设置
-    //[[CrashReporter sharedInstance] setDeviceId:@"yourDeviceId"];
-    
-#if _BUILD_FOR_TLS
-    int envValue = [UserConfig shareConfig].isTestServer ? 1:0;
-    
-    [[TIMManager sharedInstance] setEnv:envValue];
-    //    [[TIMManager sharedInstance]setEnv:1];
-    [[TIMManager sharedInstance] initSdk:TLS_SDK_APPID accountType:kAVSDKDemo_AccountType];
-    
-    
-    // Override point for customization after application launch.
-    [[TLSLoginHelper getInstance] init:TLS_SDK_APPID andAccountType:TLS_SDK_ACCOUNT_TYPE andAppVer:APP_VERSION];
-    [[TLSAccountHelper getInstance] init:TLS_SDK_APPID andAccountType:TLS_SDK_ACCOUNT_TYPE andAppVer:APP_VERSION];
-    [[TLSLoginHelper getInstance] setLogcat:YES];
-    //    [[TLSLoginHelper getInstance] setTestHost:@"113.108.64.238" andPort:443];
-    //    [TLSLoginHelper getInstance]
-    self.openQQ = [[TencentOAuth alloc] initWithAppId:QQ_OPEN_ID andDelegate:self];
-    [WXApi registerApp:WX_OPEN_ID];
-    
-    
-    [self switchToLoginView];
-#else
+
     [self switchToMain];
-#endif
-    
     return YES;
 }
 
@@ -112,21 +63,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (void)switchToLoginView
-{
-    /*
-    if (!self.window)
-    {
-        self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    }
-    AVTLSLoginViewController *vc = [[AVTLSLoginViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
-    */
 }
 
 
